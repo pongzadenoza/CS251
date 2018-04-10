@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="login_mng.php" server="C:/xampp/htdocs/testserv" local="131678235687416257" remote="131678235680000000" Dst="0" />
-<file name="index.html" server="C:/xampp/htdocs/testserv" local="131678115584823918" remote="131678115580000000" Dst="0" />
-<file name="login.html" server="C:/xampp/htdocs/testserv" local="131678150524313210" remote="131678150520000000" Dst="0" />
-<file name="login.html" server="C:/xampp/htdocs/testserv/" local="131678710762007681" remote="131678710760000000" Dst="0" />
-<file name="index.php" server="C:/xampp/htdocs/testserv/" local="131678104014565278" remote="131678104010000000" Dst="0" />
-<file name="login_mng.php" server="C:/xampp/htdocs/testserv/" local="131678235687416257" remote="131678235680000000" Dst="0" />
-<file name="login.php" server="C:/xampp/htdocs/testserv/" local="131678718537211633" remote="131678718530000000" Dst="0" />
-<file name="index.html" server="C:/xampp/htdocs/testserv/" local="131678730318503127" remote="131678730310000000" Dst="0" />
+<file name=".DS_Store" server="13.231.233.64//var/www/html/cs281/" local="131666300700000000" remote="131666300700000000" Dst="0" />
+<file name="cart.html" server="13.231.233.64//var/www/html/cs281/" local="131666677500000000" remote="131666677500000000" Dst="0" />
+<file name="category.html" server="13.231.233.64//var/www/html/cs281/" local="131666677480000000" remote="131666677480000000" Dst="0" />
+<file name="checkout.html" server="13.231.233.64//var/www/html/cs281/" local="131666677440000000" remote="131666677440000000" Dst="0" />
+<file name="confermation.html" server="13.231.233.64//var/www/html/cs281/" local="131666677400000000" remote="131666677400000000" Dst="0" />
+<file name="elements.html" server="13.231.233.64//var/www/html/cs281/" local="131666677600000000" remote="131666677600000000" Dst="0" />
+<file name="generic.html" server="13.231.233.64//var/www/html/cs281/" local="131666677700000000" remote="131666677700000000" Dst="0" />
+<file name="index.html" server="13.231.233.64//var/www/html/cs281/" local="131678732461959025" remote="131678751000000000" Dst="0" />
+<file name="login.html" server="13.231.233.64//var/www/html/cs281/" local="131678733969171670" remote="131678750990000000" Dst="0" />
+<file name="mail.php" server="13.231.233.64//var/www/html/cs281/" local="131666300640000000" remote="131666300640000000" Dst="0" />
+<file name="single.html" server="13.231.233.64//var/www/html/cs281/" local="131666677920000000" remote="131666677920000000" Dst="0" />
+<file name="tracking.html" server="13.231.233.64//var/www/html/cs281/" local="131666677980000000" remote="131666677980000000" Dst="0" />
+<file name="login_mng.php" server="C:/xampp/htdocs/testserv" local="131678749751901364" remote="131678749750000000" Dst="0" />
+<file name="login.php" server="C:/xampp/htdocs/testserv" local="131678750110356347" remote="131678750110000000" Dst="0" />
+<file name="index.html" server="C:/xampp/htdocs/testserv" local="131678732461959025" remote="131678732460000000" Dst="0" />
+<file name="login_mng.php" server="13.231.233.64//var/www/html/cs281/" local="131678749751901364" remote="131678750980000000" Dst="0" />
+<file name="login.php" server="13.231.233.64//var/www/html/cs281/" local="131678750110356347" remote="131678750990000000" Dst="0" />
+<file name="index.php" server="13.231.233.64//var/www/html/cs281/" local="131678732462079015" remote="131678751000000000" Dst="0" />
+<file name="index.php" server="C:/xampp/htdocs/testserv" local="131678732462079015" remote="131678732460000000" Dst="0" />
 </dwsync>

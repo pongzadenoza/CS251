@@ -2,16 +2,25 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>PHP Login page Test</title>
 </head>
-<?php include("login_mng.php");
 
+	
+
+<body>
+	<?php include("login_mng.php");
+
+echo "This is login.php";
+	
+
+	
  $mng = new Loginmng();
 
-mng->chkConnect();
-mng
-echo 
+$mng->chkConnect();
+
+
  ?>
-<body>
+	
+	<a href=login.html>back</a>	
 </body>
 </html>

@@ -2,13 +2,14 @@
 <?php
 	  class Loginmng{
 
-	  $servername ="13.231.233.64";
-		$username = "root";
-$password = "123456";
-$dbname = "CS281";
+	  
 
 	 function  _construct(){
 
+		  $servername ='13.231.233.64';
+		$username = "root";
+		 $password = "123456";
+		 $dbname = "CS281";
 	  }
 
 
@@ -16,11 +17,13 @@ $dbname = "CS281";
 
 	 }
 
-	 function chkConnect :bool(){
+	 function chkConnect(){
 				$conn = new mysqli($servername,$username,$password,$dbname);
-if($conn->connect_error){
+
+		 if($conn->connect_error){
 	die("Connection failed:" .$conn->connect_error);
-}
+
+		 }
 	 }
 	  }
 
