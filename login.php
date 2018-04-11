@@ -16,7 +16,13 @@ echo "This is login.php";
 	
  $mng = new Loginmng();
 
-$mng->chkConnect();
+if($mng->chkConnect()){
+	
+	
+	
+	
+	
+}
 
 
  ?>
