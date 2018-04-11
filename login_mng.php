@@ -5,10 +5,10 @@
 	  
 	 function  _construct(){
 		 	session_start();
-		  $servername ="13.231.233.64";
-		$username = "root";
-		 $password = "123456";
-		 $dbname = "CS281";
+		  $servername ='13.231.233.64';
+		$username = 'project';
+		 $password = '123456';
+		 $dbname = 'CS281';
 	  }
 
 
@@ -17,7 +17,7 @@
 	 }
 
 	 function chkConnect(){
-				$conn = new mysqli($servername,$username,$password,$dbname);
+				$conn = new mysqli('13.231.233.64','project','123456','CS281');
 
 		 if($conn->connect_error){
 	die("Connection failed:" .$conn->connect_error);
