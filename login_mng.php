@@ -3,10 +3,9 @@
 	  class Loginmng{
 
 	  
-
 	 function  _construct(){
 		 	session_start();
-		  $servername ="13.231.233.64:3307";
+		  $servername ="13.231.233.64";
 		$username = "root";
 		 $password = "123456";
 		 $dbname = "CS281";

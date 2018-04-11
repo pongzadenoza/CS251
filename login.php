@@ -9,6 +9,7 @@
 
 <body>
 	<?php include("login_mng.php");
+	
 
 echo "This is login.php";
 	
