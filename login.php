@@ -10,16 +10,17 @@
 <body>
 	<?php include("login_mng.php");
 	
+	$id = $_GET['cid'];
+	$pass = $_GET['cpassword'];
 
+	echo "$id.=$pass";
 
 	
-
-	
- $mng = new Loginmng();
+ $mng = new Loginmng($id , $pass);
 
 if($mng->chkConnect()){
 	
-	echo "This is login.php555";
+	//echo "This is login.php555";
 	$mng->getInfo();
 	
 	
