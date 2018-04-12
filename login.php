@@ -11,7 +11,7 @@
 	<?php include("login_mng.php");
 	
 
-echo "This is login.php";
+
 	
 
 	
@@ -19,8 +19,8 @@ echo "This is login.php";
 
 if($mng->chkConnect()){
 	
-	
-	
+	echo "This is login.php555";
+	$mng->getInfo();
 	
 	
 }

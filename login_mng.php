@@ -4,7 +4,7 @@
 
 	  
 	 function  _construct(){
-		 	session_start();
+		 	
 		  $servername ='13.231.233.64';
 		$username = 'project';
 		 $password = '123456';
@@ -17,7 +17,8 @@
 	 }
 
 	 function chkConnect(){
-				$conn = new mysqli('13.231.233.64','project','123456','CS281');
+		 session_start();
+				$conn = new mariaDB("mydpk.ddns.net:3307/pong284_CS284","pong284","123456","CS281");
 
 		 if($conn->connect_error){
 	die("Connection failed:" .$conn->connect_error);
