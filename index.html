@@ -42,26 +42,7 @@
 							<ul class="list">
 								<li><a href="login.html">login</a>
 								
-								<?php
-							if($_SESSION['C_ID']){
-								echo '<a href ="#" class ="dropdown-toggle" data-toggle="dropdown">
-									HEY!! '.$_SESSION['C_ID'].'</a>';
-								echo '<ul class="dropdown-menu">';
-								echo '<li><a href="profile.php">Profile</a>';
-								echo '</li>';
-								if($_SESSION["C_TYPE"]==1){
-									echo '<li><a href="management.php">Management</a>';
-									echo '</li>';
-								}
-								echo '<li><a href="logout.php">Logout</a>';
-								echo '</li>';
-                echo '</ul>';
-							}else{
-								echo '<li class="">';
-								echo'<a href =login-page.html >Login</a>';
-								echo '</li>';
-							}
-						?>
+								
 								
 								
 								
