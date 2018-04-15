@@ -1,78 +1,37 @@
-
 <?php
-	  class Loginmng{
+session_start();
+?>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>PHP Login page Test</title>
+</head>
 
-		  
-	  
-	 function  _construct($id, $pass){
-		 	
-		  $servername ='13.231.233.64';
-		$username = 'project';
-		 $password = '123456';
-		 $dbname = 'CS281';
-	  }
+	
+
+<body>
+	<?php include("login_ctl.php");
+	
+	$id = $_GET['cid'];
+	$pass = $_GET['cpassword'];
+
+	echo "$id.=$pass";
+
+	
+ $mng = new Loginmng($id , $pass);
+
+if($mng->chkConnect()){
+	
+	//echo "This is login.php555";
+	$mng->getInfo();
+	
+	
+}
 
 
-   function _desruct(){
-
-	 }
-
-	 function chkConnect(){
-		 global $conn;
-		 session_start();
-		 
-				$conn = new mysqli("13.231.233.64:3306","project","123456","CS281");
-
-		 
-		 if($conn->connect_error){
-	die("Connection failed:" .$conn->connect_error);
-			 return false;
-		 }
-		 
-		 return true;
-	 }
-		  
-		  
-		  function getInfo(){
-			  global $conn;
-			  $id = $_REQUEST['cid'];
-			  $pass = $_REQUEST['cpassword'];
-			  
-			  //echo "<br>$id<br>";
-
-			 // echo "<br>$pass<br>";
-
-			  $sql = "SELECT * FROM custom WHERE c_id = '".$id."' AND c_pwd = '".$pass."'";
-			  
-			  
-			 
-				  $object =  $conn->query($sql);
-			  
-			  
-			  
-			  $resultArray = $object->fetch_array();
-			  
-			  
-			  if(!$resultArray){
-				  echo "$resultArray<br>";
-					echo 'ID OR PASSWORD Incorrect';
-			  }else{
-				  //	header('location:index.php');
-					$_SESSION['C_ID'] = $resultArray['C_ID'];
-					$_SESSION['C_TYPE'] = $resultArray['C_TYPE'];
-					session_write_close();
-					if($_SESSION['C_TYPE'==1]){
-						 echo "<script type='text/javascript'>alert('submitted successfully!')</script>";
-						header('location:index.html');
-					}else{
-						 echo "<script type='text/javascript'>alert('submitted successfully!')</script>";
-						header('location:index.html');	
-					}
-				}
-			  mysqli_close();
-			
-		  }
-	  
-	  
-	  }
-	  ?>
+ ?>
+	
+	<a href=login.php>back</a>	
+</body>
+</html>

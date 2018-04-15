@@ -47,10 +47,25 @@ session_start();
 								
 								<li>
 									
+									<?php 
+									error_reporting(E_ALL ^ E_NOTICE);
+									
+									if($_SESSION['C_ID']){
+										
+										echo "Welcome <b>".$_SESSION['C_ID']."</b><br>" ;
+										echo "<a href=\"logout.php\">logout</a>";
+										
+										
+									}
+									else{
+										
+										
+										echo "<a href=\"login.php\">login</a>";
+										
+									}
 									
 									
-									<a href="login.html">login</a>
-
+										?>
 									
 								</li>
 								
@@ -91,7 +106,7 @@ session_start();
 								        <a class="dropdown-item" href="cart.html">Cart</a>
 								        <a class="dropdown-item" href="checkout.html">Checkout</a>
 								        <a class="dropdown-item" href="confermation.html">Confermation</a>
-								        <a class="dropdown-item" href="login.html">Login</a>
+								        <a class="dropdown-item" href="login.php">Login</a>
 								        <a class="dropdown-item" href="tracking.html">Tracking</a>
 								        <a class="dropdown-item" href="generic.html">Generic</a>
 								        <a class="dropdown-item" href="elements.html">Elements</a>
