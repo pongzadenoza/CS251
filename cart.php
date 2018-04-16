@@ -2,8 +2,7 @@
 session_start();
 ?>
 <!DOCTYPE html>
-    <html lang="zxx" class="no-js">
-    <head>
+<html lang="zxx" class="no-js"><head>
         <!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Favicon-->
@@ -27,31 +26,50 @@ session_start();
             <link rel="stylesheet" href="css/owl.carousel.css">            
             <link rel="stylesheet" href="css/font-awesome.min.css">
             <link rel="stylesheet" href="css/nice-select.css">
-            <link rel="stylesheet" href="css/ion.rangeSlider.css" />
-            <link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" />
+            <link rel="stylesheet" href="css/ion.rangeSlider.css">
+            <link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css">
             <link rel="stylesheet" href="css/bootstrap.css">
             <link rel="stylesheet" href="css/main.css">
         </head>
         <body>
 
             <!-- Start Header Area -->
-            <header class="default-header">
+            <div id="undefined-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 108px;"><header class="default-header" style="width: 1348px; position: fixed; top: 0px;">
                 <div class="menutop-wrap">
                     <div class="menu-top container">
                         <div class="d-flex justify-content-between align-items-center">
                             <ul class="list">
-                                <li><a href="tel:+12312-3-1209">+12312-3-1209</a></li>
-                                <li><a href="mailto:support@colorlib.com">support@colorlib.com</a></li>                             
+                                <li><a href="tel:+12312-3-1209">0861234567</a></li>
+                                <li><a href="mailto:support@colorlib.com">JR'Zaa@gmail.com</a></li>                             
                             </ul>
                             <ul class="list">
-                                <li><a href="#">login</a></li>
+                                <li>
+									<?php
+									error_reporting(E_ALL ^ E_NOTICE);
+
+									if($_SESSION['C_ID']){
+
+										echo "Welcome <b>".$_SESSION['C_ID']."</b><br>" ;
+										echo "<a href=\"logout.php\">logout</a>";
+
+
+									}
+									else{
+
+
+										echo "<a href=\"login.php\">login</a>";
+
+									}
+
+
+										?></li>
                             </ul>
                         </div>
                     </div>                  
                 </div>
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container">
-                          <a class="navbar-brand" href="index.php">
+                          <a class="navbar-brand" href="index.html">
                             <img src="img/logo.png" alt="">
                           </a>
                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +77,7 @@ session_start();
                           </button>
                           <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
                             <ul class="navbar-nav">
-                                <li><a href="index.php">Home</a></li>
+                                <li><a href="#home">Home</a></li>
                                 <li><a href="#catagory">Category</a></li>
                                 <li><a href="#men">Men</a></li>
                                 <li><a href="#women">Women</a></li>
@@ -69,10 +87,10 @@ session_start();
                                       <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                                         Pages
                                       </a>
-                                      <div class="dropdown-menu">
+                                      <div class="dropdown-menu" style="display: none;">
                                         <a class="dropdown-item" href="category.php">Category</a>
                                         <a class="dropdown-item" href="single.html">Single</a>
-                                        <a class="dropdown-item" href="cart.php">Cart</a>
+                                        <a class="dropdown-item" href="cart.html">Cart</a>
                                         <a class="dropdown-item" href="checkout.html">Checkout</a>
                                         <a class="dropdown-item" href="confermation.html">Confermation</a>
                                         <a class="dropdown-item" href="login.html">Login</a>
@@ -85,7 +103,7 @@ session_start();
                           </div>                        
                     </div>
                 </nav>
-            </header>
+            </header></div>
             <!-- End Header Area -->
 
             <!-- Start Banner Area -->
@@ -95,8 +113,8 @@ session_start();
                         <div class="col-first">
                             <h1>Shopping Cart</h1>
                              <nav class="d-flex align-items-center justify-content-start">
-                                <a href="index.php">Home<i class="fa fa-caret-right" aria-hidden="true"></i></a>
-                                <a href="cart.php">Shopping Cart</a>
+                                <a href="index.html">Home<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                <a href="cart.html">Shopping Cart</a>
                             </nav>
                         </div>
                     </div>
@@ -104,49 +122,115 @@ session_start();
             </section>
             <!-- End Banner Area -->
 
-		<!-- Start My Account -->
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="login-form">
-						<h3 class="billing-title text-center">Login</h3>
-						<p class="text-center mt-80 mb-40">Welcome back! Sign in to your account </p>
-						<form name="login-form" action="login_mng.php" method="GET">
-							<input type="text" name="cid" value="" placeholder="Username or Email*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Username or Email*'" required class="common-input mt-20">
-							<input type="password" name="cpassword" value="" placeholder="Password*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Password*'" required class="common-input mt-20">
-							<button class="view-btn color-2 mt-20 w-100"><span>Login</span></button>
-							<div class="mt-20 d-flex align-items-center justify-content-between">
-								<div class="d-flex align-items-center"><input type="checkbox" class="pixel-checkbox" id="login-1"><label for="login-1">Remember me</label></div>
-								<a href="#">Lost your password?</a>
-							</div>
-						</form>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="register-form">
-						<h3 class="billing-title text-center">Register</h3>
-						<p class="text-center mt-40 mb-30">Create your very own account </p>
-						<form action="#">
-							<input type="text" placeholder="Full name*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Full name*'" required class="common-input mt-20">
-							<input type="email" placeholder="Email address*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Email address*'" required class="common-input mt-20">
-							<input type="text" placeholder="Phone number*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Phone number*'" required class="common-input mt-20">
-							<input type="text" placeholder="Address*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Address*'" required class="common-input mt-20">
-							<input type="text" placeholder="Username*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Username*'" required class="common-input mt-20">
-							<input type="password" placeholder="Password*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Password*'" required class="common-input mt-20">
-							<button class="view-btn color-2 mt-20 w-100"><span>Register</span></button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End My Account -->
-		
+            <!-- Start Cart Area -->
+            <div class="container">
+                <div class="cart-title">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6 class="ml-15">Product</h6>
+                        </div>
+                        <div class="col-md-2">
+                            <h6>ราคา</h6>
+                        </div>
+                        <div class="col-md-2">
+                            <h6>จำนวน</h6>
+                        </div>
+                        <div class="col-md-2">
+                            <h6>ยอดรวม</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-single-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-12">
+                            <div class="product-item d-flex align-items-center">
+                                <img src="img/nikezoom.jpg" class="img-fluid" alt="" width="200">
+                                <h6>NIKE ZOOM FLY</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <div class="price">$360.00</div>
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <div class="quantity-container d-flex align-items-center mt-15">
+                                <input type="text" class="quantity-amount" value="1">
+                                <div class="arrow-btn d-inline-flex flex-column">
+                                    <button class="increase arrow" type="button" title="Increase Quantity"><span class="lnr lnr-chevron-up"></span></button>
+                                    <button class="decrease arrow" type="button" title="Decrease Quantity"><span class="lnr lnr-chevron-down"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-12">
+                            <div class="total">$720.00</div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                
+                <div class="cupon-area d-flex align-items-center justify-content-between flex-wrap">
+                    <a href="#" class="view-btn color-2"><span>Update Cart</span></a>
+                    <div class="cuppon-wrap d-flex align-items-center flex-wrap">
+                        <div class="cupon-code">
+                            <input type="text">
+                            <button class="view-btn color-2"><span>Apply</span></button>
+                        </div>
+                        <a href="#" class="view-btn color-2 have-btn"><span>ส่วนลด</span></a>
+                    </div>
+                </div>
+                <div class="subtotal-area d-flex align-items-center justify-content-end">
+                    <div class="title text-uppercase">ยอดรวม</div>
+                    <div class="subtotal">$2160.00</div>
+                </div>
+                <div class="shipping-area d-flex justify-content-end">
+                    <div class="tile text-uppercase">การส่งสินค้า</div>
+                    <form action="#" class="d-inline-flex flex-column align-items-end">
+                        <ul class="d-flex flex-column align-items-end">
+                            <li class="filter-list">
+                                <label for="flat-rate">Flat Rate:<span>$5.00</span></label>
+                                <input class="pixel-radio" type="radio" id="flat-rate" name="brand">
+                            </li>
+                            <li class="filter-list">
+                                <label for="free-shipping">Free Shipping</label>
+                                <input class="pixel-radio" type="radio" id="free-shipping" name="brand">
+                            </li>
+                            <li class="filter-list">
+                                <label for="flat-rate-2">Flat Rate:<span>$10.00</span></label>
+                                <input class="pixel-radio" type="radio" id="flat-rate-2" name="brand">
+                            </li>
+                            <li class="filter-list">
+                                <label for="local-delivery">Local Delivery:<span>$2.00</span></label>
+                                <input class="pixel-radio" type="radio" id="local-delivery" name="brand">
+                            </li>
+                            <li class="calculate">Calculate Shipping</li>
+                        </ul>
+                        <div class="sorting">
+                            <select style="display: none;">
+                                <option value="1">Bangladesh</option>
+                                <option value="1">India</option>
+                                <option value="1">Srilanka</option>
+                            </select><div class="nice-select" tabindex="0"><span class="current">Bangladesh</span><ul class="list"><li data-value="1" class="option selected">Bangladesh</li><li data-value="1" class="option">India</li><li data-value="1" class="option">Srilanka</li></ul></div>
+                        </div>
+                        <div class="sorting mt-20">
+                            <select style="display: none;">
+                                <option value="1">Select a State</option>
+                                <option value="1">Select a State</option>
+                                <option value="1">Select a State</option>
+                            </select><div class="nice-select" tabindex="0"><span class="current">Select a State</span><ul class="list"><li data-value="1" class="option selected">Select a State</li><li data-value="1" class="option">Select a State</li><li data-value="1" class="option">Select a State</li></ul></div>
+                        </div>
+                        <input type="text" placeholder="Postcode/Zipcode" onfocus="this.placeholder=''" onblur="this.placeholder = 'Postcode/Zipcode'" required="" class="common-input mt-10">
+                        <button class="view-btn color-2 mt-10"><span>Update Details</span></button>
+                    </form>
+
+                </div>
+            </div>
+            <!-- End Cart Area -->
 
             <!-- Start Most Search Product Area -->
             <section class="section-half">
                 <div class="container">
                     <div class="organic-section-title text-center">
-                        <h3>Most Searched Products</h3>
+                        <h3>จากสินค้าค้นหามากที่สุด</h3>
                     </div>
                     <div class="row mt-30">
                         <div class="col-lg-3 col-md-4 col-sm-6">
@@ -268,26 +352,35 @@ session_start();
                     <div class="row">
                         <div class="col-lg-3  col-md-6 col-sm-6">
                             <div class="single-footer-widget">
-                                <h6>About Us</h6>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
-                                </p>
+                                <h6>เกี่ยวกับเรา</h6>
+                                <p>ห้างสรรพสินค้าออนไลน์ชั้นนำ
+JR ‘Zaa คือห้างสรรพสินค้าออนไลน์ที่ จัดส่งสินค้ารวดเร็ว เชื่อถือได้ และมอบความสะดวกสบายในการเลือกซื้อสินค้าแก่ลูกค้า
+
+ด้วยการนำเสนอสินค้าที่คู่ควรแก่คุณ 
+JR ‘Zaa พร้อมมอบสิ่งที่ดีที่สุด ให้แก่ลูกค้าเสมอ ไม่ว่าจะเป็นวิธีการชำระเงินปลายทาง หรือบริการการคืนสินค้าฟรี และศูนย์บริการลูกค้าที่พร้อมจะให้คำแนะนำตลอดการเลือกซื้อสินค้า
+
+
+</p>
                             </div>
                         </div>
                         <div class="col-lg-3  col-md-6 col-sm-6">
                             <div class="single-footer-widget">
-                                <h6>Newsletter</h6>
-                                <p>Stay update with our latest</p>
+                                
+                                <p>เราไม่เคยหยุดที่จะหาสิ่งที่ดีที่สุดให้คุณ เพราะเราคือห้างสรรพสินค้าที่อยู่เพียงแค่ปลายนิ้ว ที่ให้คุณช๊อปปิ้งได้ทุกที่ทุกเวลา! ตลอด 24 ชั่วโมง ง่าย ๆ เพียงแค่สมัครเป็นส่วนหนึ่งของเว็ป JR ‘Zaa มาเป็นสมาชิกกับเราและรับสิทธิพิเศษรวมทั้งข่าวสารและโปรโมชั่นสุดพิเศษอย่างต่อเนื่อง
+
+เพราะคุณคือคนสำคัญของเรา เราจึงทุ่มเทที่จะสร้างประสบการณ์การชอปปิ้งที่ดีที่สุดให้กับคุณ หากคุณมีคำถามใดๆ พวกเรารอตอบคุณอยู่เพียงต่อสายโทรศัพท์หรืออีเมลล์หาเราเท่านั้น
+
+</p>
                                 <div class="" id="mc_embed_signup">
 
                                         <form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
 
                                         <div class="d-flex flex-row">
 
-                                            <input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
+                                            
 
 
-                                                <button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                                                
                                                 <div style="position: absolute; left: -5000px;">
                                                     <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
                                                 </div>
@@ -303,7 +396,7 @@ session_start();
                         </div>                      
                         <div class="col-lg-3  col-md-6 col-sm-6">
                             <div class="single-footer-widget mail-chimp">
-                                <h6 class="mb-20">Instragram Feed</h6>
+                                
                                 <ul class="instafeed d-flex flex-wrap">
                                     <li><img src="img/i1.jpg" alt=""></li>
                                     <li><img src="img/i2.jpg" alt=""></li>
@@ -318,8 +411,8 @@ session_start();
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="single-footer-widget">
-                                <h6>Follow Us</h6>
-                                <p>Let us be social</p>
+                                <h6>ติดตามเราได้ที่</h6>
+                                
                                 <div class="footer-social d-flex align-items-center">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
                                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -331,7 +424,7 @@ session_start();
                     </div>
                     <div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <p class="footer-text m-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+                        <p class="footer-text m-0">Copyright ©<script>document.write(new Date().getFullYear());</script>2018 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
                 </div>
@@ -348,6 +441,5 @@ session_start();
             <script src="js/jquery.magnific-popup.min.js"></script>
             <script src="js/owl.carousel.min.js"></script>            
             <script src="js/main.js"></script>  
-           
-        </body>
-    </html>
+        
+    </body></html>
