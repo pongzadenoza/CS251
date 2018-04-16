@@ -126,13 +126,13 @@ session_start();
 					<div class="register-form">
 						<h3 class="billing-title text-center">Register</h3>
 						<p class="text-center mt-40 mb-30">Create your very own account </p>
-						<form action="#">
-							<input type="text" placeholder="Full name*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Full name*'" required class="common-input mt-20">
-							<input type="email" placeholder="Email address*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Email address*'" required class="common-input mt-20">
-							<input type="text" placeholder="Phone number*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Phone number*'" required class="common-input mt-20">
-							<input type="text" placeholder="Address*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Address*'" required class="common-input mt-20">
-							<input type="text" placeholder="Username*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Username*'" required class="common-input mt-20">
-							<input type="password" placeholder="Password*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Password*'" required class="common-input mt-20">
+						<form action="register_mng.php" method="post">
+							<input name ="cname" type="text" placeholder="Full name*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Full name*'" required class="common-input mt-20">
+							<input name="cmail" type="email" placeholder="Email address*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Email address*'" required class="common-input mt-20">
+							<input name="cphone" type="text" placeholder="Phone number*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Phone number*'" required class="common-input mt-20">
+							<input name="cads" type="text" placeholder="Address*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Address*'" required class="common-input mt-20">
+							<input name="cusr" type="text" placeholder="Username*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Username*'" required class="common-input mt-20">
+							<input name= "cpwd" type="password" placeholder="Password*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Password*'" required class="common-input mt-20">
 							<button class="view-btn color-2 mt-20 w-100"><span>Register</span></button>
 						</form>
 					</div>
