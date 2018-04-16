@@ -1,6 +1,6 @@
 <?php
 session_start();
-?>	
+?>
 <!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 	<head>
@@ -19,7 +19,7 @@ session_start();
 		<!-- Site Title -->
 		<title>Shop</title>
 
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 			<!--
 			CSS
 			============================================= -->
@@ -40,45 +40,45 @@ session_start();
 						<div class="d-flex justify-content-between align-items-center">
 							<ul class="list">
 								<li><a href="tel:+12312-3-1209">+12312-3-1209</a></li>
-								<li><a href="mailto:support@colorlib.com">support@colorlib.com</a></li>								
-							</ul>
-							
-							<ul class="list">
-								
-								<li>
-									
-									<?php 
-									error_reporting(E_ALL ^ E_NOTICE);
-									
-									if($_SESSION['C_ID']){
-										
-										echo "Welcome <b>".$_SESSION['C_ID']."</b><br>" ;
-										echo "<a href=\"logout.php\">logout</a>";
-										
-										
-									}
-									else{
-										
-										
-										echo "<a href=\"login.php\">login</a>";
-										
-									}
-									
-									
-										?>
-									
-								</li>
-								
-								
-								
-								
-								
-								
+								<li><a href="mailto:support@colorlib.com">support@colorlib.com</a></li>
 							</ul>
 
-							
+							<ul class="list">
+
+								<li>
+
+									<?php
+									error_reporting(E_ALL ^ E_NOTICE);
+
+									if($_SESSION['C_ID']){
+
+										echo "Welcome <b>".$_SESSION['C_ID']."</b><br>" ;
+										echo "<a href=\"logout.php\">logout</a>";
+
+
+									}
+									else{
+
+
+										echo "<a href=\"login.php\">login</a>";
+
+									}
+
+
+										?>
+
+								</li>
+
+
+
+
+
+
+							</ul>
+
+
 						</div>
-					</div>					
+					</div>
 				</div>
 				<nav class="navbar navbar-expand-lg  navbar-light">
 					<div class="container">
@@ -92,8 +92,7 @@ session_start();
 						    <ul class="navbar-nav">
 								<li><a href="#home">Home</a></li>
 								<li><a href="#catagory">Category</a></li>
-								<li><a href="#men">Men</a></li>
-								<li><a href="#women">Women</a></li>
+								<li><a href="#promotion">Promotion</a></li>
 								<li><a href="#latest">latest</a></li>
 									<!-- Dropdown -->
 								    <li class="dropdown">
@@ -111,9 +110,9 @@ session_start();
 								        <a class="dropdown-item" href="generic.html">Generic</a>
 								        <a class="dropdown-item" href="elements.html">Elements</a>
 								      </div>
-								    </li>									
+								    </li>
 						    </ul>
-						  </div>						
+						  </div>
 					</div>
 				</nav>
 			</header>
@@ -124,7 +123,7 @@ session_start();
 				<div class="container-fluid">
 					<div class="row fullscreen align-items-center justify-content-center">
 						<div class="col-lg-6 col-md-12 d-flex align-self-end img-right no-padding">
-							<img class="img-fluid" src="img/mushroom.png" alt="">
+							<img class="img-fluid" src="img/nikezoom.jpg" alt="">
 						</div>
 						<div class="banner-content col-lg-6 col-md-12">
 							<h1 class="title-top"><span>Flat</span> 75%Off</h1>
@@ -133,11 +132,11 @@ session_start();
 								this Season!
 							</h1>
 							<button class="primary-btn text-uppercase"><a href="#">Purchase Now</a></button>
-						</div>							
+						</div>
 					</div>
 				</div>
 			</section>
-			<!-- End banner Area -->	
+			<!-- End banner Area -->
 
 			<!-- Start category Area -->
 			<section class="category-area section-gap section-gap" id="catagory">
@@ -146,10 +145,9 @@ session_start();
 						<div class="menu-content pb-40">
 							<div class="title text-center">
 								<h1 class="mb-10">Second hand Shoes</h1>
-								<p>Who are in extremely love with eco friendly system.</p>
 							</div>
 						</div>
-					</div>					
+					</div>
 					<div class="row">
 						<div class="col-lg-8 col-md-8 mb-10">
 							<div class="row category-bottom">
@@ -157,9 +155,9 @@ session_start();
 									<div class="content">
 									    <a href="#" target="_blank">
 									      <div class="content-overlay"></div>
-									  		 <img class="content-image img-fluid d-block mx-auto" src="img/c1.jpg" alt="">
+									  		 <img class="content-image img-fluid d-block mx-auto" src="img\NIKEZOOM\AegeanStormBlueNebulaThunderBlueSummitWhite\messageImage_1523450488069.jpg" alt="">
 									      <div class="content-details fadeIn-bottom">
-									        <h3 class="content-title">Product for Women</h3>
+									        <h3 class="content-title">รองเท้ากีฬา</h3>
 									      </div>
 									    </a>
 									</div>
@@ -168,9 +166,9 @@ session_start();
 									<div class="content">
 									    <a href="#" target="_blank">
 									      <div class="content-overlay"></div>
-									  		 <img class="content-image img-fluid d-block mx-auto" src="img/c2.jpg" alt="">
+									  		 <img class="content-image img-fluid d-block mx-auto" src="img/slipper1.jpg" alt="">
 									      <div class="content-details fadeIn-bottom">
-									        <h3 class="content-title">Product for Couple</h3>
+									        <h3 class="content-title">รองเท้าแตะ</h3>
 									      </div>
 									    </a>
 									</div>
@@ -181,12 +179,12 @@ session_start();
 									      <div class="content-overlay"></div>
 									  		 <img class="content-image img-fluid d-block mx-auto" src="img/c3.jpg" alt="">
 									      <div class="content-details fadeIn-bottom">
-									        <h3 class="content-title">Shop Now</h3>
+									        <h3 class="content-title">รองเท้าส้นสูง</h3>
 									      </div>
 									    </a>
 									</div>
-							  	</div>																
-							</div>							
+							  	</div>
+							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 mb-10">
 						  <div class="content">
@@ -194,194 +192,18 @@ session_start();
 						      <div class="content-overlay"></div>
 						  		 <img class="content-image img-fluid d-block mx-auto" src="img/c4.jpg" alt="">
 						      <div class="content-details fadeIn-bottom">
-						        <h3 class="content-title">Product For Men</h3>
+						        <h3 class="content-title">รองเท้าผ้าใบ</h3>
 						      </div>
 						    </a>
 						  </div>
-						</div>						
+						</div>
 					</div>
-				</div>	
+				</div>
 			</section>
 			<!-- End category Area -->
-			
-			<!-- Start men-product Area -->
-			<section class="men-product-area section-gap relative" id="men">
-				<div class="overlay overlay-bg"></div>
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-40">
-							<div class="title text-center">
-								<h1 class="text-white mb-10">New realeased Products for Men</h1>
-								<p class="text-white">Who are in extremely love with eco friendly system.</p>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-3 col-md-6 single-product">
-						  <div class="content">
-						      <div class="content-overlay"></div>
-						  		 <img class="content-image img-fluid d-block mx-auto" src="img/l1.jpg" alt="">
-						      <div class="content-details fadeIn-bottom">
-							        <div class="bottom d-flex align-items-center justify-content-center">
-										<a href="#"><span class="lnr lnr-heart"></span></a>
-										<a href="#"><span class="lnr lnr-layers"></span></a>
-										<a href="#"><span class="lnr lnr-cart"></span></a>
-										<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
-									</div>
-						      </div>
-						  </div>
-						  <div class="price">
-						  		<h5 class="text-white">Long Sleeve shirt</h5>
-						  		<h3 class="text-white">$150.00</h3>
-						   </div>
-						</div>	
-						<div class="col-lg-3 col-md-6 single-product">
-						  <div class="content">
-						      <div class="content-overlay"></div>
-						  		 <img class="content-image img-fluid d-block mx-auto" src="img/l2.jpg" alt="">
-						      <div class="content-details fadeIn-bottom">
-							        <div class="bottom d-flex align-items-center justify-content-center">
-										<a href="#"><span class="lnr lnr-heart"></span></a>
-										<a href="#"><span class="lnr lnr-layers"></span></a>
-										<a href="#"><span class="lnr lnr-cart"></span></a>
-										<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
-									</div>
-						      </div>					      
-						  </div>
-						  <div class="price">
-						  		<h5 class="text-white">Long Sleeve shirt</h5>
-						  		<h3 class="text-white">$150.00</h3>
-						   </div>							  
-						</div>	
-						<div class="col-lg-3 col-md-6 single-product">
-						  <div class="content">
-						      <div class="content-overlay"></div>
-						  		 <img class="content-image img-fluid d-block mx-auto" src="img/l3.jpg" alt="">
-						      <div class="content-details fadeIn-bottom">
-							        <div class="bottom d-flex align-items-center justify-content-center">
-										<a href="#"><span class="lnr lnr-heart"></span></a>
-										<a href="#"><span class="lnr lnr-layers"></span></a>
-										<a href="#"><span class="lnr lnr-cart"></span></a>
-										<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
-									</div>
-						      </div>					      
-						  </div>
-						  <div class="price">
-						  		<h5 class="text-white">Long Sleeve shirt</h5>
-						  		<h3 class="text-white">$150.00</h3>
-						   </div>							  
-						</div>	
-						<div class="col-lg-3 col-md-6 single-product">
-						  <div class="content">
-					      	<div class="content-overlay"></div>
-					  		 <img class="content-image img-fluid d-block mx-auto" src="img/l4.jpg" alt="">
-						      <div class="content-details fadeIn-bottom">
-							        <div class="bottom d-flex align-items-center justify-content-center">
-										<a href="#"><span class="lnr lnr-heart"></span></a>
-										<a href="#"><span class="lnr lnr-layers"></span></a>
-										<a href="#"><span class="lnr lnr-cart"></span></a>
-										<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
-									</div>
-						      </div>
-						  </div>
-						    <div class="price">
-						  		<h5 class="text-white">Long Sleeve shirt</h5>
-						  		<h3 class="text-white">$150.00</h3>
-						    </div>							  					  
-						</div>																		
-					</div>
-				</div>	
-			</section>
-			<!-- End men-product Area -->
 
-			<!-- Start women-product Area -->
-			<section class="women-product-area section-gap" id="women">
-				<div class="container">
-					<div class="countdown-content pb-40">
-						<div class="title text-center">
-							<h1 class="mb-10">New realeased Products for Women</h1>
-							<p>Who are in extremely love with eco friendly system.</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-3 col-md-6 single-product">
-						  <div class="content">
-						      <div class="content-overlay"></div>
-						  		 <img class="content-image img-fluid d-block mx-auto" src="img/l5.jpg" alt="">
-						      <div class="content-details fadeIn-bottom">
-							        <div class="bottom d-flex align-items-center justify-content-center">
-										<a href="#"><span class="lnr lnr-heart"></span></a>
-										<a href="#"><span class="lnr lnr-layers"></span></a>
-										<a href="#"><span class="lnr lnr-cart"></span></a>
-										<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
-									</div>
-						      </div>
-						  </div>
-						  <div class="price">
-						  		<h5>Long Sleeve shirt</h5>
-						  		<h3>$150.00</h3>
-						   </div>						  
-						</div>	
-						<div class="col-lg-3 col-md-6 single-product">
-						  <div class="content">
-						      <div class="content-overlay"></div>
-						  		 <img class="content-image img-fluid d-block mx-auto" src="img/l6.jpg" alt="">
-						      <div class="content-details fadeIn-bottom">
-							        <div class="bottom d-flex align-items-center justify-content-center">
-										<a href="#"><span class="lnr lnr-heart"></span></a>
-										<a href="#"><span class="lnr lnr-layers"></span></a>
-										<a href="#"><span class="lnr lnr-cart"></span></a>
-										<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
-									</div>
-						      </div>
-						  </div>
-						  <div class="price">
-						  		<h5>Long Sleeve shirt</h5>
-						  		<h3>$150.00</h3>
-						   </div>						  
-						</div>	
-						<div class="col-lg-3 col-md-6 single-product">
-						  <div class="content">
-						      <div class="content-overlay"></div>
-						  		 <img class="content-image img-fluid d-block mx-auto" src="img/l7.jpg" alt="">
-						      <div class="content-details fadeIn-bottom">
-							        <div class="bottom d-flex align-items-center justify-content-center">
-										<a href="#"><span class="lnr lnr-heart"></span></a>
-										<a href="#"><span class="lnr lnr-layers"></span></a>
-										<a href="#"><span class="lnr lnr-cart"></span></a>
-										<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
-									</div>
-						      </div>
-						  </div>
-						  <div class="price">
-						  		<h5>Long Sleeve shirt</h5>
-						  		<h3>$150.00</h3>
-						   </div>						  
-						</div>	
-						<div class="col-lg-3 col-md-6 single-product">
-						  <div class="content">
-						      <div class="content-overlay"></div>
-						  		 <img class="content-image img-fluid d-block mx-auto" src="img/l8.jpg" alt="">
-						      <div class="content-details fadeIn-bottom">
-							        <div class="bottom d-flex align-items-center justify-content-center">
-										<a href="#"><span class="lnr lnr-heart"></span></a>
-										<a href="#"><span class="lnr lnr-layers"></span></a>
-										<a href="#"><span class="lnr lnr-cart"></span></a>
-										<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
-									</div>
-						      </div>
-						  </div>
-						  <div class="price">
-						  		<h5>Long Sleeve shirt</h5>
-						  		<h3>$150.00</h3>
-						   </div>						  
-						</div>																			
-					</div>
-				</div>	
-			</section>
-			<!-- End women-product Area -->
-			
 			<!-- Start Count Down Area -->
+			<section class="promotion-area section-gap section-gap" id="promotion">
 			<div class="countdown-area">
 				<div class="container">
 					<div class="countdown-content">
@@ -432,9 +254,10 @@ session_start();
 					</div>
 				</div>
 			</div>
+			</section>
 			<!-- End Count Down Area -->
 
-			<!-- Start related-product Area --> 
+			<!-- Start related-product Area -->
 			<section class="related-product-area section-gap" id="latest">
 				<div class="container">
 					<div class="related-content">
@@ -442,7 +265,7 @@ session_start();
 							<h1 class="mb-10">Related Searched Products</h1>
 							<p>Who are in extremely love with eco friendly system.</p>
 						</div>
-					</div>					
+					</div>
 					<div class="row">
 						<div class="col-lg-3 col-md-4 col-sm-6 mb-20">
 							<div class="single-related-product d-flex">
@@ -451,8 +274,8 @@ session_start();
 									<a href="#" class="title">Black lace Heels</a>
 									<div class="price"><span class="lnr lnr-tag"></span> $189.00</div>
 								</div>
-							</div>							
-						</div>		
+							</div>
+						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6 mb-20">
 							<div class="single-related-product d-flex">
 								<a href="#"><img src="img/r2.jpg" alt=""></a>
@@ -460,8 +283,8 @@ session_start();
 									<a href="#" class="title">Black lace Heels</a>
 									<div class="price"><span class="lnr lnr-tag"></span> $189.00</div>
 								</div>
-							</div>							
-						</div>		
+							</div>
+						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6 mb-20">
 							<div class="single-related-product d-flex">
 								<a href="#"><img src="img/r3.jpg" alt=""></a>
@@ -469,8 +292,8 @@ session_start();
 									<a href="#" class="title">Black lace Heels</a>
 									<div class="price"><span class="lnr lnr-tag"></span> $189.00</div>
 								</div>
-							</div>							
-						</div>		
+							</div>
+						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6 mb-20">
 							<div class="single-related-product d-flex">
 								<a href="#"><img src="img/r4.jpg" alt=""></a>
@@ -478,8 +301,8 @@ session_start();
 									<a href="#" class="title">Black lace Heels</a>
 									<div class="price"><span class="lnr lnr-tag"></span> $189.00</div>
 								</div>
-							</div>							
-						</div>	
+							</div>
+						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6 mb-20">
 							<div class="single-related-product d-flex">
 								<a href="#"><img src="img/r5.jpg" alt=""></a>
@@ -487,8 +310,8 @@ session_start();
 									<a href="#" class="title">Black lace Heels</a>
 									<div class="price"><span class="lnr lnr-tag"></span> $189.00</div>
 								</div>
-							</div>							
-						</div>		
+							</div>
+						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6 mb-20">
 							<div class="single-related-product d-flex">
 								<a href="#"><img src="img/r6.jpg" alt=""></a>
@@ -496,8 +319,8 @@ session_start();
 									<a href="#" class="title">Black lace Heels</a>
 									<div class="price"><span class="lnr lnr-tag"></span> $189.00</div>
 								</div>
-							</div>							
-						</div>		
+							</div>
+						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6 mb-20">
 							<div class="single-related-product d-flex">
 								<a href="#"><img src="img/r7.jpg" alt=""></a>
@@ -505,8 +328,8 @@ session_start();
 									<a href="#" class="title">Black lace Heels</a>
 									<div class="price"><span class="lnr lnr-tag"></span> $189.00</div>
 								</div>
-							</div>							
-						</div>		
+							</div>
+						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6 mb-20">
 							<div class="single-related-product d-flex">
 								<a href="#"><img src="img/r8.jpg" alt=""></a>
@@ -514,8 +337,8 @@ session_start();
 									<a href="#" class="title">Black lace Heels</a>
 									<div class="price"><span class="lnr lnr-tag"></span> $189.00</div>
 								</div>
-							</div>							
-						</div>	
+							</div>
+						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6">
 							<div class="single-related-product d-flex">
 								<a href="#"><img src="img/r9.jpg" alt=""></a>
@@ -523,8 +346,8 @@ session_start();
 									<a href="#" class="title">Black lace Heels</a>
 									<div class="price"><span class="lnr lnr-tag"></span> $189.00</div>
 								</div>
-							</div>							
-						</div>		
+							</div>
+						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6">
 							<div class="single-related-product d-flex">
 								<a href="#"><img src="img/r10.jpg" alt=""></a>
@@ -532,8 +355,8 @@ session_start();
 									<a href="#" class="title">Black lace Heels</a>
 									<div class="price"><span class="lnr lnr-tag"></span> $189.00</div>
 								</div>
-							</div>							
-						</div>		
+							</div>
+						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6">
 							<div class="single-related-product d-flex">
 								<a href="#"><img src="img/r11.jpg" alt=""></a>
@@ -541,8 +364,8 @@ session_start();
 									<a href="#" class="title">Black lace Heels</a>
 									<div class="price"><span class="lnr lnr-tag"></span> $189.00</div>
 								</div>
-							</div>							
-						</div>		
+							</div>
+						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6">
 							<div class="single-related-product d-flex">
 								<a href="#"><img src="img/r12.jpg" alt=""></a>
@@ -550,13 +373,13 @@ session_start();
 									<a href="#" class="title">Black lace Heels</a>
 									<div class="price"><span class="lnr lnr-tag"></span> $189.00</div>
 								</div>
-							</div>							
-						</div>																		
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
 			<!-- End related-product Area -->
-	
+
 			<!-- Start brand Area -->
 			<section class="brand-area pb-100">
 				<div class="container">
@@ -576,12 +399,12 @@ session_start();
 							<a class="col single-img" href="#">
 								<img class="d-block mx-auto" src="img/br5.png" alt="">
 							</a>
-					</div>	
-				</div>	
+					</div>
+				</div>
 			</section>
 			<!-- End brand Area -->
 
-			<!-- start footer Area -->		
+			<!-- start footer Area -->
 			<footer class="footer-area section-gap">
 				<div class="container">
 					<div class="row">
@@ -610,16 +433,16 @@ session_start();
 				                            	<div style="position: absolute; left: -5000px;">
 													<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
 												</div>
-				                          	
+
 											<!-- <div class="col-lg-4 col-md-4">
 												<button class="bb-btn btn"><span class="lnr lnr-arrow-right"></span></button>
 											</div>  -->
-										</div>		
+										</div>
 										<div class="info"></div>
 										</form>
 								</div>
 								</div>
-						</div>						
+						</div>
 						<div class="col-lg-3  col-md-6 col-sm-6">
 							<div class="single-footer-widget mail-chimp">
 								<h6 class="mb-20">Instragram Feed</h6>
@@ -646,7 +469,7 @@ session_start();
 									<a href="#"><i class="fa fa-behance"></i></a>
 								</div>
 							</div>
-						</div>							
+						</div>
 					</div>
 					<div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
 
@@ -655,8 +478,8 @@ session_start();
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					</div>
 				</div>
-			</footer>	
-			<!-- End footer Area -->		
+			</footer>
+			<!-- End footer Area -->
 
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
@@ -666,8 +489,8 @@ session_start();
 			<script src="js/jquery.sticky.js"></script>
 			<script src="js/ion.rangeSlider.js"></script>
 			<script src="js/jquery.magnific-popup.min.js"></script>
-            <script src="js/owl.carousel.min.js"></script>			
-			<script src="js/main.js"></script>	
-			
+            <script src="js/owl.carousel.min.js"></script>
+			<script src="js/main.js"></script>
+
 		</body>
 	</html>
