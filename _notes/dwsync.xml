@@ -7,18 +7,17 @@
 <file name="generic.html" server="13.231.233.64//var/www/html/cs281/" local="131683458174039301" remote="131684168400000000" Dst="0" />
 <file name="mail.php" server="13.231.233.64//var/www/html/cs281/" local="131666300640000000" remote="131684170050000000" Dst="0" />
 <file name="single.html" server="13.231.233.64//var/www/html/cs281/" local="131683458176602451" remote="131684170950000000" Dst="0" />
-<file name="tracking.html" server="13.231.233.64//var/www/html/cs281/" local="131683458177719464" remote="131684170950000000" Dst="0" />
 <file name="login_mng.php" server="C:/xampp/htdocs/testserv" local="131683030733325154" remote="131683030730000000" Dst="0" />
-<file name="login.php" server="C:/xampp/htdocs/testserv" local="131684158314441994" remote="131684158310000000" Dst="0" />
+<file name="login.php" server="C:/xampp/htdocs/testserv" local="131684441817775008" remote="131684441810000000" Dst="0" />
 <file name="mail.php" server="C:/xampp/htdocs/testserv" local="131666300640000000" remote="131666300640000000" Dst="0" />
 <file name="sent_mail_in_html.php" server="C:/xampp/htdocs/testserv" local="131682991137740922" remote="131682991130000000" Dst="0" />
 <file name="index.php" server="C:/xampp/htdocs/testserv" local="131683459103489793" remote="131683459100000000" Dst="0" />
-<file name="login_ctl.php" server="C:/xampp/htdocs/testserv" local="131684367095841611" remote="131684367090000000" Dst="0" />
+<file name="login_ctl.php" server="C:/xampp/htdocs/testserv" local="131684369921149167" remote="131684369920000000" Dst="0" />
 <file name="logout.php" server="C:/xampp/htdocs/testserv" local="131683052366161797" remote="131683052360000000" Dst="0" />
-<file name="cart.php" server="C:/xampp/htdocs/testserv" local="131683458981979785" remote="131683458980000000" Dst="0" />
-<file name="category.php" server="C:/xampp/htdocs/testserv" local="131683459545203844" remote="131683459540000000" Dst="0" />
+<file name="cart.php" server="C:/xampp/htdocs/testserv" local="131684441775760262" remote="131684441770000000" Dst="0" />
+<file name="category.php" server="C:/xampp/htdocs/testserv" local="131684441790181702" remote="131684441790000000" Dst="0" />
 <file name="register_ctl.php" server="C:/xampp/htdocs/testserv" local="131684367020732468" remote="131684367020000000" Dst="0" />
-<file name="register_mng.php" server="C:/xampp/htdocs/testserv" local="131683914370701533" remote="131683914370000000" Dst="0" />
+<file name="register_mng.php" server="C:/xampp/htdocs/testserv" local="131684162602213373" remote="131684162600000000" Dst="0" />
 <file name="cart.php" server="13.231.233.64//var/www/html/cs281/" local="131683458981979785" remote="131684168100000000" Dst="0" />
 <file name="category.php" server="13.231.233.64//var/www/html/cs281/" local="131683459545203844" remote="131684168110000000" Dst="0" />
 <file name="index.php" server="13.231.233.64//var/www/html/cs281/" local="131683459103489793" remote="131684169930000000" Dst="0" />
@@ -34,4 +33,6 @@
 <file name="register_mng.php" server="13.231.233.64//var/www/html/cs281/" local="131684162602213373" remote="131684170070000000" Dst="0" />
 <file name="sample_email.php" server="13.231.233.64//var/www/html/cs281/" local="131682146980930698" remote="131684170070000000" Dst="0" />
 <file name="sent_mail_in_html.php" server="13.231.233.64//var/www/html/cs281/" local="131682991137740922" remote="131684170550000000" Dst="0" />
+<file name="add_item.php" server="C:/xampp/htdocs/testserv" local="131684438514101546" remote="131684438510000000" Dst="0" />
+<file name="tracking.php" server="C:/xampp/htdocs/testserv" local="131684460414295311" remote="131684460410000000" Dst="0" />
 </dwsync>

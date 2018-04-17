@@ -1,4 +1,7 @@
-    <!DOCTYPE html>
+<?php
+session_start();
+?>
+<!DOCTYPE html>
     <html lang="zxx" class="no-js">
     <head>
         <!-- Mobile Specific Meta -->
@@ -73,7 +76,7 @@
                                         <a class="dropdown-item" href="checkout.html">Checkout</a>
                                         <a class="dropdown-item" href="confermation.html">Confermation</a>
                                         <a class="dropdown-item" href="login.php">Login</a>
-                                        <a class="dropdown-item" href="tracking.html">Tracking</a>
+                                        <a class="dropdown-item" href="tracking.php">Tracking</a>
                                         <a class="dropdown-item" href="generic.html">Generic</a>
                                         <a class="dropdown-item" href="elements.html">Elements</a>
                                       </div>
@@ -90,10 +93,10 @@
                 <div class="container">
                     <div class="breadcrumb-banner d-flex flex-wrap align-items-center">
                         <div class="col-first">
-                            <h1>Shopping Cart</h1>
+                            <h1>Add Product</h1>
                              <nav class="d-flex align-items-center justify-content-start">
                                 <a href="index.php">Home<i class="fa fa-caret-right" aria-hidden="true"></i></a>
-                                <a href="cart.php">Shopping Cart</a>
+                                <a href="cart.php">Add Product</a>
                             </nav>
                         </div>
                     </div>
@@ -105,11 +108,24 @@
 		<div class="container">
 			<div class="order-tracking">
 				<p>To track your order please enter your Order ID in the box below and press the "Track" button. This was given to you on your receipt and in the confirmation email you should have received.</p>
-				<form action="#">
-					<input type="text" placeholder="Order ID" onfocus="this.placeholder=''" onblur="this.placeholder = 'Order ID'" required class="common-input mt-20">
-					<input type="text" placeholder="Billing Email Address" onfocus="this.placeholder=''" onblur="this.placeholder = 'Billing Email Address'" required class="common-input mt-20">
-					<button class="view-btn color-2 mt-20"><span>Track Order</span></button>
+				<form action="add_item.php" method="post" enctype="multipart/form-data">
+					<input type="text" name="p_name" placeholder="Title" onfocus="this.placeholder=''" onblur="this.placeholder = 'Order ID'" required class="common-input mt-20">
+					<input type="text" placeholder="Owner" onfocus="this.placeholder=''" onblur="this.placeholder = 'Billing Email Address'" required class="common-input mt-20">
+					<input type="number" onchange="setTwoNumberDecimal" min="0" max="999999999" step="0.25"  name="p_price" placeholder="ราคา" onfocus="this.placeholder=''" onblur="this.placeholder = 'ราคา'" required class="common-input mt-20 w-25">
+					<input type="number" placeholder="Age(year)" onfocus="this.placeholder=''" onblur="this.placeholder = 'อายุของรองเท้า'" required class="common-input mt-20 w-25">
+					<select name="p_cate" required class="common-input mt-20 w-50 mr-50"  [single]>
+						<option value="0">รองเท้ากีฬา</option>
+						<option value="1">รองเท้าแตะ</option>
+						<option value="2">รองเท้าส้นสูง</option>
+						<option value="3">รองเท้าผ้าใบ</option>
+					</select>
+				  	<input type="file" name="p_pic" accept="image/*" class="view-btn  mt-20"><br>
+					<textarea name="p_dtl" placeholder="รายละเอียดสินค้า" rows="5" cols="50" required class="common-input "></textarea>
+							 
+				  <button  class="view-btn color-2 mt-20 mr-20 w-100"><span>Add Item</span></button>
 				</form>
+				
+					
 			</div>
 		</div>
 		<!-- End My Account -->
