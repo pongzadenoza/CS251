@@ -14,7 +14,7 @@ $regis = new Register();
 if($regis->chkConnect()){
 	
 	
-	$regis->setRegisInfo($_REQUEST['cname'] ,$_REQUEST['cmail'] ,$_REQUEST['cphone'] ,$_REQUEST['cads'],$_REQUEST['cusr'],$_REQUEST['cpwd']);
+	$regis->setRegisInfo($_REQUEST['cname'] ,$_REQUEST['cmail'] ,$_REQUEST['cphone'] ,$_REQUEST['cads'],$_REQUEST['cusr'],$_REQUEST['cpwd'], $_REQUEST['ctype']);
 	
 	$regis->regis();
 }

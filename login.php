@@ -133,6 +133,13 @@ session_start();
 							<input name="cads" type="text" placeholder="Address*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Address*'" required class="common-input mt-20">
 							<input name="cusr" type="text" placeholder="Username*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Username*'" required class="common-input mt-20">
 							<input name= "cpwd" type="password" placeholder="Password*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Password*'" required class="common-input mt-20">
+							<p class="text-center mt-20 mb-20">ID Type</p>
+							<p class="mt-10 mb-0">Seller</p>
+							<input name= "ctype" type="radio" value="0"  onblur="this.placeholder = 'seller*'" >
+							<p class="mt-10 mb-0">Buyer</p>
+							<input name= "ctype" type="radio" value="1"  onblur="this.placeholder = 'buyer*'" >
+							
+							
 							<button class="view-btn color-2 mt-20 w-100"><span>Register</span></button>
 						</form>
 					</div>

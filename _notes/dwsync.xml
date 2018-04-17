@@ -9,7 +9,7 @@
 <file name="single.html" server="13.231.233.64//var/www/html/cs281/" local="131666677920000000" remote="131666677920000000" Dst="0" />
 <file name="tracking.html" server="13.231.233.64//var/www/html/cs281/" local="131666677980000000" remote="131666677980000000" Dst="0" />
 <file name="login_mng.php" server="C:/xampp/htdocs/testserv" local="131683030733325154" remote="131683030730000000" Dst="0" />
-<file name="login.php" server="C:/xampp/htdocs/testserv" local="131683884920060106" remote="131683884920000000" Dst="0" />
+<file name="login.php" server="C:/xampp/htdocs/testserv" local="131684158314441994" remote="131684158310000000" Dst="0" />
 <file name="mail.php" server="C:/xampp/htdocs/testserv" local="131666300640000000" remote="131666300640000000" Dst="0" />
 <file name="sent_mail_in_html.php" server="C:/xampp/htdocs/testserv" local="131682991137740922" remote="131682991130000000" Dst="0" />
 <file name="index.php" server="C:/xampp/htdocs/testserv" local="131683459103489793" remote="131683459100000000" Dst="0" />
@@ -17,6 +17,6 @@
 <file name="logout.php" server="C:/xampp/htdocs/testserv" local="131683052366161797" remote="131683052360000000" Dst="0" />
 <file name="cart.php" server="C:/xampp/htdocs/testserv" local="131683458981979785" remote="131683458980000000" Dst="0" />
 <file name="category.php" server="C:/xampp/htdocs/testserv" local="131683459545203844" remote="131683459540000000" Dst="0" />
-<file name="register_ctl.php" server="C:/xampp/htdocs/testserv" local="131683927791345973" remote="131683927790000000" Dst="0" />
+<file name="register_ctl.php" server="C:/xampp/htdocs/testserv" local="131684141071671853" remote="131684141070000000" Dst="0" />
 <file name="register_mng.php" server="C:/xampp/htdocs/testserv" local="131683914370701533" remote="131683914370000000" Dst="0" />
 </dwsync>
