@@ -12,7 +12,7 @@ error_reporting(E_ALL ^ E_NOTICE);
 
 	 private $name,$mail, $phone, $ads ,$usr, $pwd ,$type;
 
- function _construct(){
+ function __construct(){
 	 session_start();
 	 $servername = "13.231.233.64";
 	$username = "project";

@@ -1,22 +1,37 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
 <file name=".DS_Store" server="13.231.233.64//var/www/html/cs281/" local="131666300700000000" remote="131666300700000000" Dst="0" />
-<file name="checkout.html" server="13.231.233.64//var/www/html/cs281/" local="131666677440000000" remote="131666677440000000" Dst="0" />
-<file name="confermation.html" server="13.231.233.64//var/www/html/cs281/" local="131666677400000000" remote="131666677400000000" Dst="0" />
-<file name="elements.html" server="13.231.233.64//var/www/html/cs281/" local="131666677600000000" remote="131666677600000000" Dst="0" />
-<file name="generic.html" server="13.231.233.64//var/www/html/cs281/" local="131666677700000000" remote="131666677700000000" Dst="0" />
-<file name="mail.php" server="13.231.233.64//var/www/html/cs281/" local="131666300640000000" remote="131666300640000000" Dst="0" />
-<file name="single.html" server="13.231.233.64//var/www/html/cs281/" local="131666677920000000" remote="131666677920000000" Dst="0" />
-<file name="tracking.html" server="13.231.233.64//var/www/html/cs281/" local="131666677980000000" remote="131666677980000000" Dst="0" />
+<file name="checkout.html" server="13.231.233.64//var/www/html/cs281/" local="131683458170797966" remote="131684168230000000" Dst="0" />
+<file name="confermation.html" server="13.231.233.64//var/www/html/cs281/" local="131683458171705537" remote="131684168230000000" Dst="0" />
+<file name="elements.html" server="13.231.233.64//var/www/html/cs281/" local="131683458172822551" remote="131684168320000000" Dst="0" />
+<file name="generic.html" server="13.231.233.64//var/www/html/cs281/" local="131683458174039301" remote="131684168400000000" Dst="0" />
+<file name="mail.php" server="13.231.233.64//var/www/html/cs281/" local="131666300640000000" remote="131684170050000000" Dst="0" />
+<file name="single.html" server="13.231.233.64//var/www/html/cs281/" local="131683458176602451" remote="131684170950000000" Dst="0" />
+<file name="tracking.html" server="13.231.233.64//var/www/html/cs281/" local="131683458177719464" remote="131684170950000000" Dst="0" />
 <file name="login_mng.php" server="C:/xampp/htdocs/testserv" local="131683030733325154" remote="131683030730000000" Dst="0" />
 <file name="login.php" server="C:/xampp/htdocs/testserv" local="131684158314441994" remote="131684158310000000" Dst="0" />
 <file name="mail.php" server="C:/xampp/htdocs/testserv" local="131666300640000000" remote="131666300640000000" Dst="0" />
 <file name="sent_mail_in_html.php" server="C:/xampp/htdocs/testserv" local="131682991137740922" remote="131682991130000000" Dst="0" />
 <file name="index.php" server="C:/xampp/htdocs/testserv" local="131683459103489793" remote="131683459100000000" Dst="0" />
-<file name="login_ctl.php" server="C:/xampp/htdocs/testserv" local="131683048128072628" remote="131683048120000000" Dst="0" />
+<file name="login_ctl.php" server="C:/xampp/htdocs/testserv" local="131684367095841611" remote="131684367090000000" Dst="0" />
 <file name="logout.php" server="C:/xampp/htdocs/testserv" local="131683052366161797" remote="131683052360000000" Dst="0" />
 <file name="cart.php" server="C:/xampp/htdocs/testserv" local="131683458981979785" remote="131683458980000000" Dst="0" />
 <file name="category.php" server="C:/xampp/htdocs/testserv" local="131683459545203844" remote="131683459540000000" Dst="0" />
-<file name="register_ctl.php" server="C:/xampp/htdocs/testserv" local="131684141071671853" remote="131684141070000000" Dst="0" />
+<file name="register_ctl.php" server="C:/xampp/htdocs/testserv" local="131684367020732468" remote="131684367020000000" Dst="0" />
 <file name="register_mng.php" server="C:/xampp/htdocs/testserv" local="131683914370701533" remote="131683914370000000" Dst="0" />
+<file name="cart.php" server="13.231.233.64//var/www/html/cs281/" local="131683458981979785" remote="131684168100000000" Dst="0" />
+<file name="category.php" server="13.231.233.64//var/www/html/cs281/" local="131683459545203844" remote="131684168110000000" Dst="0" />
+<file name="index.php" server="13.231.233.64//var/www/html/cs281/" local="131683459103489793" remote="131684169930000000" Dst="0" />
+<file name="index.php.notuse" server="13.231.233.64//var/www/html/cs281/" local="131683051256491559" remote="131684169940000000" Dst="0" />
+<file name="index2.html" server="13.231.233.64//var/www/html/cs281/" local="131683824375363363" remote="131684169940000000" Dst="0" />
+<file name="login.php" server="13.231.233.64//var/www/html/cs281/" local="131684158314441994" remote="131684170030000000" Dst="0" />
+<file name="login_ctl.php" server="13.231.233.64//var/www/html/cs281/" local="131683048128072628" remote="131684170040000000" Dst="0" />
+<file name="login_mng.php" server="13.231.233.64//var/www/html/cs281/" local="131683030733325154" remote="131684170040000000" Dst="0" />
+<file name="logout.php" server="13.231.233.64//var/www/html/cs281/" local="131683052366161797" remote="131684170040000000" Dst="0" />
+<file name="nikezoom.jpg" server="13.231.233.64//var/www/html/cs281/" local="131679537170607452" remote="131684170050000000" Dst="0" />
+<file name="post2.php" server="13.231.233.64//var/www/html/cs281/" local="131683824375493018" remote="131684170060000000" Dst="0" />
+<file name="register_ctl.php" server="13.231.233.64//var/www/html/cs281/" local="131684166636534454" remote="131684170060000000" Dst="0" />
+<file name="register_mng.php" server="13.231.233.64//var/www/html/cs281/" local="131684162602213373" remote="131684170070000000" Dst="0" />
+<file name="sample_email.php" server="13.231.233.64//var/www/html/cs281/" local="131682146980930698" remote="131684170070000000" Dst="0" />
+<file name="sent_mail_in_html.php" server="13.231.233.64//var/www/html/cs281/" local="131682991137740922" remote="131684170550000000" Dst="0" />
 </dwsync>

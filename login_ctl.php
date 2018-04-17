@@ -6,7 +6,7 @@ session_start();
 
 		  
 	  
-	 function  _construct($id, $pass){
+	 function  __construct($id, $pass){
 		 	
 	 $servername ='13.231.233.64';
 		$username = 'project';
@@ -15,7 +15,7 @@ session_start();
 	  }
 
 
-   function _desruct(){
+   function __desruct(){
 
 	 }
 

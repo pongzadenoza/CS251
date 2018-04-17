@@ -46,14 +46,13 @@
           }
         }
         else {
-          var newTop = documentHeight - s.stickyElement.outerHeight()
-            - s.topSpacing - s.bottomSpacing - scrollTop - extra;
+          var newTop = documentHeight - s.stickyElement.outerHeight() - s.topSpacing - s.bottomSpacing - scrollTop - extra;
           if (newTop < 0) {
             newTop = newTop + s.topSpacing;
           } else {
             newTop = s.topSpacing;
           }
-          if (s.currentTop != newTop) {
+          if (s.currentTop !== newTop) {
             s.stickyElement
               .css('width', s.stickyElement.width())
               .css('position', 'fixed')
