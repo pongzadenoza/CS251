@@ -17,4 +17,21 @@
 <file name="shThemeMDUltra.css" server="13.231.233.64//var/www/html/cs281/" local="131666305440000000" remote="131684170910000000" Dst="0" />
 <file name="shThemeMidnight.css" server="13.231.233.64//var/www/html/cs281/" local="131666305480000000" remote="131684170910000000" Dst="0" />
 <file name="shThemeRDark.css" server="13.231.233.64//var/www/html/cs281/" local="131666305420000000" remote="131684170920000000" Dst="0" />
+<file name="shCore.css" server="C:/xampp/htdocs/testserv/" local="131678101420300362" remote="131678101420000000" Dst="0" />
+<file name="shCoreDefault.css" server="C:/xampp/htdocs/testserv/" local="131678101420310386" remote="131678101420000000" Dst="0" />
+<file name="shCoreDjango.css" server="C:/xampp/htdocs/testserv/" local="131678101420320409" remote="131678101420000000" Dst="0" />
+<file name="shCoreEclipse.css" server="C:/xampp/htdocs/testserv/" local="131678101420330433" remote="131678101420000000" Dst="0" />
+<file name="shCoreEmacs.css" server="C:/xampp/htdocs/testserv/" local="131678101420340468" remote="131678101420000000" Dst="0" />
+<file name="shCoreFadeToGrey.css" server="C:/xampp/htdocs/testserv/" local="131678101420340468" remote="131678101420000000" Dst="0" />
+<file name="shCoreMDUltra.css" server="C:/xampp/htdocs/testserv/" local="131678101420350492" remote="131678101420000000" Dst="0" />
+<file name="shCoreMidnight.css" server="C:/xampp/htdocs/testserv/" local="131678101420360516" remote="131678101420000000" Dst="0" />
+<file name="shCoreRDark.css" server="C:/xampp/htdocs/testserv/" local="131678101420370546" remote="131678101420000000" Dst="0" />
+<file name="shThemeDefault.css" server="C:/xampp/htdocs/testserv/" local="131678101420370546" remote="131678101420000000" Dst="0" />
+<file name="shThemeDjango.css" server="C:/xampp/htdocs/testserv/" local="131678101420380569" remote="131678101420000000" Dst="0" />
+<file name="shThemeEclipse.css" server="C:/xampp/htdocs/testserv/" local="131678101420390593" remote="131678101420000000" Dst="0" />
+<file name="shThemeEmacs.css" server="C:/xampp/htdocs/testserv/" local="131678101420390593" remote="131678101420000000" Dst="0" />
+<file name="shThemeFadeToGrey.css" server="C:/xampp/htdocs/testserv/" local="131678101420400623" remote="131678101420000000" Dst="0" />
+<file name="shThemeMDUltra.css" server="C:/xampp/htdocs/testserv/" local="131678101420400623" remote="131678101420000000" Dst="0" />
+<file name="shThemeMidnight.css" server="C:/xampp/htdocs/testserv/" local="131678101420410646" remote="131678101420000000" Dst="0" />
+<file name="shThemeRDark.css" server="C:/xampp/htdocs/testserv/" local="131678101420420676" remote="131678101420000000" Dst="0" />
 </dwsync>

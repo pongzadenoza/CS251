@@ -4,4 +4,8 @@
 <file name="custom.js" server="13.231.233.64//var/www/html/cs281/" local="131666305080000000" remote="131684170670000000" Dst="0" />
 <file name="jquery-1.11.0.min.js" server="13.231.233.64//var/www/html/cs281/" local="131666305100000000" remote="131684170680000000" Dst="0" />
 <file name="jquery.nav.js" server="13.231.233.64//var/www/html/cs281/" local="131666305140000000" remote="131684170680000000" Dst="0" />
+<file name=".DS_Store" server="C:/xampp/htdocs/testserv/" local="131678101420029633" remote="131678101420000000" Dst="0" />
+<file name="custom.js" server="C:/xampp/htdocs/testserv/" local="131678101420039663" remote="131678101420000000" Dst="0" />
+<file name="jquery-1.11.0.min.js" server="C:/xampp/htdocs/testserv/" local="131678101420059711" remote="131678101420000000" Dst="0" />
+<file name="jquery.nav.js" server="C:/xampp/htdocs/testserv/" local="131678101420069734" remote="131678101420000000" Dst="0" />
 </dwsync>

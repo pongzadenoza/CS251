@@ -78,6 +78,16 @@ function chkConnect(){
 			$conn->close();
 	 }
 
+	 public static function getmail(){
+		 $sql = "SELECT c_mail FROM custominfo";
+		  $conn = new mysqli("13.231.233.64:3306","project","123456","CS281");
+		$temp= $conn->query($sql);
+		 $temp = mysqli_fetch_array($temp);
+		 
+		 print_r($temp);
+		 return $temp;
+		 
+	 }
 }
 
 ?>
