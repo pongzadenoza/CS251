@@ -13,7 +13,9 @@ print_r($_FILES[$pic]['type']);
 <meta charset="utf-8">
 <title>Untitled Document</title>
 </head>
+	
 
 <body>
+
 </body>
 </html>

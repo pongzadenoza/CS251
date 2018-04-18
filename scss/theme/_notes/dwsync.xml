@@ -9,4 +9,13 @@
 <file name="_mixins.scss" server="13.231.233.64//var/www/html/cs281/" local="131666303760000000" remote="131684170520000000" Dst="0" />
 <file name="_reset.scss" server="13.231.233.64//var/www/html/cs281/" local="131666303820000000" remote="131684170520000000" Dst="0" />
 <file name="_variables.scss" server="13.231.233.64//var/www/html/cs281/" local="131666303800000000" remote="131684170530000000" Dst="0" />
+<file name="_common.scss" server="C:/xampp/htdocs/testserv/" local="131678101419748887" remote="131678101410000000" Dst="0" />
+<file name="_elements.scss" server="C:/xampp/htdocs/testserv/" local="131678101419758911" remote="131678101410000000" Dst="0" />
+<file name="_flexbox.scss" server="C:/xampp/htdocs/testserv/" local="131678101419758911" remote="131678101410000000" Dst="0" />
+<file name="_footer.scss" server="C:/xampp/htdocs/testserv/" local="131678101419768935" remote="131678101410000000" Dst="0" />
+<file name="_header.scss" server="C:/xampp/htdocs/testserv/" local="131678101419778964" remote="131678101410000000" Dst="0" />
+<file name="_home.scss" server="C:/xampp/htdocs/testserv/" local="131678101419788988" remote="131678101410000000" Dst="0" />
+<file name="_mixins.scss" server="C:/xampp/htdocs/testserv/" local="131678101419799018" remote="131678101410000000" Dst="0" />
+<file name="_reset.scss" server="C:/xampp/htdocs/testserv/" local="131678101419809053" remote="131678101410000000" Dst="0" />
+<file name="_variables.scss" server="C:/xampp/htdocs/testserv/" local="131678101419819077" remote="131678101410000000" Dst="0" />
 </dwsync>

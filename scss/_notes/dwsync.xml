@@ -5,4 +5,9 @@
 <file name="bootstrap.scss" server="13.231.233.64//var/www/html/cs281/" local="131666303700000000" remote="131684170470000000" Dst="0" />
 <file name="main.css" server="13.231.233.64//var/www/html/cs281/" local="131676902854133125" remote="131684170480000000" Dst="0" />
 <file name="main.scss" server="13.231.233.64//var/www/html/cs281/" local="131666303680000000" remote="131684170480000000" Dst="0" />
+<file name=".DS_Store" server="C:/xampp/htdocs/testserv/" local="131678101419066198" remote="131678101410000000" Dst="0" />
+<file name="bootstrap.css" server="C:/xampp/htdocs/testserv/" local="131678101419086252" remote="131678101410000000" Dst="0" />
+<file name="bootstrap.scss" server="C:/xampp/htdocs/testserv/" local="131678101419096281" remote="131678101410000000" Dst="0" />
+<file name="main.css" server="C:/xampp/htdocs/testserv/" local="131678101419728834" remote="131678101410000000" Dst="0" />
+<file name="main.scss" server="C:/xampp/htdocs/testserv/" local="131678101419738858" remote="131678101410000000" Dst="0" />
 </dwsync>
