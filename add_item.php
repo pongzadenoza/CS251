@@ -1,7 +1,7 @@
 <?php
 session_start();
 print_r($_REQUEST);
-$pic = $_REQUEST['pic'];
+$pic = $_REQUEST['p_pic'];
 echo $pic;
 print_r($_FILES[$pic]['type']);
 ?>
