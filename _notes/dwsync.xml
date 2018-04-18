@@ -57,6 +57,7 @@
 <file name="sample_email.php" server="C:/xampp/htdocs/testserv/" local="131682162835789492" remote="131682162830000000" Dst="0" />
 <file name="sent_mail_in_html.php" server="C:/xampp/htdocs/testserv/" local="131683078452210422" remote="131683078450000000" Dst="0" />
 <file name="single.html" server="C:/xampp/htdocs/testserv/" local="131684989319900922" remote="131684989310000000" Dst="0" />
-<file name="tracking.html" server="C:/xampp/htdocs/testserv/" local="131685074638985280" remote="131685074630000000" Dst="0" />
-<file name="upload.php" server="C:/xampp/htdocs/testserv/" local="131685075421989448" remote="131685075420000000" Dst="0" />
+<file name="tracking.html" server="C:/xampp/htdocs/testserv/" local="131685139029725989" remote="131685139020000000" Dst="0" />
+<file name="upload.php" server="C:/xampp/htdocs/testserv/" local="131685218702263692" remote="131685218700000000" Dst="0" />
+<file name="file_mng.php" server="C:/xampp/htdocs/testserv/" local="131685122373425009" remote="131685122370000000" Dst="0" />
 </dwsync>
