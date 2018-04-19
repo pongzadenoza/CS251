@@ -29,6 +29,9 @@ session_start();
 			<link rel="stylesheet" href="css/nouislider.min.css">
             <link rel="stylesheet" href="css/bootstrap.css">
             <link rel="stylesheet" href="css/main.css">
+
+
+
         </head>
         <body>
 
@@ -161,7 +164,16 @@ session_start();
 								  		 <img class="content-image img-fluid d-block mx-auto" src="img\shoes\03.001.jpg" alt="">
 								      <div class="content-details fadeIn-bottom">
 									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
+
+
+
+                      <a href="?search=3.001">
+
+
+
+                    <span class="lnr lnr-heart"></span></a>
+
+
 												<a href="#"><span class="lnr lnr-layers"></span></a>
 												<a href="#"><span class="lnr lnr-cart"></span></a>
 												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
@@ -169,7 +181,7 @@ session_start();
 								      </div>
 								  </div>
 								  <div class="price">
-								  		<h5>NIKE AIR MAX 97 ULTRA '17 </h5>
+								  		<h5>NIKE AIR MAX 97 ULTRA 17 </h5>
 
 								  		<h3>$150.00</h3>
 								   </div>
@@ -180,7 +192,10 @@ session_start();
 								  		 <img class="content-image img-fluid d-block mx-auto" src="img\shoes\03.002.jpg" alt="">
 								      <div class="content-details fadeIn-bottom">
 									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
+		      <a href="?search=3.002">
+    <span class="lnr lnr-heart"></span></a>
+
+
 												<a href="#"><span class="lnr lnr-layers"></span></a>
 												<a href="#"><span class="lnr lnr-cart"></span></a>
 												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
@@ -198,7 +213,9 @@ session_start();
 								  		 <img class="content-image img-fluid d-block mx-auto" src="img\shoes\03.003.jpg" alt="">
 								      <div class="content-details fadeIn-bottom">
 									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
+
+                        			      <a href="?search=3.003">
+                            <span class="lnr lnr-heart"></span></a>
 												<a href="#"><span class="lnr lnr-layers"></span></a>
 												<a href="#"><span class="lnr lnr-cart"></span></a>
 												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
@@ -216,7 +233,9 @@ session_start();
 								  		 <img class="content-image img-fluid d-block mx-auto" src="img\shoes\03.004.jpg" alt="">
 								      <div class="content-details fadeIn-bottom">
 									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
+
+                        		      <a href="?search=3.004">
+                            <span class="lnr lnr-heart"></span></a>
 												<a href="#"><span class="lnr lnr-layers"></span></a>
 												<a href="#"><span class="lnr lnr-cart"></span></a>
 												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
@@ -234,7 +253,9 @@ session_start();
 								  		 <img class="content-image img-fluid d-block mx-auto" src="img\shoes\03.005.jpg" alt="">
 								      <div class="content-details fadeIn-bottom">
 									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
+
+                        			      <a href="?search=3.005">
+                            <span class="lnr lnr-heart"></span></a>
 												<a href="#"><span class="lnr lnr-layers"></span></a>
 												<a href="#"><span class="lnr lnr-cart"></span></a>
 												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
@@ -252,7 +273,8 @@ session_start();
 								  		 <img class="content-image img-fluid d-block mx-auto" src="img\shoes\03.006.jpg" alt="">
 								      <div class="content-details fadeIn-bottom">
 									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
+	      <a href="?search=3.006">
+                            <span class="lnr lnr-heart"></span></a>
 												<a href="#"><span class="lnr lnr-layers"></span></a>
 												<a href="#"><span class="lnr lnr-cart"></span></a>
 												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
@@ -270,7 +292,9 @@ session_start();
 								  		 <img class="content-image img-fluid d-block mx-auto" src="img\shoes\03.007.jpg" alt="">
 								      <div class="content-details fadeIn-bottom">
 									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
+
+                        	      <a href="?search=3.007">
+                            <span class="lnr lnr-heart"></span></a>
 												<a href="#"><span class="lnr lnr-layers"></span></a>
 												<a href="#"><span class="lnr lnr-cart"></span></a>
 												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
@@ -288,7 +312,9 @@ session_start();
 								  		 <img src="img\shoes\03.008.jpg" class="content-image img-fluid d-block mx-auto">
 								      <div class="content-details fadeIn-bottom">
 									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
+
+                        		      <a href="?search=3.008">
+                            <span class="lnr lnr-heart"></span></a>
 												<a href="#"><span class="lnr lnr-layers"></span></a>
 												<a href="#"><span class="lnr lnr-cart"></span></a>
 												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
@@ -303,11 +329,12 @@ session_start();
 								<div class="col-xl-4 col-lg-6 col-md-12 col-sm-6 single-product">
 								  <div class="content">
 								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img\shoes\03.010.jpg" alt="">
+								  		 <img class="content-image img-fluid d-block mx-auto" src="img\shoes\03.009.jpg" alt="">
 								      <div class="content-details fadeIn-bottom">
 									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
 
+		      <a href="?search=3.009">
+    <span class="lnr lnr-heart"></span></a>
 												<a href="#"><span class="lnr lnr-layers"></span></a>
 												<a href="#"><span class="lnr lnr-cart"></span></a>
 												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
@@ -322,10 +349,12 @@ session_start();
 								<div class="col-xl-4 col-lg-6 col-md-12 col-sm-6 single-product">
 								  <div class="content">
 								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img\shoes\03.011.jpg" alt="">
+								  		 <img class="content-image img-fluid d-block mx-auto" src="img\shoes\03.010.jpg" alt="">
 								      <div class="content-details fadeIn-bottom">
 									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
+
+                        	      <a href="?search=3.01">
+                            <span class="lnr lnr-heart"></span></a>
 												<a href="#"><span class="lnr lnr-layers"></span></a>
 												<a href="#"><span class="lnr lnr-cart"></span></a>
 												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
@@ -340,10 +369,12 @@ session_start();
 								<div class="col-xl-4 col-lg-6 col-md-12 col-sm-6 single-product">
 								  <div class="content">
 								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img\shoes\03.012.jpg" alt="">
+								  		 <img class="content-image img-fluid d-block mx-auto" src="img\shoes\03.011.jpg" alt="">
 								      <div class="content-details fadeIn-bottom">
 									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
+
+                        			      <a href="?search=3.011">
+                            <span class="lnr lnr-heart"></span></a>
 												<a href="#"><span class="lnr lnr-layers"></span></a>
 												<a href="#"><span class="lnr lnr-cart"></span></a>
 												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
@@ -358,10 +389,12 @@ session_start();
 								<div class="col-xl-4 col-lg-6 col-md-12 col-sm-6 single-product">
 								  <div class="content">
 								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img\shoes\03.013.jpg" alt="">
+								  		 <img class="content-image img-fluid d-block mx-auto" src="img\shoes\03.012.jpg" alt="">
 								      <div class="content-details fadeIn-bottom">
 									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
+
+                        		      <a href="?search=3.012">
+                            <span class="lnr lnr-heart"></span></a>
 												<a href="#"><span class="lnr lnr-layers"></span></a>
 												<a href="#"><span class="lnr lnr-cart"></span></a>
 												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
@@ -372,6 +405,60 @@ session_start();
 								  		<h5>Nike Air Presto Essential</h5>
 								  		<h3>$150.00</h3>
 								   </div>
+                   <?php
+                       //check if the get variable exists
+                       if (isset($_GET['search']))
+                       {
+                           search($_GET['search']);
+                       }
+
+                       function Search($res)
+                       {
+                           //real search code goes here
+
+                           $compname=$res;
+
+                             $con= new mysqli("13.231.233.64:3306","project","123456","CS281");
+                             if (mysqli_connect_errno())
+                             {
+                             echo "Failed to connect to MySQL: " . mysqli_connect_error();
+                             }
+                             $result = mysqli_query($con,"SELECT * FROM product_detail");
+
+                             while($row = mysqli_fetch_array($result))
+                             {
+
+                             $compname2=$row['id'];
+                             $result2 = mysqli_query($con,"SELECT * FROM Shoes_like");
+                             if ($compname==$compname2) {
+                               $in=1;
+                             while($row2 = mysqli_fetch_array($result2))
+                             {
+                               if($row['name']==$row2['name'])
+                               {
+                                 $in=0;
+                               }
+                             }
+                             if($in==1)
+                             {
+                               $conn = new mysqli("13.231.233.64:3306","project","123456","CS281");
+                             $sql2 = "INSERT INTO Shoes_like(name,price) VALUES('".$row['name']."','".$row['price']."');";
+
+                             if($conn->query($sql2)===TRUE){
+                               echo "New Records sql Created Succressfully";
+                             }else{
+                               echo "Error".$sql. "<br>" .$conn->error;
+                             }
+
+                             $conn->close();
+                               $con->close();
+                             }
+                             }
+                             }   mysqli_close($con);
+                       }
+
+
+                   ?>
 								</div>
 							</div>
 						</section>
@@ -823,3 +910,49 @@ JR ‘Zaa พร้อมมอบสิ่งที่ดีที่สุด 
 
 
 </body></html>
+<script type="text/javascript">
+function loadXMLDoc(ad_id)
+{ var id = ad_id;
+  <?php
+
+$compname=id;
+
+  $con= new mysqli("13.231.233.64:3306","project","123456","CS281");
+  if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+  $result = mysqli_query($con,"SELECT * FROM product_detail");
+
+  while($row = mysqli_fetch_array($result))
+  {
+
+  $compname2=$row['id'];
+  $result2 = mysqli_query($con,"SELECT * FROM Shoes_like");
+  if ($compname==$compname2) {
+    $in=1;
+  while($row2 = mysqli_fetch_array($result2))
+  {
+    if($row['name']==$row2['name'])
+    {
+      $in=0;
+    }
+  }
+  if($in==1)
+  {
+    $conn = new mysqli("13.231.233.64:3306","project","123456","CS281");
+  $sql2 = "INSERT INTO Shoes_like(name,price) VALUES('".$row['name']."','".$row['price']."');";
+
+  if($conn->query($sql2)===TRUE){
+    echo "New Records sql Created Succressfully";
+  }else{
+    echo "Error".$sql. "<br>" .$conn->error;
+  }
+
+  $conn->close();
+    $con->close();
+  }
+  }
+  }   mysqli_close($con);
+?>
+}</script>
