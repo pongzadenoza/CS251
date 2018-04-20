@@ -408,14 +408,22 @@ session_start();
 			<footer class="footer-area section-gap">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-3  col-md-6 col-sm-6">
-							<div class="single-footer-widget">
-								<h6>About Us</h6>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
-								</p>
+						<body>
+							<div class="main">
+								<div class="info"></div>
+									<h6>Enter Your Email!</h6>
+								<form action="sentemailtoSQ.php" method="post" name="form" class="form-box">
+									<label for="name">Name</label><br>
+									<input type="text" name="name" class="inp" placeholder="Enter Your Name" required><br>
+									<label for="email">Email ID</label><br>
+									<input type="email" name="email" class="inp" placeholder="Enter Your Email" required><br>
+									<label for="phone">Phone</label><br>
+									<input type="tel" name="phone" class="inp" placeholder="Enter Your Phone" required><br>
+									<br>
+									<input type="submit" name="submit" value="Send" class="sub-btn">
+								</form>
 							</div>
-						</div>
+						</body>
 						<div class="col-lg-3  col-md-6 col-sm-6">
 							<div class="single-footer-widget">
 								<h6>Newsletter</h6>
@@ -477,6 +485,7 @@ session_start();
 						<p class="footer-text m-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					</div>
+
 				</div>
 			</footer>
 			<!-- End footer Area -->
