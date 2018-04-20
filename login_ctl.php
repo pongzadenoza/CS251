@@ -62,6 +62,7 @@ session_start();
 				  //	header('location:index.php');
 					//$_SESSION['C_ID'] = $resultArray['C_ID'];
 				  $_SESSION['C_ID'] = $id;
+				  $_SESSION['C_TYPE'] = $resultArray[0][2];
 				  
 					//$_SESSION['C_TYPE'] = $resultArray['C_TYPE'];
 				  
