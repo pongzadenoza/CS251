@@ -491,51 +491,23 @@ session_start();
 </div>
 							<ul class="main-categories">
 								<li class="main-nav-list"><a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="รองเท้าบาส" ><span class="lnr lnr-arrow-right"></span>Basketball<span class="number">(53)</span></a>
-									<!--<ul class="collapse" id="fruitsVegetable" data-toggle="collapse" aria-expanded="false" ก="" style="">
-										<li class="main-nav-list child"><a href="#">Frozen Fish<span class="number">(13)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Dried Fish<span class="number">(09)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Fresh Fish<span class="number">(17)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Meat Alternatives<span class="number">(01)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Meat<span class="number">(11)</span></a></li>
-									</ul>-->
+									
 								</li>
 
 								<li class="main-nav-list"><a data-toggle="collapse" href="#meatFish" aria-expanded="false" aria-controls="meatFish" class="collapsed"><span class="lnr lnr-arrow-right"></span>Lifestyle<span class="number">(53)</span></a>
-									<ul class="collapse" id="meatFish" data-toggle="collapse" aria-expanded="false" aria-controls="meatFish" style="">
-										<li class="main-nav-list child"><a href="#">Frozen Fish<span class="number">(13)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Dried Fish<span class="number">(09)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Fresh Fish<span class="number">(17)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Meat Alternatives<span class="number">(01)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Meat<span class="number">(11)</span></a></li>
-									</ul>
+									
 								</li>
 								<li class="main-nav-list"><a data-toggle="collapse" href="#cooking" aria-expanded="false" aria-controls="cooking"><span class="lnr lnr-arrow-right"></span>Running<span class="number">(53)</span></a>
-									<ul class="collapse" id="cooking" data-toggle="collapse" aria-expanded="false" aria-controls="cooking">
-										<li class="main-nav-list child"><a href="#">Frozen Fish<span class="number">(13)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Dried Fish<span class="number">(09)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Fresh Fish<span class="number">(17)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Meat Alternatives<span class="number">(01)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Meat<span class="number">(11)</span></a></li>
-									</ul>
+									
 								</li>
 								<li class="main-nav-list"><a data-toggle="collapse" href="#beverages" aria-expanded="false" aria-controls="beverages"><span class="lnr lnr-arrow-right"></span>Gym &amp; Training<span class="number">(24)</span></a>
-									<ul class="collapse" id="beverages" data-toggle="collapse" aria-expanded="false" aria-controls="beverages">
-										<li class="main-nav-list child"><a href="#">Frozen Fish<span class="number">(13)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Dried Fish<span class="number">(09)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Fresh Fish<span class="number">(17)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Meat Alternatives<span class="number">(01)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Meat<span class="number">(11)</span></a></li>
-									</ul>
+									
 								</li>
 								<li class="main-nav-list"><a data-toggle="collapse" href="#homeClean" aria-expanded="false" aria-controls="homeClean"><span class="lnr lnr-arrow-right"></span>Walking<span class="number">(53)</span></a>
-									<ul class="collapse" id="homeClean" data-toggle="collapse" aria-expanded="false" aria-controls="homeClean">
-										<li class="main-nav-list child"><a href="#">Frozen Fish<span class="number">(13)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Dried Fish<span class="number">(09)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Fresh Fish<span class="number">(17)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Meat Alternatives<span class="number">(01)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Meat<span class="number">(11)</span></a></li>
-									</ul>
+									
 								</li>
+								
+								
 								<li class="main-nav-list"></li>
 								<li class="main-nav-list">
 									<ul class="collapse" id="officeProduct" data-toggle="collapse" aria-expanded="false" aria-controls="officeProduct">

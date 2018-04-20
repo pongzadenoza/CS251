@@ -143,7 +143,7 @@ $user = $_SESSION['C_ID'];
 			<div class="row">
 				<div class="col-30">
 					<div class="order-wrapper mt-10">
-						<h3 class="billing-title mb-10"><?php echo $user.": List of your favorite shoes."?></h3>
+						<h3 class="billing-title mb-10"><?php echo $user." List of your favorite shoes"?></h3>
 
 						<html>
 
