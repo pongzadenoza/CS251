@@ -412,7 +412,7 @@ session_start();
 							<div class="main">
 								<div class="info"></div>
 									<h6>Enter Your Email!</h6>
-								<form action="sentemailtoSQ.php" method="post" name="form" class="form-box">
+								<form action="sentemailtoSQL.php" method="post" name="form" class="form-box">
 									<label for="name">Name</label><br>
 									<input type="text" name="name" class="inp" placeholder="Enter Your Name" required><br>
 									<label for="email">Email ID</label><br>
