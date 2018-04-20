@@ -490,14 +490,14 @@ session_start();
 
 </div>
 							<ul class="main-categories">
-								<li class="main-nav-list"><a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="รองเท้าบาส" class="collapsed"><span class="lnr lnr-arrow-right"></span>Basketball<span class="number">(53)</span></a>
-									<ul class="collapse" id="fruitsVegetable" data-toggle="collapse" aria-expanded="false" ก="" style="">
+								<li class="main-nav-list"><a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="รองเท้าบาส" ><span class="lnr lnr-arrow-right"></span>Basketball<span class="number">(53)</span></a>
+									<!--<ul class="collapse" id="fruitsVegetable" data-toggle="collapse" aria-expanded="false" ก="" style="">
 										<li class="main-nav-list child"><a href="#">Frozen Fish<span class="number">(13)</span></a></li>
 										<li class="main-nav-list child"><a href="#">Dried Fish<span class="number">(09)</span></a></li>
 										<li class="main-nav-list child"><a href="#">Fresh Fish<span class="number">(17)</span></a></li>
 										<li class="main-nav-list child"><a href="#">Meat Alternatives<span class="number">(01)</span></a></li>
 										<li class="main-nav-list child"><a href="#">Meat<span class="number">(11)</span></a></li>
-									</ul>
+									</ul>-->
 								</li>
 
 								<li class="main-nav-list"><a data-toggle="collapse" href="#meatFish" aria-expanded="false" aria-controls="meatFish" class="collapsed"><span class="lnr lnr-arrow-right"></span>Lifestyle<span class="number">(53)</span></a>
