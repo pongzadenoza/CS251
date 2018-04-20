@@ -34,5 +34,6 @@
 <file name="sample_email.php" server="13.231.233.64//var/www/html/cs281/" local="131682146980930698" remote="131684170070000000" Dst="0" />
 <file name="sent_mail_in_html.php" server="13.231.233.64//var/www/html/cs281/" local="131682991137740922" remote="131684170550000000" Dst="0" />
 <file name="add_item.php" server="C:/xampp/htdocs/testserv" local="131684953325181688" remote="131684953320000000" Dst="0" />
-<file name="category2.php" server="C:/xampp/htdocs/testserv" local="131685393732591650" remote="131685393730000000" Dst="0" />
+<file name="category2.php" server="C:/xampp/htdocs/testserv" local="131686497221191872" remote="131686497220000000" Dst="0" />
+<file name="upload.php" server="C:/xampp/htdocs/testserv" local="131686479097380591" remote="131686479090000000" Dst="0" />
 </dwsync>
