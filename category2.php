@@ -1,5 +1,13 @@
 <?php
-session_start();
+	session_start();
+
+	$conn = new mysqli( "13.231.233.64:3306", "project", "123456", "CS281" );
+	$getsql = "SELECT * FROM product";
+	$res = $conn->query($getsql);
+	$idArr = mysqli_fetch_all($res);
+	
+
+
 ?>
 <!DOCTYPE html>
 <html lang="zxx" class="no-js"><head>
@@ -34,14 +42,15 @@ session_start();
 
         </head>
         <body>
-
+			
             <!-- Start Header Area -->
-
+		
             <div id="undefined-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 109px;"><div id="undefined-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 108px;"><div id="undefined-sticky-wrapper" class="sticky-wrapper" style="height: 108px;"><div id="undefined-sticky-wrapper" class="sticky-wrapper" style="height: 108px;"><header class="default-header" style="">
                 <div class="menutop-wrap">
                     <div class="menu-top container">
                         <div class="d-flex justify-content-between align-items-center">
                             <ul class="list">
+									<?php print_r($idArr);?>
                                 <li><a href="tel:+12312-3-1209">+12312-3-1209</a></li>
                                 <li><a href="mailto:support@colorlib.com">support@colorlib.com</a></li>
                             </ul>
@@ -161,13 +170,13 @@ session_start();
 								<div class="col-xl-4 col-lg-6 col-md-12 col-sm-6 single-product">
 								  <div class="content">
 								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img\shoes\03.001.jpg" alt="">
+								  		 <img class="content-image img-fluid d-block mx-auto" src="img\product\"1_25".jpg" alt="">
 								      <div class="content-details fadeIn-bottom">
 									        <div class="bottom d-flex align-items-center justify-content-center">
 
 
 
-                      <a href="?search=3.001">
+                      <a href="img/">
 
 
 

@@ -64,6 +64,7 @@ session_start();
 				  $_SESSION['C_ID'] = $id;
 				  $_SESSION['C_TYPE'] = $resultArray[0][2];
 				  
+				  
 					//$_SESSION['C_TYPE'] = $resultArray['C_TYPE'];
 				  
 				  echo "<script type='text/javascript'>alert('submitted successfully!')</script>";

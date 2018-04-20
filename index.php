@@ -409,16 +409,16 @@ session_start();
 				<div class="container">
 					<div class="row">
 						<body>
-							<div class="main">
+							<div class="single-footer-widget">
 								<div class="info"></div>
 									<h6>Enter Your Email!</h6>
 								<form action="sentemailtoSQL.php" method="post" name="form" class="form-box">
 									<label for="name">Name</label><br>
-									<input type="text" name="name" class="inp" placeholder="Enter Your Name" required><br>
+									<input type="text" name="name" class="form-control" placeholder="Enter Your Name" required><br>
 									<label for="email">Email ID</label><br>
-									<input type="email" name="email" class="inp" placeholder="Enter Your Email" required><br>
+									<input type="email" name="email" class="form-control" placeholder="Enter Your Email" required><br>
 									<label for="phone">Phone</label><br>
-									<input type="tel" name="phone" class="inp" placeholder="Enter Your Phone" required><br>
+									<input type="tel" name="phone" class="form-control" placeholder="Enter Your Phone" required><br>
 									<br>
 									<input type="submit" name="submit" value="Send" class="sub-btn">
 								</form>
@@ -452,7 +452,7 @@ session_start();
 								</div>
 						</div>
 						<div class="col-lg-3  col-md-6 col-sm-6">
-							<div class="single-footer-widget mail-chimp">
+							<!--<div class="single-footer-widget mail-chimp">
 								<h6 class="mb-20">Instragram Feed</h6>
 								<ul class="instafeed d-flex flex-wrap">
 									<li><img src="img/i1.jpg" alt=""></li>
@@ -464,7 +464,7 @@ session_start();
 									<li><img src="img/i7.jpg" alt=""></li>
 									<li><img src="img/i8.jpg" alt=""></li>
 								</ul>
-							</div>
+							</div>-->
 						</div>
 						<div class="col-lg-3 col-md-6 col-sm-6">
 							<div class="single-footer-widget">

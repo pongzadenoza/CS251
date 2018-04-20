@@ -1,7 +1,7 @@
 <?php
 $target_dir = "img/product/";
-print_r( $_REQUEST );
-print_r( $_FILES );
+//print_r( $_REQUEST );
+//print_r( $_FILES );
 $target_file = $target_dir . basename( $_FILES[ "fileToUpload" ][ "name" ] );
 $uploadOk = 1;
 $imageFileType = strtolower( pathinfo( $target_file, PATHINFO_EXTENSION ) );
@@ -37,8 +37,18 @@ if ( $uploadOk == 0 ) {
 	echo "Sorry, your file was not uploaded.";
 	// if everything is ok, try to upload file
 } else {
+	$cate = $_REQUEST[ 'p_cate' ];
 	
+	$conn = new mysqli( "13.231.233.64:3306", "project", "123456", "CS281" );
+	$getsql = "SELECT p_ind FROM product";
+	$res = $conn->query($getsql);
+	$idArr = mysqli_fetch_all($res);
+	//print_r($idArr);
+	//echo count($idArr);
+	$pString = (count($idArr)  === 0) ? "0" : $idArr[count($idArr) -1][0];
+	$target_file = $target_dir . $cate . "_" . $pString.".jpg";
 	
+	//echo "<br>".$target_file;
 	
 	if ( move_uploaded_file( $_FILES[ "fileToUpload" ][ "tmp_name" ], $target_file ) ) {
 		$name = $_REQUEST[ 'p_name' ];
@@ -46,13 +56,13 @@ if ( $uploadOk == 0 ) {
 		$cate = $_REQUEST[ 'p_cate' ];
 		$detail = $_REQUEST[ 'p_dtl' ];
 		$age = $_REQUEST[ 'p_age' ];
-		$fName = $_FILES[ 'fileToUpload' ][ 'name' ];
+		//$fName = $_FILES[ 'fileToUpload' ][ 'name' ];
 
-		$conn = new mysqli( "13.231.233.64:3306", "project", "123456", "CS281" );
 		
 		
 		
-		$sql1 = "INSERT INTO product(p_id,p_name,p_price,p_age,p_category,p_detail) VALUES('" . $fName . "','" . $name . "','" . $price . "','".$age."','" . $cate . "','" . $detail . "');";
+		
+		$sql1 = "INSERT INTO product(p_id,p_name,p_price,p_age,ca_id,p_detail) VALUES('" .$cate. "_". $pString . "','" . $name . "','" . $price . "','".$age."','" . $cate . "','" . $detail . "');";
 		
 		
 		if($conn->query( $sql1 )===TRUE){
