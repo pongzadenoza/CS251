@@ -30,8 +30,8 @@
 <file name="success-radio.png" server="C:/xampp/htdocs/testserv" local="131666302460000000" remote="131666302460000000" Dst="0" />
 <file name="disabled-radio.png" server="C:/xampp/htdocs/testserv" local="131666302460000000" remote="131666302460000000" Dst="0" />
 <file name="d.jpg" server="C:/xampp/htdocs/testserv/" local="131678101417727883" remote="131678101410000000" Dst="0" />
-<file name="disabled-check.png" server="C:/xampp/htdocs/testserv/" local="131678101417737912" remote="131678101410000000" Dst="0" />
-<file name="disabled-radio.png" server="C:/xampp/htdocs/testserv/" local="131678101417747947" remote="131678101410000000" Dst="0" />
+<file name="disabled-check.png" server="C:/xampp/htdocs/testserv/" local="131690276075342333" remote="131690276070000000" Dst="0" />
+<file name="disabled-radio.png" server="C:/xampp/htdocs/testserv/" local="131690276075342333" remote="131690276070000000" Dst="0" />
 <file name="f1.jpg" server="C:/xampp/htdocs/testserv/" local="131678101417747947" remote="131678101410000000" Dst="0" />
 <file name="f2.jpg" server="C:/xampp/htdocs/testserv/" local="131678101417757965" remote="131678101410000000" Dst="0" />
 <file name="f3.jpg" server="C:/xampp/htdocs/testserv/" local="131678101417767989" remote="131678101410000000" Dst="0" />
@@ -48,8 +48,8 @@
 <file name="g6.jpg" server="C:/xampp/htdocs/testserv/" local="131678101417878280" remote="131678101410000000" Dst="0" />
 <file name="g7.jpg" server="C:/xampp/htdocs/testserv/" local="131678101417898333" remote="131678101410000000" Dst="0" />
 <file name="g8.jpg" server="C:/xampp/htdocs/testserv/" local="131678101417908374" remote="131678101410000000" Dst="0" />
-<file name="primary-check.png" server="C:/xampp/htdocs/testserv/" local="131678101417918409" remote="131678101410000000" Dst="0" />
-<file name="primary-radio.png" server="C:/xampp/htdocs/testserv/" local="131678101417918409" remote="131678101410000000" Dst="0" />
-<file name="success-check.png" server="C:/xampp/htdocs/testserv/" local="131678101417928438" remote="131678101410000000" Dst="0" />
-<file name="success-radio.png" server="C:/xampp/htdocs/testserv/" local="131678101417938451" remote="131678101410000000" Dst="0" />
+<file name="primary-check.png" server="C:/xampp/htdocs/testserv/" local="131690276075482706" remote="131690276070000000" Dst="0" />
+<file name="primary-radio.png" server="C:/xampp/htdocs/testserv/" local="131690276075492742" remote="131690276070000000" Dst="0" />
+<file name="success-check.png" server="C:/xampp/htdocs/testserv/" local="131690276075492742" remote="131690276070000000" Dst="0" />
+<file name="success-radio.png" server="C:/xampp/htdocs/testserv/" local="131690276075502754" remote="131690276070000000" Dst="0" />
 </dwsync>
