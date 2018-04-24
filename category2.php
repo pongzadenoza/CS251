@@ -165,12 +165,16 @@
 						</div>
 						<!-- End Filter Bar -->
 						<!-- Start Best Seller -->
+						
 						<section class="lattest-product-area pb-40 category-list">
 							<div class="row">
 								<div class="col-xl-4 col-lg-6 col-md-12 col-sm-6 single-product">
 								  <div class="content">
 								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img\product\"1_25".jpg" alt="">
+									 
+									 
+								  	  <img class="content-image img-fluid d-block mx-auto"   <?php echo "src=\"img\\product\\".$idArr[0][1].".jpg\"" ;?> >
+										 
 								      <div class="content-details fadeIn-bottom">
 									        <div class="bottom d-flex align-items-center justify-content-center">
 
