@@ -1,5 +1,13 @@
 <?php
-session_start();
+	session_start();
+
+	$conn = new mysqli( "13.231.233.64:3306", "project", "123456", "CS281" );
+	$getsql = "SELECT * FROM product";
+	$res = $conn->query($getsql);
+	$idArr = mysqli_fetch_all($res);
+	$procount = count($idArr);
+	$conn->close();
+
 ?>
 <!DOCTYPE html>
 <html lang="zxx" class="no-js"><head>
@@ -29,16 +37,20 @@ session_start();
 			<link rel="stylesheet" href="css/nouislider.min.css">
             <link rel="stylesheet" href="css/bootstrap.css">
             <link rel="stylesheet" href="css/main.css">
+
+
+
         </head>
         <body>
-
+			
             <!-- Start Header Area -->
-
+		
             <div id="undefined-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 109px;"><div id="undefined-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 108px;"><div id="undefined-sticky-wrapper" class="sticky-wrapper" style="height: 108px;"><div id="undefined-sticky-wrapper" class="sticky-wrapper" style="height: 108px;"><header class="default-header" style="">
                 <div class="menutop-wrap">
                     <div class="menu-top container">
                         <div class="d-flex justify-content-between align-items-center">
                             <ul class="list">
+									
                                 <li><a href="tel:+12312-3-1209">+12312-3-1209</a></li>
                                 <li><a href="mailto:support@colorlib.com">support@colorlib.com</a></li>
                             </ul>
@@ -153,225 +165,56 @@ session_start();
 						</div>
 						<!-- End Filter Bar -->
 						<!-- Start Best Seller -->
+						
 						<section class="lattest-product-area pb-40 category-list">
 							<div class="row">
+								
+						<?php for($i = 0 ; $i < $procount ; $i++) { ?>		
 								<div class="col-xl-4 col-lg-6 col-md-12 col-sm-6 single-product">
 								  <div class="content">
 								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img\NIKEAIRMAX97\ShownWolfGreyDarkGreyWhite\messageImage_1523450922453.jpg" alt="">
+									 
+									 
+								  	  <img class="content-image img-fluid d-block mx-auto" name="select_p"  <?php echo "src=\"img\\product\\".$idArr[$i][1].".jpg\"" ;?> >
+										 
 								      <div class="content-details fadeIn-bottom">
 									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
-												<a href="#"><span class="lnr lnr-layers"></span></a>
-												<a href="#"><span class="lnr lnr-cart"></span></a>
-												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
-											</div>
-								      </div>
-								  </div>
-								  <div class="price">
-								  		<h5>NIKE AIR MAX 97 ULTRA '17</h5>
-								  		<h3>$150.00</h3>
-								   </div>
-								</div>
-								<div class="col-xl-4 col-lg-6 col-md-12 col-sm-6 single-product">
-								  <div class="content">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img\NIKEAIRMAX97\ShownObsidianWhiteDiffused Blue/messageImage_1523450710243.jpg" alt="">
-								      <div class="content-details fadeIn-bottom">
-									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
-												<a href="#"><span class="lnr lnr-layers"></span></a>
-												<a href="#"><span class="lnr lnr-cart"></span></a>
-												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
-											</div>
-								      </div>
-								  </div>
-								  <div class="price">
-								  		<h5>NIKE AIR MAX 97 ULTRA '17</h5>
-								  		<h3>$150.00</h3>
-								   </div>
-								</div>
-								<div class="col-xl-4 col-lg-6 col-md-12 col-sm-6 single-product">
-								  <div class="content">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img\NIKEAIRMAX97\ShownCargoKhakiRiverRockNeutralOliveWhite/messageImage_1523450982371.jpg" alt="">
-								      <div class="content-details fadeIn-bottom">
-									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
-												<a href="#"><span class="lnr lnr-layers"></span></a>
-												<a href="#"><span class="lnr lnr-cart"></span></a>
-												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
-											</div>
-								      </div>
-								  </div>
-								  <div class="price">
-								  		<h5>NIKE AIR MAX 97 ULTRA '17</h5>
-								  		<h3>$150.00</h3>
-								   </div>
-								</div>
-								<div class="col-xl-4 col-lg-6 col-md-12 col-sm-6 single-product">
-								  <div class="content">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img\NIKE1\ShownDarkStuccoSummitWhiteBlack\messageImage_1523451183449.jpg" alt="">
-								      <div class="content-details fadeIn-bottom">
-									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
-												<a href="#"><span class="lnr lnr-layers"></span></a>
-												<a href="#"><span class="lnr lnr-cart"></span></a>
-												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
-											</div>
-								      </div>
-								  </div>
-								  <div class="price">
-								  		<h5>NIKE AIR FORCE 1 07</h5>
-								  		<h3>$150.00</h3>
-								   </div>
-								</div>
-								<div class="col-xl-4 col-lg-6 col-md-12 col-sm-6 single-product">
-								  <div class="content">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img\NIKE1\ShownWhiteBlack\messageImage_1523451148212.jpg" alt="">
-								      <div class="content-details fadeIn-bottom">
-									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
-												<a href="#"><span class="lnr lnr-layers"></span></a>
-												<a href="#"><span class="lnr lnr-cart"></span></a>
-												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
-											</div>
-								      </div>
-								  </div>
-								  <div class="price">
-								  		<h5>NIKE AIR FORCE 1 07</h5>
-								  		<h3>$150.00</h3>
-								   </div>
-								</div>
-								<div class="col-xl-4 col-lg-6 col-md-12 col-sm-6 single-product">
-								  <div class="content">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img\NIKE1\ShownTeamOrangeWhite\messageImage_1523451164294.jpg" alt="">
-								      <div class="content-details fadeIn-bottom">
-									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
-												<a href="#"><span class="lnr lnr-layers"></span></a>
-												<a href="#"><span class="lnr lnr-cart"></span></a>
-												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
-											</div>
-								      </div>
-								  </div>
-								  <div class="price">
-								  		<h5>NIKE AIR FORCE 1 07</h5>
-								  		<h3>$150.00</h3>
-								   </div>
-								</div>
-								<div class="col-xl-4 col-lg-6 col-md-12 col-sm-6 single-product">
-								  <div class="content">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img\NIKE1\ShownWolfGreyWhite\messageImage_1523449519866.jpg" alt="">
-								      <div class="content-details fadeIn-bottom">
-									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
-												<a href="#"><span class="lnr lnr-layers"></span></a>
-												<a href="#"><span class="lnr lnr-cart"></span></a>
-												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
-											</div>
-								      </div>
-								  </div>
-								  <div class="price">
-								  		<h5>NIKE AIR FORCE 1 07</h5>
-								  		<h3>$150.00</h3>
-								   </div>
-								</div>
-								<div class="col-xl-4 col-lg-6 col-md-12 col-sm-6 single-product">
-								  <div class="content">
-								      <div class="content-overlay"></div>
-								  		 <img src="img\NMD_R1STLT\MulticolorBlackMulticolor\messageImage_1523515799576.jpg" class="content-image img-fluid d-block mx-auto">
-								      <div class="content-details fadeIn-bottom">
-									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
-												<a href="#"><span class="lnr lnr-layers"></span></a>
-												<a href="#"><span class="lnr lnr-cart"></span></a>
-												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
-										</div>
-							        </div>
-								  </div>
-								  <div class="price">
-								  		<h5>NMD_R1 STLT Primeknit Shoes</h5>
-								  		<h3>$150.00</h3>
-								   </div>
-								</div>
-								<div class="col-xl-4 col-lg-6 col-md-12 col-sm-6 single-product">
-								  <div class="content">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img\NMD_R1STLT\MulticolorBlackYellow\messageImage_1523516101315.jpg" alt="">
-								      <div class="content-details fadeIn-bottom">
-									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
+
+
+
+                      
+
+
+
+                    						<a href="#">	<span class="lnr lnr-heart"></span></a>
+
 
 												<a href="#"><span class="lnr lnr-layers"></span></a>
-												<a href="#"><span class="lnr lnr-cart"></span></a>
+												 <a href= <?php echo "class/addtocart.php?select_p=".$idArr[$i][1]; ?>><span class="lnr lnr-cart"></span></a> 
 												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
 											</div>
 								      </div>
 								  </div>
 								  <div class="price">
-								  		<h5>NMD_R1 STLT Primeknit Shoes</h5>
-								  		<h3>$150.00</h3>
+								  	<?php echo	"<h5>".$idArr[$i][2] ."</h5>"; ?>
+
+								  	<?php echo	"<h3>".$idArr[$i][3]." ฿</h3>";?>
+									  <?php echo	"<h6>".$idArr[$i][4]." Years</h3>";?>
 								   </div>
 								</div>
-								<div class="col-xl-4 col-lg-6 col-md-12 col-sm-6 single-product">
-								  <div class="content">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img\NMD_R1STLT\MulticolorMulticolorBlack\messageImage_1523516772534.jpg" alt="">
-								      <div class="content-details fadeIn-bottom">
-									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
-												<a href="#"><span class="lnr lnr-layers"></span></a>
-												<a href="#"><span class="lnr lnr-cart"></span></a>
-												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
-											</div>
-								      </div>
-								  </div>
-								  <div class="price">
-								  		<h5>NMD_R1 STLT Primeknit Shoes</h5>
-								  		<h3>$150.00</h3>
-								   </div>
-								</div>
-								<div class="col-xl-4 col-lg-6 col-md-12 col-sm-6 single-product">
-								  <div class="content">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img\NMD_R1STLT\BlackMulticolorPink\messageImage_1523516614528.jpg" alt="">
-								      <div class="content-details fadeIn-bottom">
-									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
-												<a href="#"><span class="lnr lnr-layers"></span></a>
-												<a href="#"><span class="lnr lnr-cart"></span></a>
-												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
-											</div>
-								      </div>
-								  </div>
-								  <div class="price">
-								  		<h5>NMD_R1 STLT Primeknit Shoes</h5>
-								  		<h3>$150.00</h3>
-								   </div>
-								</div>
-								<div class="col-xl-4 col-lg-6 col-md-12 col-sm-6 single-product">
-								  <div class="content">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img\NMD_XR1\MulticolorMulticolorRed\messageImage_1523517114086.jpg" alt="">
-								      <div class="content-details fadeIn-bottom">
-									        <div class="bottom d-flex align-items-center justify-content-center">
-												<a href="#"><span class="lnr lnr-heart"></span></a>
-												<a href="#"><span class="lnr lnr-layers"></span></a>
-												<a href="#"><span class="lnr lnr-cart"></span></a>
-												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
-											</div>
-								      </div>
-								  </div>
-								  <div class="price">
-								  		<h5>NMD_XR1 Shoes (1 Pair Per Customer)</h5>
-								  		<h3>$150.00</h3>
-								   </div>
-								</div>
+								
+								<?php } ?>
+								
+							
+						
+								
+								
+							
+								
+								
+								
+							
+								
 							</div>
 						</section>
 						<!-- End Best Seller -->
@@ -402,52 +245,24 @@ session_start();
 
 </div>
 							<ul class="main-categories">
-								<li class="main-nav-list"><a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="รองเท้าบาส" class="collapsed"><span class="lnr lnr-arrow-right"></span>Basketball<span class="number">(53)</span></a>
-									<ul class="collapse" id="fruitsVegetable" data-toggle="collapse" aria-expanded="false" ก="" style="">
-										<li class="main-nav-list child"><a href="#">Frozen Fish<span class="number">(13)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Dried Fish<span class="number">(09)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Fresh Fish<span class="number">(17)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Meat Alternatives<span class="number">(01)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Meat<span class="number">(11)</span></a></li>
-									</ul>
+								<li class="main-nav-list"><a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="รองเท้าบาส" ><span class="lnr lnr-arrow-right"></span>Basketball<span class="number">(53)</span></a>
+									
 								</li>
 
 								<li class="main-nav-list"><a data-toggle="collapse" href="#meatFish" aria-expanded="false" aria-controls="meatFish" class="collapsed"><span class="lnr lnr-arrow-right"></span>Lifestyle<span class="number">(53)</span></a>
-									<ul class="collapse" id="meatFish" data-toggle="collapse" aria-expanded="false" aria-controls="meatFish" style="">
-										<li class="main-nav-list child"><a href="#">Frozen Fish<span class="number">(13)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Dried Fish<span class="number">(09)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Fresh Fish<span class="number">(17)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Meat Alternatives<span class="number">(01)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Meat<span class="number">(11)</span></a></li>
-									</ul>
+									
 								</li>
 								<li class="main-nav-list"><a data-toggle="collapse" href="#cooking" aria-expanded="false" aria-controls="cooking"><span class="lnr lnr-arrow-right"></span>Running<span class="number">(53)</span></a>
-									<ul class="collapse" id="cooking" data-toggle="collapse" aria-expanded="false" aria-controls="cooking">
-										<li class="main-nav-list child"><a href="#">Frozen Fish<span class="number">(13)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Dried Fish<span class="number">(09)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Fresh Fish<span class="number">(17)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Meat Alternatives<span class="number">(01)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Meat<span class="number">(11)</span></a></li>
-									</ul>
+									
 								</li>
 								<li class="main-nav-list"><a data-toggle="collapse" href="#beverages" aria-expanded="false" aria-controls="beverages"><span class="lnr lnr-arrow-right"></span>Gym &amp; Training<span class="number">(24)</span></a>
-									<ul class="collapse" id="beverages" data-toggle="collapse" aria-expanded="false" aria-controls="beverages">
-										<li class="main-nav-list child"><a href="#">Frozen Fish<span class="number">(13)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Dried Fish<span class="number">(09)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Fresh Fish<span class="number">(17)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Meat Alternatives<span class="number">(01)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Meat<span class="number">(11)</span></a></li>
-									</ul>
+									
 								</li>
 								<li class="main-nav-list"><a data-toggle="collapse" href="#homeClean" aria-expanded="false" aria-controls="homeClean"><span class="lnr lnr-arrow-right"></span>Walking<span class="number">(53)</span></a>
-									<ul class="collapse" id="homeClean" data-toggle="collapse" aria-expanded="false" aria-controls="homeClean">
-										<li class="main-nav-list child"><a href="#">Frozen Fish<span class="number">(13)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Dried Fish<span class="number">(09)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Fresh Fish<span class="number">(17)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Meat Alternatives<span class="number">(01)</span></a></li>
-										<li class="main-nav-list child"><a href="#">Meat<span class="number">(11)</span></a></li>
-									</ul>
+									
 								</li>
+								
+								
 								<li class="main-nav-list"></li>
 								<li class="main-nav-list">
 									<ul class="collapse" id="officeProduct" data-toggle="collapse" aria-expanded="false" aria-controls="officeProduct">
@@ -497,7 +312,7 @@ session_start();
 								</li>
 							</ul>
 						</div>
-						<div class="sidebar-filter mt-50">
+						<!--<div class="sidebar-filter mt-50">
 							<div class="top-filter-head">Product Filters</div>
 							<div class="common-filter">
 								<div class="head">Active Filters</div>
@@ -506,7 +321,7 @@ session_start();
 
 								</ul>
 							</div>
-							<div class="common-filter">
+							<!--<div class="common-filter">
 								<div class="head">Brands</div>
 								<form action="#">
 									<ul>
@@ -517,9 +332,9 @@ session_start();
 										<li class="filter-list"><input class="pixel-radio" type="radio" id="samsung" name="brand"><label for="samsung">Lacoste<span>(19)</span></label></li>
 									</ul>
 								</form>
-							</div>
+							</div>-->
 
-							<div class="common-filter">
+							<!--<div class="common-filter">
 								<div class="head">Price</div>
 								<div class="price-range-area">
 									<div id="price-range" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-origin" style="left: 10%;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="50.0" aria-valuenow="10.0" aria-valuetext="500.00" style="z-index: 5;"></div></div><div class="noUi-connect" style="left: 10%; right: 50%;"></div><div class="noUi-origin" style="left: 50%;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="10.0" aria-valuemax="100.0" aria-valuenow="50.0" aria-valuetext="4000.00" style="z-index: 6;"></div></div></div><div class="noUi-base"><div class="noUi-origin" style="left: 10%;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="50.0" aria-valuenow="10.0" aria-valuetext="500.00" style="z-index: 5;"></div></div><div class="noUi-connect" style="left: 10%; right: 50%;"></div><div class="noUi-origin" style="left: 50%;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="10.0" aria-valuemax="100.0" aria-valuenow="50.0" aria-valuetext="4000.00" style="z-index: 6;"></div></div></div><div class="noUi-base"><div class="noUi-origin" style="left: 10%;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="50.0" aria-valuenow="10.0" aria-valuetext="500.00" style="z-index: 5;"></div></div><div class="noUi-connect" style="left: 10%; right: 50%;"></div><div class="noUi-origin" style="left: 50%;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="10.0" aria-valuemax="100.0" aria-valuenow="50.0" aria-valuetext="4000.00" style="z-index: 6;"></div></div></div><div class="noUi-base"><div class="noUi-origin" style="left: 10%;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="50.0" aria-valuenow="10.0" aria-valuetext="500.00" style="z-index: 5;"></div></div><div class="noUi-connect" style="left: 10%; right: 50%;"></div><div class="noUi-origin" style="left: 50%;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="10.0" aria-valuemax="100.0" aria-valuenow="50.0" aria-valuetext="4000.00" style="z-index: 6;"></div></div></div></div>
@@ -529,8 +344,8 @@ session_start();
 										<span>$</span><div id="upper-value">4000.00</div>
 									</div>
 								</div>
-							</div>
-						</div>
+							</div>-->
+						</div> 
 					</div>
 				</div>
 			</div>
@@ -822,3 +637,4 @@ JR ‘Zaa พร้อมมอบสิ่งที่ดีที่สุด 
 
 
 </body></html>
+

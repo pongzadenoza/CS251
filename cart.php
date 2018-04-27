@@ -1,5 +1,15 @@
 <?php
-session_start();
+	require("class/cartctrl.php");
+	session_start();
+	 $usr = $_SESSION['C_ID'];
+	 $arrPro = CartCtrl::getCartProductfromUser($usr);
+	 $countArr = count($arrPro);
+
+	$totalPrice =0.0 ;
+	for($i=0 ;$i<$countArr ;$i++){
+		$totalPrice += $arrPro[$i][2];
+	}
+	
 ?>
 <!DOCTYPE html>
 <html lang="zxx" class="no-js"><head>
@@ -39,7 +49,8 @@ session_start();
                     <div class="menu-top container">
                         <div class="d-flex justify-content-between align-items-center">
                             <ul class="list">
-                                <li><a href="tel:+12312-3-1209">0861234567</a></li>
+								
+                                <li><a href="tel:+12312-3-1209">0861234567 </a></li>
                                 <li><a href="mailto:support@colorlib.com">JR'Zaa@gmail.com</a></li>                             
                             </ul>
                             <ul class="list">
@@ -133,56 +144,63 @@ session_start();
                             <h6>ราคา</h6>
                         </div>
                         <div class="col-md-2">
-                            <h6>จำนวน</h6>
+                            <h6>ราคา(รวมภาษี 7%)</h6>
                         </div>
-                        <div class="col-md-2">
-                            <h6>ยอดรวม</h6>
-                        </div>
+                        
                     </div>
                 </div>
+				
+				
+				<?php for($i=0 ;$i<$countArr ;$i++) { ?>
+				
                 <div class="cart-single-item">
                     <div class="row align-items-center">
                         <div class="col-md-6 col-12">
                             <div class="product-item d-flex align-items-center">
-                                <img src="img/nikezoom.jpg" class="img-fluid" alt="" width="200">
-                                <h6>NIKE ZOOM FLY</h6>
+                                <img <?php  echo "src=\"img/product/".$arrPro[$i][0].".jpg\"" ; ?> class="img-fluid" alt="" width="200">
+                                <h6><?php echo $arrPro[$i][3]?></h6>
                             </div>
                         </div>
                         <div class="col-md-2 col-6">
-                            <div class="price">$360.00</div>
+                            <div class="price"><?php echo $arrPro[$i][2]."฿"?></div>
                         </div>
                         <div class="col-md-2 col-6">
-                            <div class="quantity-container d-flex align-items-center mt-15">
-                                <input type="text" class="quantity-amount" value="1">
-                                <div class="arrow-btn d-inline-flex flex-column">
-                                    <button class="increase arrow" type="button" title="Increase Quantity"><span class="lnr lnr-chevron-up"></span></button>
-                                    <button class="decrease arrow" type="button" title="Decrease Quantity"><span class="lnr lnr-chevron-down"></span></button>
-                                </div>
-                            </div>
+                          	<div class="price"><?php echo $arrPro[$i][2]*1.07."฿" ?></div>                           
                         </div>
-                        <div class="col-md-2 col-12">
-                            <div class="total">$720.00</div>
+                        <div class="col-md-2 col-6">
+                       <?php    echo "<a href=  \"class/delfromcart.php?select_d=".$arrPro[$i][0]."\"" ." class=\"view-btn color-3\"> "; ?> <span>Delete Item</span></a>
                         </div>
                     </div>
 
                 </div>
+				
+				<?php } ?>
+				
                 
                 
-                <div class="cupon-area d-flex align-items-center justify-content-between flex-wrap">
-                    <a href="#" class="view-btn color-2"><span>Update Cart</span></a>
+                <!--<div class="cupon-area d-flex align-items-center justify-content-between flex-wrap">
+                    <a href="#" class="view-btn color-2" disable><span>Update Cart</span></a>
                     <div class="cuppon-wrap d-flex align-items-center flex-wrap">
                         <div class="cupon-code">
                             <input type="text">
                             <button class="view-btn color-2"><span>Apply</span></button>
                         </div>
-                        <a href="#" class="view-btn color-2 have-btn"><span>ส่วนลด</span></a>
+                        <a href="#" class="view-btn color-2 have-btn" ><span>ส่วนลด</span></a>
                     </div>
-                </div>
+                </div>-->
                 <div class="subtotal-area d-flex align-items-center justify-content-end">
                     <div class="title text-uppercase">ยอดรวม</div>
-                    <div class="subtotal">$2160.00</div>
+                    <div class="subtotal"><?php echo $totalPrice."฿"; ?></div>
+					
+					
                 </div>
-                <div class="shipping-area d-flex justify-content-end">
+				 <div class="subtotal-area d-flex align-items-center justify-content-end">
+                    <div class="title text-uppercase">ยอดรวม(รวมภาษี 7%)</div>
+                    <div class="subtotal"><?php echo $totalPrice*1.07."฿"; ?></div>
+					
+					
+                </div>
+                <!--<div class="shipping-area d-flex justify-content-end">
                     <div class="tile text-uppercase">การส่งสินค้า</div>
                     <form action="#" class="d-inline-flex flex-column align-items-end">
                         <ul class="d-flex flex-column align-items-end">
@@ -222,7 +240,7 @@ session_start();
                         <button class="view-btn color-2 mt-10"><span>Update Details</span></button>
                     </form>
 
-                </div>
+                </div>-->
             </div>
             <!-- End Cart Area -->
 

@@ -16,4 +16,9 @@
 <file name="displayProDCtrl.php" server="C:/xampp/htdocs/testserv/" local="131690164330705477" remote="131690164330000000" Dst="0" />
 <file name="registerA.php" server="C:/xampp/htdocs/testserv/" local="131690164330705477" remote="131690164330000000" Dst="0" />
 <file name="registerCtrl.php" server="C:/xampp/htdocs/testserv/" local="131690164330715490" remote="131690164330000000" Dst="0" />
+<file name="addtocart.php" server="C:/xampp/htdocs/testserv" local="131692452242012728" remote="131692452240000000" Dst="0" />
+<file name="cartctrl.php" server="C:/xampp/htdocs/testserv" local="131692469128133630" remote="131692469120000000" Dst="0" />
+<file name="cartctrl.php" server="C:/xampp/htdocs/testserv/" local="131692710101488438" remote="131692710100000000" Dst="0" />
+<file name="addtocart.php" server="C:/xampp/htdocs/testserv/" local="131692712974794430" remote="131692712970000000" Dst="0" />
+<file name="delfromcart.php" server="C:/xampp/htdocs/testserv/" local="131692711054306124" remote="131692711050000000" Dst="0" />
 </dwsync>

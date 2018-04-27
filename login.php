@@ -111,7 +111,7 @@ session_start();
 					<div class="login-form">
 						<h3 class="billing-title text-center">Login</h3>
 						<p class="text-center mt-80 mb-40">Welcome back! Sign in to your account </p>
-						<form name="login-form" action="login_mng.php" method="GET">
+						<form name="login-form" action="login_mng.php" method="POST">
 							<input type="text" name="cid" value="" placeholder="Username or Email*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Username or Email*'" required class="common-input mt-20">
 							<input type="password" name="cpassword" value="" placeholder="Password*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Password*'" required class="common-input mt-20">
 							<button class="view-btn color-2 mt-20 w-100"><span>Login</span></button>
@@ -126,7 +126,7 @@ session_start();
 					<div class="register-form">
 						<h3 class="billing-title text-center">Register</h3>
 						<p class="text-center mt-40 mb-30">Create your very own account </p>
-						<form action="register_mng.php" method="post">
+						<form action="register_mng.php" method="POST">
 							<input name ="cname" type="text" placeholder="Full name*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Full name*'" required class="common-input mt-20">
 							<input name="cmail" type="email" placeholder="Email address*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Email address*'" required class="common-input mt-20">
 							<input name="cphone" type="text" placeholder="Phone number*" onfocus="this.placeholder=''" onblur="this.placeholder = 'Phone number*'" required class="common-input mt-20">

@@ -100,7 +100,7 @@ session_start();
 								        Pages
 								      </a>
 								      <div class="dropdown-menu">
-								        <a class="dropdown-item" href="category2.php">Category</a>
+								        <a class="dropdown-item" href="category.php">Category</a>
 								        <a class="dropdown-item" href="single.html">Single</a>
 								        <a class="dropdown-item" href="cart.php">Cart</a>
 								        <a class="dropdown-item" href="checkout.html">Checkout</a>
@@ -131,7 +131,7 @@ session_start();
 								It’s Happening <br>
 								this Season!
 							</h1>
-							<button class="primary-btn text-uppercase"><a href="#">Purchase Now</a></button>
+							<button class="primary-btn text-uppercase"><a href="category.php">Purchase Now</a></button>
 						</div>
 					</div>
 				</div>

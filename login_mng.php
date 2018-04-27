@@ -13,8 +13,8 @@ session_start();
 <body>
 	<?php include("login_ctl.php");
 	
-	$id = $_GET['cid'];
-	$pass = $_GET['cpassword'];
+	$id = $_REQUEST['cid'];
+	$pass = $_REQUEST['cpassword'];
 
 	echo "$id.=$pass";
 
