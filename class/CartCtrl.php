@@ -17,7 +17,9 @@ error_reporting(E_ALL ^ E_NOTICE);
 		 $addsql = "INSERT INTO cart(p_id , car_usr) VALUES('".$pid."','".$usr."');";
 		 if($conn->query($addsql)===TRUE){
 			 
-			 echo "<script type='text/javascript'>alert('Added item to cart')</script>";
+			 echo "<script type='text/javascript'>alert('เพิ่มสินค้าไปยังตะกร้าแล้ว')</script>";
+		 }else{
+			 echo "<script type='text/javascript'>alert('เพิ่มสินค้าล้มเหลว กรุณาเข้าสู่ระบบ')</script>";
 		 }
 		 
 		 $conn->close();
