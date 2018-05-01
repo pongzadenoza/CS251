@@ -5,6 +5,7 @@
 	$getsql = "SELECT * FROM product";
 	$res = $conn->query($getsql);
 	$idArr = mysqli_fetch_all($res);
+
 	$procount = count($idArr);
 	$conn->close();
 
@@ -42,15 +43,15 @@
 
         </head>
         <body>
-			
+
             <!-- Start Header Area -->
-		
+
             <div id="undefined-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 109px;"><div id="undefined-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 108px;"><div id="undefined-sticky-wrapper" class="sticky-wrapper" style="height: 108px;"><div id="undefined-sticky-wrapper" class="sticky-wrapper" style="height: 108px;"><header class="default-header" style="">
                 <div class="menutop-wrap">
                     <div class="menu-top container">
                         <div class="d-flex justify-content-between align-items-center">
                             <ul class="list">
-									
+
                                 <li><a href="tel:+12312-3-1209">+12312-3-1209</a></li>
                                 <li><a href="mailto:support@colorlib.com">support@colorlib.com</a></li>
                             </ul>
@@ -108,6 +109,7 @@
                                         <a class="dropdown-item" href="tracking.php">Tracking</a>
                                         <a class="dropdown-item" href="generic.html">Generic</a>
                                         <a class="dropdown-item" href="elements.html">Elements</a>
+																				<a class="dropdown-item" href="Favorite.php">Favorite</a>
                                       </div>
                                     </li>
                             </ul>
@@ -165,32 +167,32 @@
 						</div>
 						<!-- End Filter Bar -->
 						<!-- Start Best Seller -->
-						
+
 						<section class="lattest-product-area pb-40 category-list">
 							<div class="row">
-								
-						<?php for($i = 0 ; $i < $procount ; $i++) { ?>		
+
+						<?php for($i = 0 ; $i < $procount ; $i++) { ?>
 								<div class="col-xl-4 col-lg-6 col-md-12 col-sm-6 single-product">
 								  <div class="content">
 								      <div class="content-overlay"></div>
-									 
-									 
+
+
 								  	  <img class="content-image img-fluid d-block mx-auto" name="select_p"  <?php echo "src=\"img\\product\\".$idArr[$i][1].".jpg\"" ;?> >
-										 
+
 								      <div class="content-details fadeIn-bottom">
 									        <div class="bottom d-flex align-items-center justify-content-center">
 
 
 
-                      
 
 
 
-                    						<a href="#">	<span class="lnr lnr-heart"></span></a>
+
+                    					 <a href= <?php echo "class/addfavorite.php?select_f=".$idArr[$i][3]."&select_f2=".$idArr[$i][2]."&select_f3=".$idArr[$i][1]; ?>><span class="lnr lnr-heart"></span></a>
 
 
 												<a href="#"><span class="lnr lnr-layers"></span></a>
-												 <a href= <?php echo "class/addtocart.php?select_p=".$idArr[$i][1]; ?>><span class="lnr lnr-cart"></span></a> 
+												 <a href= <?php echo "class/addtocart.php?select_p=".$idArr[$i][1]; ?>><span class="lnr lnr-cart"></span></a>
 												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
 											</div>
 								      </div>
@@ -202,19 +204,19 @@
 									  <?php echo	"<h6>".$idArr[$i][4]." Years</h3>";?>
 								   </div>
 								</div>
-								
+
 								<?php } ?>
-								
-							
-						
-								
-								
-							
-								
-								
-								
-							
-								
+
+
+
+
+
+
+
+
+
+
+
 							</div>
 						</section>
 						<!-- End Best Seller -->
@@ -246,23 +248,23 @@
 </div>
 							<ul class="main-categories">
 								<li class="main-nav-list"><a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="รองเท้าบาส" ><span class="lnr lnr-arrow-right"></span>Basketball<span class="number">(53)</span></a>
-									
+
 								</li>
 
 								<li class="main-nav-list"><a data-toggle="collapse" href="#meatFish" aria-expanded="false" aria-controls="meatFish" class="collapsed"><span class="lnr lnr-arrow-right"></span>Lifestyle<span class="number">(53)</span></a>
-									
+
 								</li>
 								<li class="main-nav-list"><a data-toggle="collapse" href="#cooking" aria-expanded="false" aria-controls="cooking"><span class="lnr lnr-arrow-right"></span>Running<span class="number">(53)</span></a>
-									
+
 								</li>
 								<li class="main-nav-list"><a data-toggle="collapse" href="#beverages" aria-expanded="false" aria-controls="beverages"><span class="lnr lnr-arrow-right"></span>Gym &amp; Training<span class="number">(24)</span></a>
-									
+
 								</li>
 								<li class="main-nav-list"><a data-toggle="collapse" href="#homeClean" aria-expanded="false" aria-controls="homeClean"><span class="lnr lnr-arrow-right"></span>Walking<span class="number">(53)</span></a>
-									
+
 								</li>
-								
-								
+
+
 								<li class="main-nav-list"></li>
 								<li class="main-nav-list">
 									<ul class="collapse" id="officeProduct" data-toggle="collapse" aria-expanded="false" aria-controls="officeProduct">
@@ -345,7 +347,7 @@
 									</div>
 								</div>
 							</div>-->
-						</div> 
+						</div>
 					</div>
 				</div>
 			</div>
@@ -637,4 +639,3 @@ JR ‘Zaa พร้อมมอบสิ่งที่ดีที่สุด 
 
 
 </body></html>
-
