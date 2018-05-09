@@ -58,8 +58,7 @@
                             <ul class="navbar-nav">
                                 <li><a href="#home">Home</a></li>
                                 <li><a href="#catagory">Category</a></li>
-                                <li><a href="#men">Men</a></li>
-                                <li><a href="#women">Women</a></li>
+                               
                                 <li><a href="#latest">latest</a></li>
                                     <!-- Dropdown -->
                                     <li class="dropdown">
@@ -68,7 +67,7 @@
                                       </a>
                                       <div class="dropdown-menu">
                                         <a class="dropdown-item" href="category.php">Category</a>
-                                        <a class="dropdown-item" href="single.html">Single</a>
+                                       
                                         <a class="dropdown-item" href="cart.php">Cart</a>
                                         <a class="dropdown-item" href="checkout.html">Checkout</a>
                                         <a class="dropdown-item" href="confermation.html">Confermation</a>
@@ -106,6 +105,7 @@
                 <div class="product-quick-view">
                     <div class="row align-items-center">
                         <div class="col-lg-6">
+							
                             <div class="quick-view-carousel-details">
                                 <div class="item" style="background: url(img/q1.jpg);">
 
@@ -113,9 +113,7 @@
                                 <div class="item" style="background: url(img/q1.jpg);">
 
                                 </div>
-                                <div class="item" style="background: url(img/q1.jpg);">
-
-                                </div>
+                               
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -130,13 +128,13 @@
                                     <p class="content">Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.</p>
                                 </div>
                                 <div >
-                                    <div class="quantity-container d-flex align-items-center mt-15">
+                                    <!--<div class="quantity-container d-flex align-items-center mt-15">
                                         Quantity:
                                         <input type="text" class="quantity-amount ml-15" value="1" />
                                         <div class="arrow-btn d-inline-flex flex-column">
                                             <button class="increase arrow" type="button" title="Increase Quantity"><span class="lnr lnr-chevron-up"></span></button>
                                             <button class="decrease arrow" type="button" title="Decrease Quantity"><span class="lnr lnr-chevron-down"></span></button>
-                                        </div>
+                                        </div>-->
 
                                     </div>
                                     <div class="d-flex mt-20">
@@ -149,7 +147,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+           
 
             <div class="container">
                 <div class="details-tab-navigation d-flex justify-content-center mt-30">
@@ -160,12 +158,7 @@
                         <li>
                             <a class="nav-link" id="specification-tab" data-toggle="tab" href="#specification" role="tab" aria-controls="specification">Specification</a>
                         </li>
-                        <li>
-                            <a class="nav-link" id="comments-tab" data-toggle="tab" href="#comments" role="tab" aria-controls="comments">Comments</a>
-                        </li>
-                        <li>
-                            <a class="nav-link active" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews">Reviews</a>
-                        </li>
+                       
                     </ul>
                 </div>
                 <div class="tab-content" id="myTabContent">

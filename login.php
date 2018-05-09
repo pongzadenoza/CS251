@@ -71,7 +71,7 @@ session_start();
                                       </a>
                                       <div class="dropdown-menu">
                                         <a class="dropdown-item" href="category.php">Category</a>
-                                        <a class="dropdown-item" href="single.html">Single</a>
+                                        <a class="dropdown-item" href="single.php">Single</a>
                                         <a class="dropdown-item" href="cart.php">Cart</a>
                                         <a class="dropdown-item" href="checkout.html">Checkout</a>
                                         <a class="dropdown-item" href="confermation.html">Confermation</a>
