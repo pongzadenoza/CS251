@@ -55,10 +55,7 @@ class Product
     {
         $this->pPrice = $pPrice;
     }
-    public function setPName($pName)
-    {
-        $this->pName = $pName;
-    }
+   
 	
 	 public function setPCategory($pCategory)
     {

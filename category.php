@@ -1,6 +1,6 @@
 <?php
 	session_start();
-
+	require("productgetset.php");
 	$conn = new mysqli( "13.231.233.64:3306", "project", "123456", "CS281" );
 	$getsql = "SELECT * FROM product";
 	$res = $conn->query($getsql);
@@ -8,6 +8,8 @@
 
 	$procount = count($idArr);
 	$conn->close();
+
+	
 
 ?>
 <!DOCTYPE html>

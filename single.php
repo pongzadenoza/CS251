@@ -1,4 +1,7 @@
-    <!DOCTYPE html>
+<?php
+session_start();
+?>
+<!DOCTYPE html>
     <html lang="zxx" class="no-js">
     <head>
         <!-- Mobile Specific Meta -->
@@ -41,7 +44,25 @@
                                 <li><a href="mailto:support@colorlib.com">support@colorlib.com</a></li>                             
                             </ul>
                             <ul class="list">
-                                <li><a href="#">login</a></li>
+                                <li><?php
+									error_reporting(E_ALL ^ E_NOTICE);
+
+									if($_SESSION['C_ID']){
+
+										echo "Welcome <b>".$_SESSION['C_ID']."</b><br>" ;
+										echo "<a href=\"logout.php\">logout</a>";
+
+
+									}
+									else{
+
+
+										echo "<a href=\"login.php\">login</a>";
+
+									}
+
+
+										?></li>
                             </ul>
                         </div>
                     </div>                  
