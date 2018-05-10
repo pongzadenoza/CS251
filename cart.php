@@ -9,7 +9,7 @@
 	for($i=0 ;$i<$countArr ;$i++){
 		$totalPrice += $arrPro[$i][2];
 	}
-	
+
 ?>
 <!DOCTYPE html>
 <html lang="zxx" class="no-js"><head>
@@ -28,12 +28,12 @@
         <!-- Site Title -->
         <title>Shop</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
             <!--
             CSS
             ============================================= -->
             <link rel="stylesheet" href="css/linearicons.css">
-            <link rel="stylesheet" href="css/owl.carousel.css">            
+            <link rel="stylesheet" href="css/owl.carousel.css">
             <link rel="stylesheet" href="css/font-awesome.min.css">
             <link rel="stylesheet" href="css/nice-select.css">
             <link rel="stylesheet" href="css/ion.rangeSlider.css">
@@ -49,9 +49,9 @@
                     <div class="menu-top container">
                         <div class="d-flex justify-content-between align-items-center">
                             <ul class="list">
-								
+
                                 <li><a href="tel:+12312-3-1209">0861234567 </a></li>
-                                <li><a href="mailto:support@colorlib.com">JR'Zaa@gmail.com</a></li>                             
+                                <li><a href="mailto:support@colorlib.com">JR'Zaa@gmail.com</a></li>
                             </ul>
                             <ul class="list">
                                 <li>
@@ -76,7 +76,7 @@
 										?></li>
                             </ul>
                         </div>
-                    </div>                  
+                    </div>
                 </div>
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container">
@@ -108,10 +108,11 @@
                                         <a class="dropdown-item" href="tracking.php">Tracking</a>
                                         <a class="dropdown-item" href="generic.html">Generic</a>
                                         <a class="dropdown-item" href="elements.html">Elements</a>
+																				<a class="dropdown-item" href="Favorite.php">Favorite</a>
                                       </div>
-                                    </li>                                   
+                                    </li>
                             </ul>
-                          </div>                        
+                          </div>
                     </div>
                 </nav>
             </header></div>
@@ -146,13 +147,13 @@
                         <div class="col-md-2">
                             <h6>ราคา(รวมภาษี 7%)</h6>
                         </div>
-                        
+
                     </div>
                 </div>
-				
-				
+
+
 				<?php for($i=0 ;$i<$countArr ;$i++) { ?>
-				
+
                 <div class="cart-single-item">
                     <div class="row align-items-center">
                         <div class="col-md-6 col-12">
@@ -165,7 +166,7 @@
                             <div class="price"><?php echo $arrPro[$i][2]."฿"?></div>
                         </div>
                         <div class="col-md-2 col-6">
-                          	<div class="price"><?php echo $arrPro[$i][2]*1.07."฿" ?></div>                           
+                          	<div class="price"><?php echo $arrPro[$i][2]*1.07."฿" ?></div>
                         </div>
                         <div class="col-md-2 col-6">
                        <?php    echo "<a href=  \"class/delfromcart.php?select_d=".$arrPro[$i][0]."\"" ." class=\"view-btn color-3\"> "; ?> <span>Delete Item</span></a>
@@ -173,11 +174,11 @@
                     </div>
 
                 </div>
-				
+
 				<?php } ?>
-				
-                
-                
+
+
+
                 <!--<div class="cupon-area d-flex align-items-center justify-content-between flex-wrap">
                     <a href="#" class="view-btn color-2" disable><span>Update Cart</span></a>
                     <div class="cuppon-wrap d-flex align-items-center flex-wrap">
@@ -191,14 +192,14 @@
                 <div class="subtotal-area d-flex align-items-center justify-content-end">
                     <div class="title text-uppercase">ยอดรวม</div>
                     <div class="subtotal"><?php echo $totalPrice."฿"; ?></div>
-					
-					
+
+
                 </div>
 				 <div class="subtotal-area d-flex align-items-center justify-content-end">
                     <div class="title text-uppercase">ยอดรวม(รวมภาษี 7%)</div>
                     <div class="subtotal"><?php echo $totalPrice*1.07."฿"; ?></div>
-					
-					
+
+
                 </div>
                 <!--<div class="shipping-area d-flex justify-content-end">
                     <div class="tile text-uppercase">การส่งสินค้า</div>
@@ -364,7 +365,7 @@
             </section>
             <!-- End Most Search Product Area -->
 
-            <!-- start footer Area -->      
+            <!-- start footer Area -->
             <footer class="footer-area section-gap">
                 <div class="container">
                     <div class="row">
@@ -374,7 +375,7 @@
                                 <p>ห้างสรรพสินค้าออนไลน์ชั้นนำ
 JR ‘Zaa คือห้างสรรพสินค้าออนไลน์ที่ จัดส่งสินค้ารวดเร็ว เชื่อถือได้ และมอบความสะดวกสบายในการเลือกซื้อสินค้าแก่ลูกค้า
 
-ด้วยการนำเสนอสินค้าที่คู่ควรแก่คุณ 
+ด้วยการนำเสนอสินค้าที่คู่ควรแก่คุณ
 JR ‘Zaa พร้อมมอบสิ่งที่ดีที่สุด ให้แก่ลูกค้าเสมอ ไม่ว่าจะเป็นวิธีการชำระเงินปลายทาง หรือบริการการคืนสินค้าฟรี และศูนย์บริการลูกค้าที่พร้อมจะให้คำแนะนำตลอดการเลือกซื้อสินค้า
 
 
@@ -383,7 +384,7 @@ JR ‘Zaa พร้อมมอบสิ่งที่ดีที่สุด 
                         </div>
                         <div class="col-lg-3  col-md-6 col-sm-6">
                             <div class="single-footer-widget">
-                                
+
                                 <p>เราไม่เคยหยุดที่จะหาสิ่งที่ดีที่สุดให้คุณ เพราะเราคือห้างสรรพสินค้าที่อยู่เพียงแค่ปลายนิ้ว ที่ให้คุณช๊อปปิ้งได้ทุกที่ทุกเวลา! ตลอด 24 ชั่วโมง ง่าย ๆ เพียงแค่สมัครเป็นส่วนหนึ่งของเว็ป JR ‘Zaa มาเป็นสมาชิกกับเราและรับสิทธิพิเศษรวมทั้งข่าวสารและโปรโมชั่นสุดพิเศษอย่างต่อเนื่อง
 
 เพราะคุณคือคนสำคัญของเรา เราจึงทุ่มเทที่จะสร้างประสบการณ์การชอปปิ้งที่ดีที่สุดให้กับคุณ หากคุณมีคำถามใดๆ พวกเรารอตอบคุณอยู่เพียงต่อสายโทรศัพท์หรืออีเมลล์หาเราเท่านั้น
@@ -395,26 +396,26 @@ JR ‘Zaa พร้อมมอบสิ่งที่ดีที่สุด 
 
                                         <div class="d-flex flex-row">
 
-                                            
 
 
-                                                
+
+
                                                 <div style="position: absolute; left: -5000px;">
                                                     <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
                                                 </div>
-                                            
+
                                             <!-- <div class="col-lg-4 col-md-4">
                                                 <button class="bb-btn btn"><span class="lnr lnr-arrow-right"></span></button>
                                             </div>  -->
-                                        </div>      
+                                        </div>
                                         <div class="info"></div>
                                         </form>
                                 </div>
                                 </div>
-                        </div>                      
+                        </div>
                         <div class="col-lg-3  col-md-6 col-sm-6">
                             <div class="single-footer-widget mail-chimp">
-                                
+
                                 <ul class="instafeed d-flex flex-wrap">
                                     <li><img src="img/i1.jpg" alt=""></li>
                                     <li><img src="img/i2.jpg" alt=""></li>
@@ -430,7 +431,7 @@ JR ‘Zaa พร้อมมอบสิ่งที่ดีที่สุด 
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="single-footer-widget">
                                 <h6>ติดตามเราได้ที่</h6>
-                                
+
                                 <div class="footer-social d-flex align-items-center">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
                                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -438,7 +439,7 @@ JR ‘Zaa พร้อมมอบสิ่งที่ดีที่สุด 
                                     <a href="#"><i class="fa fa-behance"></i></a>
                                 </div>
                             </div>
-                        </div>                          
+                        </div>
                     </div>
                     <div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -446,8 +447,8 @@ JR ‘Zaa พร้อมมอบสิ่งที่ดีที่สุด 
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
                 </div>
-            </footer>   
-            <!-- End footer Area -->        
+            </footer>
+            <!-- End footer Area -->
 
             <script src="js/vendor/jquery-2.2.4.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
@@ -457,7 +458,7 @@ JR ‘Zaa พร้อมมอบสิ่งที่ดีที่สุด 
             <script src="js/jquery.sticky.js"></script>
             <script src="js/ion.rangeSlider.js"></script>
             <script src="js/jquery.magnific-popup.min.js"></script>
-            <script src="js/owl.carousel.min.js"></script>            
-            <script src="js/main.js"></script>  
-        
+            <script src="js/owl.carousel.min.js"></script>
+            <script src="js/main.js"></script>
+
     </body></html>

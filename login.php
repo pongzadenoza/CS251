@@ -19,12 +19,12 @@ session_start();
         <!-- Site Title -->
         <title>Shop</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
             <!--
             CSS
             ============================================= -->
             <link rel="stylesheet" href="css/linearicons.css">
-            <link rel="stylesheet" href="css/owl.carousel.css">            
+            <link rel="stylesheet" href="css/owl.carousel.css">
             <link rel="stylesheet" href="css/font-awesome.min.css">
             <link rel="stylesheet" href="css/nice-select.css">
             <link rel="stylesheet" href="css/ion.rangeSlider.css" />
@@ -41,13 +41,13 @@ session_start();
                         <div class="d-flex justify-content-between align-items-center">
                             <ul class="list">
                                 <li><a href="tel:+12312-3-1209">+12312-3-1209</a></li>
-                                <li><a href="mailto:support@colorlib.com">support@colorlib.com</a></li>                             
+                                <li><a href="mailto:support@colorlib.com">support@colorlib.com</a></li>
                             </ul>
                             <ul class="list">
                                 <li><a href="#">login</a></li>
                             </ul>
                         </div>
-                    </div>                  
+                    </div>
                 </div>
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container">
@@ -79,10 +79,11 @@ session_start();
                                         <a class="dropdown-item" href="tracking.php">Tracking</a>
                                         <a class="dropdown-item" href="generic.html">Generic</a>
                                         <a class="dropdown-item" href="elements.html">Elements</a>
+                                        <a class="dropdown-item" href="Favorite.php">Favorite</a>
                                       </div>
-                                    </li>                                   
+                                    </li>
                             </ul>
-                          </div>                        
+                          </div>
                     </div>
                 </nav>
             </header>
@@ -138,8 +139,8 @@ session_start();
 							<input name= "ctype" type="radio" value="0"  onblur="this.placeholder = 'seller*'" >
 							<p class="mt-10 mb-0">Buyer</p>
 							<input name= "ctype" type="radio" value="1"  onblur="this.placeholder = 'buyer*'" >
-							
-							
+
+
 							<button class="view-btn color-2 mt-20 w-100"><span>Register</span></button>
 						</form>
 					</div>
@@ -147,7 +148,7 @@ session_start();
 			</div>
 		</div>
 		<!-- End My Account -->
-		
+
 
             <!-- Start Most Search Product Area -->
             <section class="section-half">
@@ -269,7 +270,7 @@ session_start();
             </section>
             <!-- End Most Search Product Area -->
 
-            <!-- start footer Area -->      
+            <!-- start footer Area -->
             <footer class="footer-area section-gap">
                 <div class="container">
                     <div class="row">
@@ -298,16 +299,16 @@ session_start();
                                                 <div style="position: absolute; left: -5000px;">
                                                     <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
                                                 </div>
-                                            
+
                                             <!-- <div class="col-lg-4 col-md-4">
                                                 <button class="bb-btn btn"><span class="lnr lnr-arrow-right"></span></button>
                                             </div>  -->
-                                        </div>      
+                                        </div>
                                         <div class="info"></div>
                                         </form>
                                 </div>
                                 </div>
-                        </div>                      
+                        </div>
                         <div class="col-lg-3  col-md-6 col-sm-6">
                             <div class="single-footer-widget mail-chimp">
                                 <h6 class="mb-20">Instragram Feed</h6>
@@ -334,7 +335,7 @@ session_start();
                                     <a href="#"><i class="fa fa-behance"></i></a>
                                 </div>
                             </div>
-                        </div>                          
+                        </div>
                     </div>
                     <div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -342,8 +343,8 @@ session_start();
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
                 </div>
-            </footer>   
-            <!-- End footer Area -->        
+            </footer>
+            <!-- End footer Area -->
 
             <script src="js/vendor/jquery-2.2.4.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
@@ -353,8 +354,8 @@ session_start();
             <script src="js/jquery.sticky.js"></script>
             <script src="js/ion.rangeSlider.js"></script>
             <script src="js/jquery.magnific-popup.min.js"></script>
-            <script src="js/owl.carousel.min.js"></script>            
-            <script src="js/main.js"></script>  
-           
+            <script src="js/owl.carousel.min.js"></script>
+            <script src="js/main.js"></script>
+
         </body>
     </html>
