@@ -32,16 +32,36 @@
         <body>
 
             <!-- Start Header Area -->
-            <header class="default-header">
+            <div id="undefined-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 108px;"><header class="default-header" style="width: 1348px; position: fixed; top: 0px;">
                 <div class="menutop-wrap">
                     <div class="menu-top container">
                         <div class="d-flex justify-content-between align-items-center">
                             <ul class="list">
-                                <li><a href="tel:+12312-3-1209">+12312-3-1209</a></li>
-                                <li><a href="mailto:support@colorlib.com">support@colorlib.com</a></li>
+
+                                <li><a href="tel:+12312-3-1209">0861234567 </a></li>
+                                <li><a href="mailto:support@colorlib.com">JR'Zaa@gmail.com</a></li>
                             </ul>
                             <ul class="list">
-                                <li><a href="#">login</a></li>
+                                <li>
+                  <?php
+                  error_reporting(E_ALL ^ E_NOTICE);
+
+                  if($_SESSION['C_ID']){
+
+                    echo "Welcome <b>".$_SESSION['C_ID']."</b><br>" ;
+                    echo "<a href=\"logout.php\">logout</a>";
+
+
+                  }
+                  else{
+
+
+                    echo "<a href=\"login.php\">login</a>";
+
+                  }
+
+
+                    ?></li>
                             </ul>
                         </div>
                     </div>
@@ -76,6 +96,7 @@
                                         <a class="dropdown-item" href="tracking.php">Tracking</a>
                                         <a class="dropdown-item" href="generic.html">Generic</a>
                                         <a class="dropdown-item" href="elements.html">Elements</a>
+                                        <a class="dropdown-item" href="Favorite.php">Favorite</a>
                                       </div>
                                     </li>
                             </ul>
