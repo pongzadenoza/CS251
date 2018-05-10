@@ -16,7 +16,7 @@ session_start();
 	$id = $_REQUEST['cid'];
 	$pass = $_REQUEST['cpassword'];
 
-	echo "$id.=$pass";
+	
 
 	
  $mng = new Loginmng($id , $pass);

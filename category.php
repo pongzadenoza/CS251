@@ -93,10 +93,11 @@
                             <ul class="navbar-nav">
                                 <li><a href="#home">Home</a></li>
                                 <li><a href="#catagory">Category</a></li>
-                                <li><a href="#men">Men</a></li>
-                                <li><a href="#women">Women</a></li>
+                                
                                 <li><a href="#latest">latest</a></li>
                                     <!-- Dropdown -->
+							
+								
                                     <li class="dropdown">
                                       <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                                         Pages
@@ -114,6 +115,29 @@
 																				<a class="dropdown-item" href="Favorite.php">Favorite</a>
                                       </div>
                                     </li>
+								
+								
+									<!--Product owner menu-->
+								<?php 
+								if( $_SESSION['C_TYPE']===0){
+								?>	
+								
+								 <li class="dropdown">
+                                      <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                        Product Management
+                                      </a>
+                                      <div class="dropdown-menu" style="display: none;">
+                              
+                                        <a class="dropdown-item" href="tracking.php">Add Product</a>
+                                       
+                                      </div>
+                                    </li>
+								
+								
+								
+								<?php
+								}?>
+								
                             </ul>
                           </div>
                     </div>

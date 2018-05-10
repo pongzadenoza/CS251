@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+
 <?php
 	  class Loginmng{
 
@@ -59,20 +57,18 @@ session_start();
 				  echo "$resultArray<br>";
 					echo 'ID OR PASSWORD Incorrect';
 			  }else{
-				  //	header('location:index.php');
-					//$_SESSION['C_ID'] = $resultArray['C_ID'];
+				  
 				  $_SESSION['C_ID'] = $id;
-				  $_SESSION['C_TYPE'] = $resultArray[0][2];
+				  $_SESSION['C_TYPE'] = $resultArray['c_type'];
 				  
-				  
-					//$_SESSION['C_TYPE'] = $resultArray['C_TYPE'];
-				  
-				  echo "<script type='text/javascript'>alert('submitted successfully!')</script>";
+				  print_r($_SESSION['C_TYPE']);
+					
+				  //echo "<script type='text/javascript'>alert('submitted successfully!')</script>";
 					session_write_close();
-				  header('location:index.php');
+				 	header('location:index.php');
 					
 				}
-			  mysqli_close();
+			  mysqli_close($conn);
 			
 		  }
 		  

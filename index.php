@@ -111,6 +111,27 @@ session_start();
 								        <a class="dropdown-item" href="elements.html">Elements</a>
 								      </div>
 								    </li>
+									<!--Product owner menu-->
+								<?php 
+								if($_SESSION['C_TYPE']==0 && isset($_SESSION['C_TYPE'])){
+								?>	
+								
+								 <li class="dropdown">
+                                      <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                        Product Management
+										 
+                                      </a>
+                                      <div class="dropdown-menu" style="display: none;">
+                              
+                                        <a class="dropdown-item" href="tracking.php">Add Product</a>
+                                       
+                                      </div>
+                                    </li>
+								
+								
+								
+								<?php
+								}?>
 						    </ul>
 						  </div>
 					</div>
