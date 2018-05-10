@@ -123,6 +123,7 @@
                               <th>Name</th>
                               <th>Price</th>
                               <th>Buy</th>
+                                <th></th>
                           </tr>
                       </thead>
                       <tbody>
@@ -153,6 +154,9 @@
                                       </div>
                                       <div class="col-md-2 col-6">
                             <th>    <a href= <?php echo "class/addtocart.php?select_p=".$row['p_id']; ?>><span class="lnr lnr-cart"></span></a></th>
+                                      </div>
+                                      <div class="col-md-2 col-6">
+                                <th>        <a href=  <?php    echo  "class/delfromfavorite.php?select_d=".$row['p_id']."" ." class=\"view-btn color-3\"> "; ?> <span>Delete Item</span></a></th>
                                       </div>
                                     </div>
                               </tr>
