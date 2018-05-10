@@ -1,4 +1,5 @@
 <?php
+session_start();
 $target_dir = "img/product/";
 //print_r( $_REQUEST );
 //print_r( $_FILES );
@@ -62,7 +63,7 @@ if ( $uploadOk == 0 ) {
 		
 		
 		
-		$sql1 = "INSERT INTO product(p_id,p_name,p_price,p_age,ca_id,p_detail) VALUES('" .$cate. "_". $pString . "','" . $name . "','" . $price . "','".$age."','" . $cate . "','" . $detail . "');";
+		$sql1 = "INSERT INTO product(p_id,p_name,p_price,p_age,ca_id,p_detail,p_usr) VALUES('" .$cate. "_". $pString . "','" . $name . "','" . $price . "','".$age."','" . $cate . "','" . $detail . "','".$_SESSION['C_ID']."');";
 		
 		
 		if($conn->query( $sql1 )===TRUE){

@@ -77,10 +77,9 @@ session_start();
                           </button>
                           <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
                             <ul class="navbar-nav">
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#catagory">Category</a></li>
-                                <li><a href="#men">Men</a></li>
-                                <li><a href="#women">Women</a></li>
+                                <li><a href="index.php">Home</a></li>
+                                <li><a href="category.php">Category</a></li>
+                               
                                 <li><a href="#latest">latest</a></li>
                                     <!-- Dropdown -->
                                     <li class="dropdown">
@@ -125,7 +124,7 @@ session_start();
 		<!-- Start My Account -->
 		<div class="container">
 			<div class="order-tracking">
-				<p>To track your order please enter your Order ID in the box below and press the "Track" button. This was given to you on your receipt and in the confirmation email you should have received.</p>
+				<p>กรุณากรอกข้อมูลสินค้าที่ท่านต้องการเพิ่มในรายการ</p>
 				<form action="upload.php" method="post" enctype="multipart/form-data">
 					<input type="text" name="p_name" placeholder="Title" onfocus="this.placeholder=''" onblur="this.placeholder = 'Order ID'" required class="common-input mt-20">
 					<input type="text" placeholder="Owner" onfocus="this.placeholder=''" onblur="this.placeholder = 'Billing Email Address'" required class="common-input mt-20">

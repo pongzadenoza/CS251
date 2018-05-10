@@ -2,7 +2,26 @@
 	session_start();
 	require("productgetset.php");
 	$conn = new mysqli( "13.231.233.64:3306", "project", "123456", "CS281" );
-	$getsql = "SELECT * FROM product";
+	
+	if(isset($_GET['type'])){
+		
+		if($_GET['type']==='0' ){
+			$getsql = "SELECT * FROM product WHERE `ca_id`=0";
+		}else if($_GET['type']==='1' ){
+			$getsql = "SELECT * FROM product WHERE `ca_id`=1";
+		}else if($_GET['type']==='2' ){
+			$getsql = "SELECT * FROM product WHERE `ca_id`=2";
+		}else if($_GET['type']==='3' ){
+			$getsql = "SELECT * FROM product WHERE `ca_id`=3";
+		}else{
+			
+		}
+		
+	}
+		else{
+		$getsql = "SELECT * FROM product";
+	}
+	
 	$res = $conn->query($getsql);
 	$idArr = mysqli_fetch_all($res);
 
@@ -273,22 +292,20 @@
 
 </div>
 							<ul class="main-categories">
-								<li class="main-nav-list"><a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="รองเท้าบาส" ><span class="lnr lnr-arrow-right"></span>Basketball<span class="number">(53)</span></a>
+								<li class="main-nav-list"><a href="category.php?type=0" ><span class="lnr lnr-arrow-right"></span>รองเท้ากีฬา</a>
 
 								</li>
 
-								<li class="main-nav-list"><a data-toggle="collapse" href="#meatFish" aria-expanded="false" aria-controls="meatFish" class="collapsed"><span class="lnr lnr-arrow-right"></span>Lifestyle<span class="number">(53)</span></a>
+								<li class="main-nav-list"><a href="category.php?type=1" ><span class="lnr lnr-arrow-right"></span>รองเท้าแตะ</a>
 
 								</li>
-								<li class="main-nav-list"><a data-toggle="collapse" href="#cooking" aria-expanded="false" aria-controls="cooking"><span class="lnr lnr-arrow-right"></span>Running<span class="number">(53)</span></a>
+								<li class="main-nav-list"><a href="category.php?type=2" ><span class="lnr lnr-arrow-right"></span>รองเท้าส้นสูง</a>
 
 								</li>
-								<li class="main-nav-list"><a data-toggle="collapse" href="#beverages" aria-expanded="false" aria-controls="beverages"><span class="lnr lnr-arrow-right"></span>Gym &amp; Training<span class="number">(24)</span></a>
+								<li class="main-nav-list"><a href="category.php?type=3" ><span class="lnr lnr-arrow-right"></span>รองเท้าผ้าใบ</a>
 
 								</li>
-								<li class="main-nav-list"><a data-toggle="collapse" href="#homeClean" aria-expanded="false" aria-controls="homeClean"><span class="lnr lnr-arrow-right"></span>Walking<span class="number">(53)</span></a>
-
-								</li>
+								
 
 
 								<li class="main-nav-list"></li>

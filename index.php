@@ -174,7 +174,7 @@ session_start();
 							<div class="row category-bottom">
 								<div class="col-lg-6 col-md-6 mb-30">
 									<div class="content">
-									    <a href="#" target="_blank">
+									    <a href="category.php?type=0" target="_blank">
 									      <div class="content-overlay"></div>
 									  		 <img class="content-image img-fluid d-block mx-auto" src="img\NIKEZOOM\AegeanStormBlueNebulaThunderBlueSummitWhite\messageImage_1523450488069.jpg" alt="">
 									      <div class="content-details fadeIn-bottom">
@@ -185,7 +185,7 @@ session_start();
 								</div>
 								<div class="col-lg-6 col-md-6 mb-30">
 									<div class="content">
-									    <a href="#" target="_blank">
+									    <a href="category.php?type=1" target="_blank">
 									      <div class="content-overlay"></div>
 									  		 <img class="content-image img-fluid d-block mx-auto" src="img/slipper1.jpg" alt="">
 									      <div class="content-details fadeIn-bottom">
@@ -196,7 +196,7 @@ session_start();
 								</div>
 								<div class="col-lg-12">
 									<div class="content">
-										<a href="#" target="_blank">
+										<a href="category.php?type=2" target="_blank">
 									      <div class="content-overlay"></div>
 									  		 <img class="content-image img-fluid d-block mx-auto" src="img/c3.jpg" alt="">
 									      <div class="content-details fadeIn-bottom">
@@ -209,7 +209,7 @@ session_start();
 						</div>
 						<div class="col-lg-4 col-md-4 mb-10">
 						  <div class="content">
-						    <a href="#" target="_blank">
+						    <a href="category.php?type=3" target="_blank">
 						      <div class="content-overlay"></div>
 						  		 <img class="content-image img-fluid d-block mx-auto" src="img/c4.jpg" alt="">
 						      <div class="content-details fadeIn-bottom">
