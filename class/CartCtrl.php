@@ -19,7 +19,11 @@ error_reporting(E_ALL ^ E_NOTICE);
 			 
 			 echo "<script type='text/javascript'>alert('เพิ่มสินค้าไปยังตะกร้าแล้ว')</script>";
 		 }else{
+			 if(!isset($_SESSION['C_ID'])){
 			 echo "<script type='text/javascript'>alert('เพิ่มสินค้าล้มเหลว กรุณาเข้าสู่ระบบ')</script>";
+			 }else{
+				echo "<script type='text/javascript'>alert('เพิ่มสินค้าล้มเหลว สินค้ามีอยู่ในตะกร้าแล้ว')</script>"; 
+			 }
 		 }
 		 
 		 $conn->close();
