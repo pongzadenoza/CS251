@@ -109,6 +109,7 @@ session_start();
 								        <a class="dropdown-item" href="tracking.php">Tracking</a>
 								        <a class="dropdown-item" href="generic.html">Generic</a>
 								        <a class="dropdown-item" href="elements.html">Elements</a>
+												<a class="dropdown-item" href="Favorite.php">Favorite</a>
 								      </div>
 								    </li>
 									<!--Product owner menu-->
@@ -429,47 +430,31 @@ session_start();
 			<footer class="footer-area section-gap">
 				<div class="container">
 					<div class="row">
-						<body>
-							<div class="single-footer-widget">
-								<div class="info"></div>
-									<h6>Enter Your Email!</h6>
-								<form action="sentemailtoSQL.php" method="post" name="form" class="form-box">
-									<label for="name">Name</label><br>
-									<input type="text" name="name" class="form-control" placeholder="Enter Your Name" required><br>
-									<label for="email">Email ID</label><br>
-									<input type="email" name="email" class="form-control" placeholder="Enter Your Email" required><br>
-									<label for="phone">Phone</label><br>
-									<input type="tel" name="phone" class="form-control" placeholder="Enter Your Phone" required><br>
-									<br>
-									<input type="submit" name="submit" value="Send" class="sub-btn">
-								</form>
-							</div>
-						</body>
+
 						<div class="col-lg-3  col-md-6 col-sm-6">
 							<div class="single-footer-widget">
 								<h6>Newsletter</h6>
 								<p>Stay update with our latest</p>
-								<div class="" id="mc_embed_signup">
-
-										<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
-
-										<div class="d-flex flex-row">
-
-											<input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
 
 
-				                            	<button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-				                            	<div style="position: absolute; left: -5000px;">
-													<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-												</div>
+								<form action="sentemailtoSQL.php" method="post" name="form" class="form-box">
+									<div class="d-flex flex-row">
 
-											<!-- <div class="col-lg-4 col-md-4">
-												<button class="bb-btn btn"><span class="lnr lnr-arrow-right"></span></button>
-											</div>  -->
-										</div>
-										<div class="info"></div>
-										</form>
-								</div>
+										<input class="form-control" type="email" name="email" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
+
+
+																		<button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+																		<div style="position: absolute; left: -5000px;">
+												<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+											</div>
+
+										<!-- <div class="col-lg-4 col-md-4">
+											<button class="bb-btn btn"><span class="lnr lnr-arrow-right"></span></button>
+										</div>  -->
+									</div>
+									<div class="info"></div>
+									</form>
+
 								</div>
 						</div>
 						<div class="col-lg-3  col-md-6 col-sm-6">
