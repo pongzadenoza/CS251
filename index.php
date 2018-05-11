@@ -147,10 +147,10 @@ session_start();
 							<img class="img-fluid" src="img/nikezoom.jpg" alt="">
 						</div>
 						<div class="banner-content col-lg-6 col-md-12">
-							<h1 class="title-top"><span>Flat</span> 75%Off</h1>
+							<h1 class="title-top"><span>Now</span> On Sales</h1>
 							<h1 class="text-uppercase">
-								It’s Happening <br>
-								this Season!
+								
+								Many Second Hand Shoes
 							</h1>
 							<button class="primary-btn text-uppercase"><a href="category.php">Purchase Now</a></button>
 						</div>
@@ -165,7 +165,7 @@ session_start();
 					<div class="row d-flex justify-content-center">
 						<div class="menu-content pb-40">
 							<div class="title text-center">
-								<h1 class="mb-10">Second hand Shoes</h1>
+								<h1 class="mb-10">Category</h1>
 							</div>
 						</div>
 					</div>
