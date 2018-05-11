@@ -238,7 +238,7 @@
 
 												<a href="#"><span class="lnr lnr-layers"></span></a>
 												 <a href= <?php echo "class/addtocart.php?select_p=".$idArr[$i][1]; ?>><span class="lnr lnr-cart"></span></a>
-												<a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
+												<a href=<?php echo "./single.php?n=".$idArr[$i][1];?> ><span class="lnr lnr-frame-expand"></span></a>
 											</div>
 								      </div>
 								  </div>

@@ -88,11 +88,9 @@
                           </button>
                           <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
                             <ul class="navbar-nav">
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#catagory">Category</a></li>
-                                <li><a href="#men">Men</a></li>
-                                <li><a href="#women">Women</a></li>
-                                <li><a href="#latest">latest</a></li>
+                                <li><a href="./index.php">Home</a></li>
+                                <li><a href="./category.php">Category</a></li>
+                               
                                     <!-- Dropdown -->
                                     <li class="dropdown">
                                       <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
@@ -106,8 +104,7 @@
                                         <a class="dropdown-item" href="confermation.html">Confermation</a>
                                         <a class="dropdown-item" href="login.html">Login</a>
                                         <a class="dropdown-item" href="tracking.php">Tracking</a>
-                                        <a class="dropdown-item" href="generic.html">Generic</a>
-                                        <a class="dropdown-item" href="elements.html">Elements</a>
+                                       
 																				<a class="dropdown-item" href="Favorite.php">Favorite</a>
                                       </div>
                                     </li>

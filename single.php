@@ -1,5 +1,13 @@
 <?php
 session_start();
+$conn = new mysqli( "13.231.233.64:3306", "project", "123456", "CS281" );
+$sql = "SELECT * FROM `product` WHERE `p_id=".$_GET['n'];
+$res = $conn->query($sql);
+$idArr = mysqli_fetch_all($res);
+$pid = $_GET['n'];
+$conn->close();
+
+
 ?>
 <!DOCTYPE html>
     <html lang="zxx" class="no-js">
@@ -127,21 +135,20 @@ session_start();
                 <div class="product-quick-view">
                     <div class="row align-items-center">
                         <div class="col-lg-6">
-
+							
                             <div class="quick-view-carousel-details">
-                                <div class="item" style="background: url(img/q1.jpg);">
-
-                                </div>
-                                <div class="item" style="background: url(img/q1.jpg);">
-
-                                </div>
+                                 <div class="item" style=<?php echo "\"background: url(img/product/".$pid.".jpg);\"  "?> >
+								</div>
+									 
+                                 <div class="item" style=<?php echo "\"background: url(img/product/".$pid.".jpg);\"" ?> >
+								</div>
 
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="quick-view-content">
                                 <div class="top">
-                                    <h3 class="head">Faded SkyBlu Denim Jeans</h3>
+                                    <h3 class="head"><?php echo $idArr[0][0]?><</h3>
                                     <div class="price d-flex align-items-center"><span class="lnr lnr-tag"></span> <span class="ml-10">$149.99</span></div>
                                     <div class="category">Category: <span>Household</span></div>
                                     <div class="available">Availibility: <span>In Stock</span></div>
