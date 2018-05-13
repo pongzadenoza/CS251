@@ -5,8 +5,14 @@
 	 $arrPro = CartCtrl::getCartProductfromUser($usr);
 	 $countArr = count($arrPro);
 
+	 $transport = 500;
+
 	$totalPrice =0.0 ;
 	for($i=0 ;$i<$countArr ;$i++){
+		if($i==4)
+		{
+			$transport = 0;
+		}
 		$totalPrice += $arrPro[$i][2];
 	}
 
@@ -90,7 +96,7 @@
                             <ul class="navbar-nav">
                                 <li><a href="./index.php">Home</a></li>
                                 <li><a href="./category.php">Category</a></li>
-                               
+
                                     <!-- Dropdown -->
                                     <li class="dropdown">
                                       <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
@@ -104,8 +110,9 @@
                                         <a class="dropdown-item" href="confermation.html">Confermation</a>
                                         <a class="dropdown-item" href="login.html">Login</a>
                                         <a class="dropdown-item" href="tracking.php">Tracking</a>
-                                       
+
 																				<a class="dropdown-item" href="Favorite.php">Favorite</a>
+
                                       </div>
                                     </li>
                             </ul>
@@ -192,12 +199,27 @@
 
 
                 </div>
-				 <div class="subtotal-area d-flex align-items-center justify-content-end">
+				<div class="subtotal-area d-flex align-items-center justify-content-end">
                     <div class="title text-uppercase">ยอดรวม(รวมภาษี 7%)</div>
                     <div class="subtotal"><?php echo $totalPrice*1.07."฿"; ?></div>
 
 
                 </div>
+
+								<div class="subtotal-area d-flex align-items-center justify-content-end">
+					 								<div class="title text-uppercase">ค่าจัดส่ง 500฿ (ซื้อของครบ 5 ชิ้น ค่าจัดส่งฟรี!!!)</div>
+					 								<div class="subtotal"><?php echo $transport."฿"; ?></div>
+
+
+					 						</div>
+
+
+								<div class="subtotal-area d-flex align-items-center justify-content-end">
+
+										<div class="s">	<a href= <?php echo "printBILL.php?select_P1=".$totalPrice."&select_P2=".$totalPrice*1.07."&select_P3=".$transport ." class=\"view-btn color-3\"> "; ?> <span>พิมพ์ใบเสร็จ</span></a>
+
+
+												 </div> </div>
                 <!--<div class="shipping-area d-flex justify-content-end">
                     <div class="tile text-uppercase">การส่งสินค้า</div>
                     <form action="#" class="d-inline-flex flex-column align-items-end">
