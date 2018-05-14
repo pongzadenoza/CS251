@@ -2,9 +2,9 @@
 	session_start();
 	require("productgetset.php");
 	$conn = new mysqli( "13.231.233.64:3306", "project", "123456", "CS281" );
-	
+
 	if(isset($_GET['type'])){
-		
+
 		if($_GET['type']==='0' ){
 			$getsql = "SELECT * FROM product WHERE `ca_id`=0";
 		}else if($_GET['type']==='1' ){
@@ -14,21 +14,21 @@
 		}else if($_GET['type']==='3' ){
 			$getsql = "SELECT * FROM product WHERE `ca_id`=3";
 		}else{
-			
+
 		}
-		
+
 	}
 		else{
 		$getsql = "SELECT * FROM product";
 	}
-	
+
 	$res = $conn->query($getsql);
 	$idArr = mysqli_fetch_all($res);
 
 	$procount = count($idArr);
 	$conn->close();
 
-	
+
 
 ?>
 <!DOCTYPE html>
@@ -112,11 +112,11 @@
                             <ul class="navbar-nav">
                                 <li><a href="#home">Home</a></li>
                                 <li><a href="#catagory">Category</a></li>
-                                
+
                                 <li><a href="#latest">latest</a></li>
                                     <!-- Dropdown -->
-							
-								
+
+
                                     <li class="dropdown">
                                       <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                                         Pages
@@ -134,29 +134,29 @@
 																				<a class="dropdown-item" href="Favorite.php">Favorite</a>
                                       </div>
                                     </li>
-								
-								
+
+
 									<!--Product owner menu-->
-								<?php 
+								<?php
 								if( $_SESSION['C_TYPE']===0){
-								?>	
-								
+								?>
+
 								 <li class="dropdown">
                                       <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                                         Product Management
                                       </a>
                                       <div class="dropdown-menu" style="display: none;">
-                              
+
                                         <a class="dropdown-item" href="tracking.php">Add Product</a>
-                                       
+
                                       </div>
                                     </li>
-								
-								
-								
+
+
+
 								<?php
 								}?>
-								
+
                             </ul>
                           </div>
                     </div>
@@ -238,7 +238,7 @@
 
 												<a href="#"><span class="lnr lnr-layers"></span></a>
 												 <a href= <?php echo "class/addtocart.php?select_p=".$idArr[$i][1]; ?>><span class="lnr lnr-cart"></span></a>
-												<a href=<?php echo "./single.php?n=".$idArr[$i][1];?> ><span class="lnr lnr-frame-expand"></span></a>
+												<a href=<?php echo "single.php?n=".$idArr[$i][1]?> ><span class="lnr lnr-frame-expand"></span></a>
 											</div>
 								      </div>
 								  </div>
@@ -305,7 +305,7 @@
 								<li class="main-nav-list"><a href="category.php?type=3" ><span class="lnr lnr-arrow-right"></span>รองเท้าผ้าใบ</a>
 
 								</li>
-								
+
 
 
 								<li class="main-nav-list"></li>
