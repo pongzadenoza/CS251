@@ -1,5 +1,6 @@
 <?php
 	require("class/cartctrl.php");
+	require("Promotion.php");
 	session_start();
 	 $usr = $_SESSION['C_ID'];
 	 $arrPro = CartCtrl::getCartProductfromUser($usr);
@@ -9,11 +10,26 @@
 
 	$totalPrice =0.0 ;
 	for($i=0 ;$i<$countArr ;$i++){
+
+
 		if($i==4)
 		{
 			$transport = 0;
 		}
-		$totalPrice += $arrPro[$i][2];
+
+
+		if(Promotion::chekPromotion($arrPro[$i][3])==0)
+		{
+			 echo 'ไม่มีโปรโมชั่น';
+		}
+		else {
+			echo 'ลด '.Promotion::chekPromotion($arrPro[$i][3])." %";
+		}
+		$promo=(100-Promotion::chekPromotion($arrPro[$i][3]))/100;
+
+
+
+		$totalPrice += $arrPro[$i][2]*$promo;
 	}
 
 ?>
@@ -34,7 +50,7 @@
         <!-- Site Title -->
         <title>Shop</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,600,600,700" rel="stylesheet">
             <!--
             CSS
             ============================================= -->
@@ -145,13 +161,18 @@
                         <div class="col-md-6">
                             <h6 class="ml-15">Product</h6>
                         </div>
+												<div class="col-md-2">
+														<h6>โปรโมชั่น</h6>
+												</div>
                         <div class="col-md-2">
                             <h6>ราคา</h6>
                         </div>
                         <div class="col-md-2">
                             <h6>ราคา(รวมภาษี 7%)</h6>
                         </div>
+												<div class="col-md-2">
 
+												</div>
                     </div>
                 </div>
 
@@ -166,12 +187,27 @@
                                 <h6><?php echo $arrPro[$i][3]?></h6>
                             </div>
                         </div>
+												<div class="col-md-2 col-6">
+													<h6>	<?php
+												if(Promotion::chekPromotion($arrPro[$i][3])==0)
+												{
+													 echo 'ไม่มีโปรโมชั่น';
+												}
+												else {
+													echo 'ลด '.Promotion::chekPromotion($arrPro[$i][3])." %";
+												}
+												$promo=(100-Promotion::chekPromotion($arrPro[$i][3]))/100;
+
+														 ?></h6>
+
+												 </div>
                         <div class="col-md-2 col-6">
-                            <div class="price"><?php echo $arrPro[$i][2]."฿"?></div>
+                            <div class="price"><?php echo $arrPro[$i][2]*$promo."฿"?></div>
                         </div>
                         <div class="col-md-2 col-6">
-                          	<div class="price"><?php echo $arrPro[$i][2]*1.07."฿" ?></div>
+                          	<div class="price"><?php echo ($arrPro[$i][2]*$promo)*1.07."฿" ?></div>
                         </div>
+
                         <div class="col-md-2 col-6">
                        <?php    echo "<a href=  \"class/delfromcart.php?select_d=".$arrPro[$i][0]."\"" ." class=\"view-btn color-3\"> "; ?> <span>Delete Item</span></a>
                         </div>
