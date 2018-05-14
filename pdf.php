@@ -29,23 +29,23 @@ $pdf->SetFont('Arial','B',14);
 //Cell(width , height , text , border , end line , [align] )
 
 $pdf->Cell(130	,5,'Thank you for your order',0,0);
-$pdf->Cell(59	,5,'INVOICE',0,1);//end of line
+$pdf->Cell(59	,5,'',0,1);//end of line
 
 //set font to arial, regular, 12pt
 $pdf->SetFont('Arial','',12);
 
-$pdf->Cell(130	,5,'[Street Address]',0,0);
+$pdf->Cell(130	,5, 'Sender is name: '.$_POST["cid1"],0,0);
 $pdf->Cell(59	,5,'',0,1);//end of line
 
-$pdf->Cell(130	,5,'[City, Country, ZIP]',0,0);
+$pdf->Cell(130	,5,'Addressee is name: '.$_POST["cid2"],0,0);
 $pdf->Cell(25	,5,'Date',0,0);
 $pdf->Cell(34	,5,date("Y-m-d"),0,1);//end of line
-
+$pdf->Cell(130	,5,'Address is name: '.$_POST["cid3"],0,0);
 //make a dummy empty cell as a vertical spacer
 $pdf->Cell(189	,10,'',0,1);//end of line
 
 //billing address
-$pdf->Cell(100	,5,'Bill to',0,1);//end of line
+$pdf->Cell(100	,5,'Item List',0,1);//end of line
 
 //add dummy cell at beginning of each line for indentation
 

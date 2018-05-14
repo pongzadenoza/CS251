@@ -144,19 +144,22 @@
 					<div class="login-form">
 						<h3 class="billing-title text-center">กรอกข้อมูล</h3>
 						<p class="text-center mt-40 mb-30">
+							<form name="login-form" action="pdf.php" method="POST">
+								<input type="text" name="cid1" value="" placeholder="sender’s name(ชื่อผู้ส่ง)*" onfocus="this.placeholder=''" onblur="this.placeholder = 'sender’s name(ชื่อผู้ส่ง)*'" required class="common-input mt-20">
+								<input type="text" name="cid2" value="" placeholder="addressee’s name(ชื่อผู้รับ)*" onfocus="this.placeholder=''" onblur="this.placeholder = 'addressee’s name(ชื่อผู้รับ)*'" required class="common-input mt-20">
+								<input type="text" name="cid3" value="" placeholder="address(ที่อยู)่*" onfocus="this.placeholder=''" onblur="this.placeholder = 'address(ที่อยู)่*'" required class="common-input mt-20">
 
-					<h6>		<P Align=right>	<?php echo "ราคารวม            ".$_GET['select_P1']." ฿"; ?></P>  </h6>
-					<h6>		<P Align=right>	<?php echo "ราคารวม + แว็กซ์            ".$_GET['select_P2']." ฿"; ?></P>  </h6>
-					<h6>		<P Align=right>	<?php echo "ค่าจัดส่ง            ".$_GET['select_P3']." ฿"; ?></P>  </h6>
-	<?php $sum=$_GET['select_P3']+$_GET['select_P2'] ?>
-						<h6>		<P Align=right>	<?php  echo "จำนวนเงินทั้งหมด            ".$sum." ฿"; ?></P>  </h6>
-							<input name ="cname" type="text" placeholder="ชื่อผู้รับ*" onfocus="this.placeholder=''" onblur="this.placeholder = 'ชื่อผู้รับ*'" required class="common-input mt-20">
-							<input name="cmail" type="email" placeholder="ชื่อผู้ส่ง*" onfocus="this.placeholder=''" onblur="this.placeholder = 'ชื่อผู้ส่ง*'" required class="common-input mt-20">
-							<input name="cphone" type="text" placeholder="เบอร์โทร*" onfocus="this.placeholder=''" onblur="this.placeholder = 'เบอร์โทร*'" required class="common-input mt-20">
-							<input name="cads" type="text" placeholder="่ที่อยู่*" onfocus="this.placeholder=''" onblur="this.placeholder = 'ที่อยู่*'" required class="common-input mt-20">
+							<button class="view-btn color-2 mt-20 w-100"><spanr>พิมพ์ใบเสร็จ</span></button>
+								<div class="mt-20 d-flex align-items-center justify-content-between">
+
+								</div>
+							</form>
 
 
-							<button class="view-btn color-2 mt-20 w-100"><span>ชำระเงิน</span></button>
+
+
+
+
 
 					</div>
 
@@ -164,7 +167,7 @@
 				<div class="col-md-6">
 					<div class="login-form">
 						<h3 class="billing-title text-center">ตัวอย่างใบเสร็จ</h3>
-					
+
 
 						<style>
     embed {
