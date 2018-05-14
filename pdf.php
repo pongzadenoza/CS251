@@ -1,6 +1,7 @@
 <?php
 require('fpdf/fpdf.php');
 	require("class/cartctrl.php");
+		require("address.php");
 session_start();
  $usr = $_SESSION['C_ID'];
  $arrPro = CartCtrl::getCartProductfromUser($usr);
@@ -14,6 +15,13 @@ for($i=0 ;$i<$countArr ;$i++){
 	}
   $totalPrice += $arrPro[$i][2];
 }
+ $aa=$_POST["cid3"];
+if($aa!=null)
+{
+	address::addAdress($usr,$_POST['cid3']);
+
+}
+
 //db connection
 //A4 width : 219mm
 //default margin : 10mm each side
