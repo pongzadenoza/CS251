@@ -1,5 +1,20 @@
 <?php
 session_start();
+$conn = new mysqli( "13.231.233.64:3306", "project", "123456", "CS281" );
+$sql = "SELECT * FROM `product` WHERE `p_id=".$_GET['n'];
+$res = $conn->query($sql);
+$idArr = mysqli_fetch_all($res);
+$pid = $_GET['n'];
+
+$compname2=$_GET['n'];
+$conn->close();
+
+
+
+
+
+
+
 ?>
 <!DOCTYPE html>
     <html lang="zxx" class="no-js">
@@ -129,23 +144,48 @@ session_start();
                         <div class="col-lg-6">
 
                             <div class="quick-view-carousel-details">
-                                <div class="item" style="background: url(img/q1.jpg);">
+                                 <div class="item" style=<?php echo "\"background: url(img/product/".$pid.".jpg);\"  "?> >
+								</div>
 
-                                </div>
-                                <div class="item" style="background: url(img/q1.jpg);">
-
-                                </div>
+                                 <div class="item" style=<?php echo "\"background: url(img/product/".$pid.".jpg);\"" ?> >
+								</div>
 
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="quick-view-content">
                                 <div class="top">
-                                    <h3 class="head">Faded SkyBlu Denim Jeans</h3>
-                                    <div class="price d-flex align-items-center"><span class="lnr lnr-tag"></span> <span class="ml-10">$149.99</span></div>
+
+
+                              <?php
+                              $conn = new mysqli( "13.231.233.64:3306", "project", "123456", "CS281" );
+                              $result = mysqli_query($conn,"SELECT * FROM `product`");
+                                  while($row = mysqli_fetch_array($result)) {
+                                    if( $compname2==$row['p_id'])
+                                    {
+                                      $pidd=$row['p_id'];
+                                      $name=$row['p_name'];
+                                        $price=$row['p_price'];
+                                  }
+                                }
+                                ?>
+
+
+
+                                    <h3 class="head"><?php echo $name?><</h3>
+                                    <div class="price d-flex align-items-center"><span class="lnr lnr-tag"></span> <span class="ml-10"><?php echo $price?></span></div>
                                     <div class="category">Category: <span>Household</span></div>
                                     <div class="available">Availibility: <span>In Stock</span></div>
                                 </div>
+
+
+
+
+
+
+
+
+
                                 <div class="middle">
                                     <p class="content">Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.</p>
                                 </div>
@@ -160,9 +200,10 @@ session_start();
 
                                     </div>
                                     <div class="d-flex mt-20">
-                                        <a href="#" class="view-btn color-2"><span>Add to Cart</span></a>
-                                        <a href="#" class="like-btn"><span class="lnr lnr-layers"></span></a>
-                                        <a href="#" class="like-btn"><span class="lnr lnr-heart"></span></a>
+                                        <a href="<?php echo "class/addtocart.php?select_p=".$pidd; ?>" class="view-btn color-2"><span>Add to Cart</span></a>
+
+                                        <a href="<?php echo "class/addfavorite.php?select_f=".$price."&select_f2=".$name."&select_f3=".$pidd?>" class="like-btn"><span class="lnr lnr-heart"></span></a>
+
                                     </div>
                                 </div>
                             </div>

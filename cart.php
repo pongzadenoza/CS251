@@ -1,13 +1,35 @@
 <?php
 	require("class/cartctrl.php");
+	require("Promotion.php");
 	session_start();
 	 $usr = $_SESSION['C_ID'];
 	 $arrPro = CartCtrl::getCartProductfromUser($usr);
 	 $countArr = count($arrPro);
 
+	 $transport = 500;
+
 	$totalPrice =0.0 ;
 	for($i=0 ;$i<$countArr ;$i++){
-		$totalPrice += $arrPro[$i][2];
+
+
+		if($i==4)
+		{
+			$transport = 0;
+		}
+
+
+		if(Promotion::chekPromotion($arrPro[$i][3])==0)
+		{
+			 echo 'ไม่มีโปรโมชั่น';
+		}
+		else {
+			echo 'ลด '.Promotion::chekPromotion($arrPro[$i][3])." %";
+		}
+		$promo=(100-Promotion::chekPromotion($arrPro[$i][3]))/100;
+
+
+
+		$totalPrice += $arrPro[$i][2]*$promo;
 	}
 
 ?>
@@ -28,7 +50,7 @@
         <!-- Site Title -->
         <title>Shop</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,600,600,700" rel="stylesheet">
             <!--
             CSS
             ============================================= -->
@@ -88,11 +110,9 @@
                           </button>
                           <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
                             <ul class="navbar-nav">
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#catagory">Category</a></li>
-                                <li><a href="#men">Men</a></li>
-                                <li><a href="#women">Women</a></li>
-                                <li><a href="#latest">latest</a></li>
+                                <li><a href="./index.php">Home</a></li>
+                                <li><a href="./category.php">Category</a></li>
+
                                     <!-- Dropdown -->
                                     <li class="dropdown">
                                       <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
@@ -106,9 +126,9 @@
                                         <a class="dropdown-item" href="confermation.html">Confermation</a>
                                         <a class="dropdown-item" href="login.html">Login</a>
                                         <a class="dropdown-item" href="tracking.php">Tracking</a>
-                                        <a class="dropdown-item" href="generic.html">Generic</a>
-                                        <a class="dropdown-item" href="elements.html">Elements</a>
+
 																				<a class="dropdown-item" href="Favorite.php">Favorite</a>
+
                                       </div>
                                     </li>
                             </ul>
@@ -141,13 +161,18 @@
                         <div class="col-md-6">
                             <h6 class="ml-15">Product</h6>
                         </div>
+												<div class="col-md-2">
+														<h6>โปรโมชั่น</h6>
+												</div>
                         <div class="col-md-2">
                             <h6>ราคา</h6>
                         </div>
                         <div class="col-md-2">
                             <h6>ราคา(รวมภาษี 7%)</h6>
                         </div>
+												<div class="col-md-2">
 
+												</div>
                     </div>
                 </div>
 
@@ -162,12 +187,27 @@
                                 <h6><?php echo $arrPro[$i][3]?></h6>
                             </div>
                         </div>
+												<div class="col-md-2 col-6">
+													<h6>	<?php
+												if(Promotion::chekPromotion($arrPro[$i][3])==0)
+												{
+													 echo 'ไม่มีโปรโมชั่น';
+												}
+												else {
+													echo 'ลด '.Promotion::chekPromotion($arrPro[$i][3])." %";
+												}
+												$promo=(100-Promotion::chekPromotion($arrPro[$i][3]))/100;
+
+														 ?></h6>
+
+												 </div>
                         <div class="col-md-2 col-6">
-                            <div class="price"><?php echo $arrPro[$i][2]."฿"?></div>
+                            <div class="price"><?php echo $arrPro[$i][2]*$promo."฿"?></div>
                         </div>
                         <div class="col-md-2 col-6">
-                          	<div class="price"><?php echo $arrPro[$i][2]*1.07."฿" ?></div>
+                          	<div class="price"><?php echo ($arrPro[$i][2]*$promo)*1.07."฿" ?></div>
                         </div>
+
                         <div class="col-md-2 col-6">
                        <?php    echo "<a href=  \"class/delfromcart.php?select_d=".$arrPro[$i][0]."\"" ." class=\"view-btn color-3\"> "; ?> <span>Delete Item</span></a>
                         </div>
@@ -195,12 +235,27 @@
 
 
                 </div>
-				 <div class="subtotal-area d-flex align-items-center justify-content-end">
+				<div class="subtotal-area d-flex align-items-center justify-content-end">
                     <div class="title text-uppercase">ยอดรวม(รวมภาษี 7%)</div>
                     <div class="subtotal"><?php echo $totalPrice*1.07."฿"; ?></div>
 
 
                 </div>
+
+								<div class="subtotal-area d-flex align-items-center justify-content-end">
+					 								<div class="title text-uppercase">ค่าจัดส่ง 500฿ (ซื้อของครบ 5 ชิ้น ค่าจัดส่งฟรี!!!)</div>
+					 								<div class="subtotal"><?php echo $transport."฿"; ?></div>
+
+
+					 						</div>
+
+
+								<div class="subtotal-area d-flex align-items-center justify-content-end">
+
+										<div class="s">	<a href= <?php echo "printBILL.php?select_P1=".$totalPrice."&select_P2=".$totalPrice*1.07."&select_P3=".$transport ." class=\"view-btn color-3\"> "; ?> <span>พิมพ์ใบเสร็จ</span></a>
+
+
+												 </div> </div>
                 <!--<div class="shipping-area d-flex justify-content-end">
                     <div class="tile text-uppercase">การส่งสินค้า</div>
                     <form action="#" class="d-inline-flex flex-column align-items-end">
