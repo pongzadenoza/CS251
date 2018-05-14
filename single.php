@@ -163,7 +163,9 @@ $conn->close();
                                   while($row = mysqli_fetch_array($result)) {
                                     if( $compname2==$row['p_id'])
                                     {
+                                      $pidd=$row['p_id'];
                                       $name=$row['p_name'];
+                                        $price=$row['p_price'];
                                   }
                                 }
                                 ?>
@@ -171,7 +173,7 @@ $conn->close();
 
 
                                     <h3 class="head"><?php echo $name?><</h3>
-                                    <div class="price d-flex align-items-center"><span class="lnr lnr-tag"></span> <span class="ml-10">$149.99</span></div>
+                                    <div class="price d-flex align-items-center"><span class="lnr lnr-tag"></span> <span class="ml-10"><?php echo $price?></span></div>
                                     <div class="category">Category: <span>Household</span></div>
                                     <div class="available">Availibility: <span>In Stock</span></div>
                                 </div>
@@ -198,9 +200,10 @@ $conn->close();
 
                                     </div>
                                     <div class="d-flex mt-20">
-                                        <a href="#" class="view-btn color-2"><span>Add to Cart</span></a>
-                                        <a href="#" class="like-btn"><span class="lnr lnr-layers"></span></a>
-                                        <a href="#" class="like-btn"><span class="lnr lnr-heart"></span></a>
+                                        <a href="<?php echo "class/addtocart.php?select_p=".$pidd; ?>" class="view-btn color-2"><span>Add to Cart</span></a>
+
+                                        <a href="<?php echo "class/addfavorite.php?select_f=".$price."&select_f2=".$name."&select_f3=".$pidd?>" class="like-btn"><span class="lnr lnr-heart"></span></a>
+
                                     </div>
                                 </div>
                             </div>
