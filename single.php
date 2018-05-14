@@ -5,7 +5,14 @@ $sql = "SELECT * FROM `product` WHERE `p_id=".$_GET['n'];
 $res = $conn->query($sql);
 $idArr = mysqli_fetch_all($res);
 $pid = $_GET['n'];
+
+$compname2=$_GET['n'];
 $conn->close();
+
+
+
+
+
 
 
 ?>
@@ -135,11 +142,11 @@ $conn->close();
                 <div class="product-quick-view">
                     <div class="row align-items-center">
                         <div class="col-lg-6">
-							
+
                             <div class="quick-view-carousel-details">
                                  <div class="item" style=<?php echo "\"background: url(img/product/".$pid.".jpg);\"  "?> >
 								</div>
-									 
+
                                  <div class="item" style=<?php echo "\"background: url(img/product/".$pid.".jpg);\"" ?> >
 								</div>
 
@@ -148,11 +155,35 @@ $conn->close();
                         <div class="col-lg-6">
                             <div class="quick-view-content">
                                 <div class="top">
-                                    <h3 class="head"><?php echo $idArr[0][0]?><</h3>
+
+
+                              <?php
+                              $conn = new mysqli( "13.231.233.64:3306", "project", "123456", "CS281" );
+                              $result = mysqli_query($conn,"SELECT * FROM `product`");
+                                  while($row = mysqli_fetch_array($result)) {
+                                    if( $compname2==$row['p_id'])
+                                    {
+                                      $name=$row['p_name'];
+                                  }
+                                }
+                                ?>
+
+
+
+                                    <h3 class="head"><?php echo $name?><</h3>
                                     <div class="price d-flex align-items-center"><span class="lnr lnr-tag"></span> <span class="ml-10">$149.99</span></div>
                                     <div class="category">Category: <span>Household</span></div>
                                     <div class="available">Availibility: <span>In Stock</span></div>
                                 </div>
+
+
+
+
+
+
+
+
+
                                 <div class="middle">
                                     <p class="content">Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.</p>
                                 </div>
