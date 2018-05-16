@@ -16,9 +16,11 @@ for($i=0 ;$i<$countArr ;$i++){
   $totalPrice += $arrPro[$i][2];
 }
  $aa=$_POST["cid3"];
+ $time=date("Y-m-d");
 if($aa!=null)
 {
-	address::addAdress($usr,$_POST['cid3']);
+	address::addAdress($usr,$_POST['cid3'],$time);
+
 
 }
 
