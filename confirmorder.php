@@ -1,16 +1,10 @@
 <?php
-session_start();
-	
-
-
 	require("class/cartctrl.php");
 	require("Promotion.php");
-	
+	session_start();
 	 $usr = $_SESSION['C_ID'];
 	 $arrPro = CartCtrl::getCartProductfromUser($usr);
 	 $countArr = count($arrPro);
-
-
 
 	 $transport = 500;
 
@@ -149,10 +143,10 @@ session_start();
                 <div class="container">
                     <div class="breadcrumb-banner d-flex flex-wrap align-items-center">
                         <div class="col-first">
-                            <h1>History</h1>
+                            <h1>Shopping Cart</h1>
                              <nav class="d-flex align-items-center justify-content-start">
                                 <a href="index.html">Home<i class="fa fa-caret-right" aria-hidden="true"></i></a>
-                                <a href="cart.html">History</a>
+                                <a href="cart.html">Shopping Cart</a>
                             </nav>
                         </div>
                     </div>
@@ -164,16 +158,12 @@ session_start();
             <div class="container">
                 <div class="cart-title">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <h6 class="ml-15">Product</h6>
                         </div>
-						<div class="col-md-2">
-							<h6>วันที่</h6>
-						</div>
-						<div class="col-md-2">
-							<h6>เวลา</h6>
-						</div>
-												
+												<div class="col-md-2">
+														<h6>โปรโมชั่น</h6>
+												</div>
                         <div class="col-md-2">
                             <h6>ราคา</h6>
                         </div>
@@ -218,9 +208,7 @@ session_start();
                           	<div class="price"><?php echo ($arrPro[$i][2]*$promo)*1.07."฿" ?></div>
                         </div>
 
-                        <div class="col-md-2 col-6">
-                       <?php    echo "<a href=  \"class/delfromcart.php?select_d=".$arrPro[$i][0]."\"" ." class=\"view-btn color-3\"> "; ?> <span>Delete Item</span></a>
-                        </div>
+                        
                     </div>
 
                 </div>
@@ -239,11 +227,32 @@ session_start();
                         <a href="#" class="view-btn color-2 have-btn" ><span>ส่วนลด</span></a>
                     </div>
                 </div>-->
-                
-				
+                <div class="subtotal-area d-flex align-items-center justify-content-end">
+                    <div class="title text-uppercase">ยอดรวม</div>
+                    <div class="subtotal"><?php echo $totalPrice."฿"; ?></div>
 
 
-								 </div>
+                </div>
+				<div class="subtotal-area d-flex align-items-center justify-content-end">
+                    <div class="title text-uppercase">ยอดรวม(รวมภาษี 7%)</div>
+                    <div class="subtotal"><?php echo $totalPrice*1.07."฿"; ?></div>
+
+
+                </div>
+
+								<div class="subtotal-area d-flex align-items-center justify-content-end">
+					 								<div class="title text-uppercase">ค่าจัดส่ง 500฿ (ซื้อของครบ 5 ชิ้น ค่าจัดส่งฟรี!!!)</div>
+					 								<div class="subtotal"><?php echo $transport."฿"; ?></div>
+
+
+					 						</div>
+
+
+								<div class="subtotal-area d-flex align-items-center justify-content-end">
+										<div class="s">	<a href= <?php echo "printBILL.php?select_P1=".$totalPrice."&select_P2=".$totalPrice*1.07."&select_P3=".$transport ." class=\"view-btn color-3\"> "; ?> <span>พิมพ์ใบเสร็จ</span></a>
+										<a href= <?php echo "index.php" ." class=\"view-btn color-3\"> "; ?> <span>ยกเลิก</span></a>
+										 </div>
+									</div>
                 <!--<div class="shipping-area d-flex justify-content-end">
                     <div class="tile text-uppercase">การส่งสินค้า</div>
                     <form action="#" class="d-inline-flex flex-column align-items-end">
