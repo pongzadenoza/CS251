@@ -252,7 +252,7 @@
 
 								<div class="subtotal-area d-flex align-items-center justify-content-end">
 
-										<div class="s">	<a href= <?php echo "printBILL.php?select_P1=".$totalPrice."&select_P2=".$totalPrice*1.07."&select_P3=".$transport ." class=\"view-btn color-3\"> "; ?> <span>พิมพ์ใบเสร็จ</span></a>
+										<div class="s">	<a href= <?php echo "confirmorder.php?select_P1=".$totalPrice."&select_P2=".$totalPrice*1.07."&select_P3=".$transport ." class=\"view-btn color-3\"> "; ?> <span>ยืนยันการสั่งซื้อ</span></a>
 
 
 												 </div> </div>

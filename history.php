@@ -197,6 +197,7 @@ session_start();
                         <div class="col-md-6 col-12">
                             <div class="product-item d-flex align-items-center">
                                 <img <?php  echo "src=\"img/product/".$arrPro[$i][0].".jpg\"" ; ?> class="img-fluid" alt="" width="200">
+								 <h6><?php echo $arrPro[$i][2]?></h6>
                                 <h6><?php echo $arrPro[$i][3]?></h6>
 								<h6><?php echo $arrPro[$i][4]?></h6>
                             </div>

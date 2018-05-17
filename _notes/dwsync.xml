@@ -38,7 +38,7 @@
 <file name="sentemailtoSQL.php" server="C:/xampp/htdocs/testserv" local="131686982097053840" remote="131686982090000000" Dst="0" />
 <file name=".DS_Store" server="C:/xampp/htdocs/testserv/" local="131678101417034038" remote="131678101410000000" Dst="0" />
 <file name="add_item.php" server="C:/xampp/htdocs/testserv/" local="131686879886616216" remote="131686879880000000" Dst="0" />
-<file name="cart.php" server="C:/xampp/htdocs/testserv/" local="131708051831321908" remote="131708051830000000" Dst="0" />
+<file name="cart.php" server="C:/xampp/htdocs/testserv/" local="131710291844843669" remote="131710291840000000" Dst="0" />
 <file name="category.php" server="C:/xampp/htdocs/testserv/" local="131708051831341956" remote="131708051830000000" Dst="0" />
 <file name="checkout.html" server="C:/xampp/htdocs/testserv/" local="131684988779913705" remote="131684988770000000" Dst="0" />
 <file name="condb.php" server="C:/xampp/htdocs/testserv/" local="131686879886641275" remote="131686879880000000" Dst="0" />
@@ -76,7 +76,7 @@
 <file name="address.php" server="C:/xampp/htdocs/testserv/" local="131710209662389418" remote="131710209660000000" Dst="0" />
 <file name="pdf.php" server="C:/xampp/htdocs/testserv/" local="131710209663665898" remote="131710209660000000" Dst="0" />
 <file name="printBILL.php" server="C:/xampp/htdocs/testserv/" local="131708051832154170" remote="131708051830000000" Dst="0" />
-<file name="history.php" server="C:/xampp/htdocs/testserv/" local="131710288922941969" remote="131710288920000000" Dst="0" />
+<file name="history.php" server="C:/xampp/htdocs/testserv/" local="131710289732053751" remote="131710289730000000" Dst="0" />
 <file name="addfavorite.php" server="13.231.233.64//var/www/html/cs281/" local="131704943010655517" remote="131710284930000000" Dst="0" />
 <file name="address.php" server="13.231.233.64//var/www/html/cs281/" local="131710209662389418" remote="131710284930000000" Dst="0" />
 <file name="confirmorder.php" server="13.231.233.64//var/www/html/cs281/" local="131710209662416617" remote="131710284940000000" Dst="0" />
@@ -93,4 +93,5 @@
 <file name="ShoesLike.php" server="13.231.233.64//var/www/html/cs281/" local="131704943010635088" remote="131710285000000000" Dst="0" />
 <file name="single.php" server="13.231.233.64//var/www/html/cs281/" local="131708051832164200" remote="131710285010000000" Dst="0" />
 <file name="upload.php" server="13.231.233.64//var/www/html/cs281/" local="131704943010997283" remote="131710285010000000" Dst="0" />
+<file name="confirmorder.php" server="C:/xampp/htdocs/testserv/" local="131710293797664103" remote="131710293790000000" Dst="0" />
 </dwsync>
