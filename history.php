@@ -6,12 +6,15 @@ session_start();
 	require("class/cartctrl.php");
 	require("Promotion.php");
 	
+	
 	 $usr = $_SESSION['C_ID'];
-	 $arrPro = CartCtrl::getCartProductfromUser($usr);
+	// $arrPro = CartCtrl::getCartProductfromUser($usr);
 	 $countArr = count($arrPro);
-
-
-
+	 $conn = new mysqli("13.231.233.64:3306","project","123456","CS281");
+		 $getsql = "SELECT p_id, p_price , p_name , p_date , p_time FROM history WHERE p_usr = '".$usr."' ;";
+	$res = $conn->query($getsql);
+	$arrPro = mysqli_fetch_all($res);
+	
 	 $transport = 500;
 
 	$totalPrice =0.0 ;
@@ -187,7 +190,7 @@ session_start();
                 </div>
 
 
-				<?php for($i=0 ;$i<$countArr ;$i++) { ?>
+				<?php for($i=0 ;$i< count($arrPro) ;$i++) { ?>
 
                 <div class="cart-single-item">
                     <div class="row align-items-center">
@@ -195,6 +198,7 @@ session_start();
                             <div class="product-item d-flex align-items-center">
                                 <img <?php  echo "src=\"img/product/".$arrPro[$i][0].".jpg\"" ; ?> class="img-fluid" alt="" width="200">
                                 <h6><?php echo $arrPro[$i][3]?></h6>
+								<h6><?php echo $arrPro[$i][4]?></h6>
                             </div>
                         </div>
 												<div class="col-md-2 col-6">
@@ -212,15 +216,13 @@ session_start();
 
 												 </div>
                         <div class="col-md-2 col-6">
-                            <div class="price"><?php echo $arrPro[$i][2]*$promo."฿"?></div>
+                            <div class="price"><?php echo $arrPro[$i][1]*$promo."฿"?></div>
                         </div>
                         <div class="col-md-2 col-6">
-                          	<div class="price"><?php echo ($arrPro[$i][2]*$promo)*1.07."฿" ?></div>
+                          	<div class="price"><?php echo ($arrPro[$i][1]*$promo)*1.07."฿" ?></div>
                         </div>
 
-                        <div class="col-md-2 col-6">
-                       <?php    echo "<a href=  \"class/delfromcart.php?select_d=".$arrPro[$i][0]."\"" ." class=\"view-btn color-3\"> "; ?> <span>Delete Item</span></a>
-                        </div>
+                       
                     </div>
 
                 </div>

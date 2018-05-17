@@ -2,7 +2,7 @@
 <dwsync>
 <file name="AddA.php" server="C:/xampp/htdocs/testserv/" local="131690164330564729" remote="131690164330000000" Dst="0" />
 <file name="AddCtrl.php" server="C:/xampp/htdocs/testserv/" local="131690164330574889" remote="131690164330000000" Dst="0" />
-<file name="CartCtrl.php" server="C:/xampp/htdocs/testserv/" local="131692781267224711" remote="131692781260000000" Dst="0" />
+<file name="CartCtrl.php" server="C:/xampp/htdocs/testserv/" local="131704943010706523" remote="131704943010000000" Dst="0" />
 <file name="Customer.php" server="C:/xampp/htdocs/testserv/" local="131690164330604983" remote="131690164330000000" Dst="0" />
 <file name="DB_Member.php" server="C:/xampp/htdocs/testserv/" local="131690164330615002" remote="131690164330000000" Dst="0" />
 <file name="DB_MemberInfo.php" server="C:/xampp/htdocs/testserv/" local="131690164330625025" remote="131690164330000000" Dst="0" />
@@ -18,10 +18,13 @@
 <file name="registerCtrl.php" server="C:/xampp/htdocs/testserv/" local="131690164330715490" remote="131690164330000000" Dst="0" />
 <file name="addtocart.php" server="C:/xampp/htdocs/testserv" local="131692452242012728" remote="131692452240000000" Dst="0" />
 <file name="cartctrl.php" server="C:/xampp/htdocs/testserv" local="131692469128133630" remote="131692469120000000" Dst="0" />
-<file name="cartctrl.php" server="C:/xampp/htdocs/testserv/" local="131704494534499908" remote="131704494530000000" Dst="0" />
+<file name="cartctrl.php" server="C:/xampp/htdocs/testserv/" local="131692710101488438" remote="131692710100000000" Dst="0" />
 <file name="addtocart.php" server="C:/xampp/htdocs/testserv/" local="131692712974794430" remote="131692712970000000" Dst="0" />
 <file name="delfromcart.php" server="C:/xampp/htdocs/testserv/" local="131692711054306124" remote="131692711050000000" Dst="0" />
 <file name="CartCtrl.php" server="13.231.233.64//var/www/html/cs281/" local="131692781267224711" remote="131692782320000000" Dst="0" />
 <file name="addtocart.php" server="13.231.233.64//var/www/html/cs281/" local="131692776484939607" remote="131692795860000000" Dst="0" />
 <file name="delfromcart.php" server="13.231.233.64//var/www/html/cs281/" local="131692776485046029" remote="131692795860000000" Dst="0" />
+<file name="addfavorite.php" server="13.231.233.64//var/www/html/cs281/" local="131704943010756648" remote="131710282750000000" Dst="0" />
+<file name="delfromfavorite.php" server="13.231.233.64//var/www/html/cs281/" local="131704943010766661" remote="131710282760000000" Dst="0" />
+<file name="ShoesLike.php" server="13.231.233.64//var/www/html/cs281/" local="131704943010716547" remote="131710282760000000" Dst="0" />
 </dwsync>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="_common.scss" server="13.231.233.64//var/www/html/cs281/" local="131690276077473808" remote="131692797880000000" Dst="0" />
-<file name="_elements.scss" server="13.231.233.64//var/www/html/cs281/" local="131690276077473808" remote="131692797890000000" Dst="0" />
-<file name="_flexbox.scss" server="13.231.233.64//var/www/html/cs281/" local="131690276077483837" remote="131692797890000000" Dst="0" />
-<file name="_footer.scss" server="13.231.233.64//var/www/html/cs281/" local="131690276077483837" remote="131692797900000000" Dst="0" />
-<file name="_header.scss" server="13.231.233.64//var/www/html/cs281/" local="131690276077494248" remote="131692797900000000" Dst="0" />
-<file name="_home.scss" server="13.231.233.64//var/www/html/cs281/" local="131690276077504272" remote="131692797910000000" Dst="0" />
-<file name="_mixins.scss" server="13.231.233.64//var/www/html/cs281/" local="131690276077514296" remote="131692797910000000" Dst="0" />
-<file name="_reset.scss" server="13.231.233.64//var/www/html/cs281/" local="131690276077524325" remote="131692797920000000" Dst="0" />
-<file name="_variables.scss" server="13.231.233.64//var/www/html/cs281/" local="131690276077534355" remote="131692797920000000" Dst="0" />
+<file name="_common.scss" server="13.231.233.64//var/www/html/cs281/" local="131690276077473808" remote="131710284480000000" Dst="0" />
+<file name="_elements.scss" server="13.231.233.64//var/www/html/cs281/" local="131690276077473808" remote="131710284490000000" Dst="0" />
+<file name="_flexbox.scss" server="13.231.233.64//var/www/html/cs281/" local="131690276077483837" remote="131710284500000000" Dst="0" />
+<file name="_footer.scss" server="13.231.233.64//var/www/html/cs281/" local="131690276077483837" remote="131710284500000000" Dst="0" />
+<file name="_header.scss" server="13.231.233.64//var/www/html/cs281/" local="131690276077494248" remote="131710284510000000" Dst="0" />
+<file name="_home.scss" server="13.231.233.64//var/www/html/cs281/" local="131690276077504272" remote="131710284510000000" Dst="0" />
+<file name="_mixins.scss" server="13.231.233.64//var/www/html/cs281/" local="131690276077514296" remote="131710284520000000" Dst="0" />
+<file name="_reset.scss" server="13.231.233.64//var/www/html/cs281/" local="131690276077524325" remote="131710284520000000" Dst="0" />
+<file name="_variables.scss" server="13.231.233.64//var/www/html/cs281/" local="131690276077534355" remote="131710284530000000" Dst="0" />
 <file name="_common.scss" server="C:/xampp/htdocs/testserv/" local="131678101419748887" remote="131678101410000000" Dst="0" />
 <file name="_elements.scss" server="C:/xampp/htdocs/testserv/" local="131678101419758911" remote="131678101410000000" Dst="0" />
 <file name="_flexbox.scss" server="C:/xampp/htdocs/testserv/" local="131678101419758911" remote="131678101410000000" Dst="0" />

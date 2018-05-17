@@ -116,7 +116,7 @@ session_start();
                             <h1>ช่องทางการชำระเงิน</h1>
                              <nav class="d-flex align-items-center justify-content-start">
                                 <a href="index.php">Home<i class="fa fa-caret-right" aria-hidden="false"></i></a>
-                                <a href="paymentway.php">>ช่องทางการชำระเงิน</</a>
+                               
                             </nav>
                         </div>
                     </div>
