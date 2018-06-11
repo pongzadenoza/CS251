@@ -145,14 +145,11 @@ session_start();
 				<div class="container-fluid">
 					<div class="row fullscreen align-items-center justify-content-center">
 						<div class="col-lg-6 col-md-12 d-flex align-self-end img-right no-padding">
-							<img class="img-fluid" src="img/nikezoom.jpg" alt="">
+							<img class="img-fluid" src="img/header-bg.png" alt="">
 						</div>
 						<div class="banner-content col-lg-6 col-md-12">
 							<h1 class="title-top"><span>Now</span> On Sales</h1>
-							<h1 class="text-uppercase">
-								
-								Many Second Hand Shoes
-							</h1>
+							<h1 class="text-uppercase"> LONELY TWO LEGGED CREATURE </h1>
 							<button class="primary-btn text-uppercase"><a href="category.php">Purchase Now</a></button>
 						</div>
 					</div>
