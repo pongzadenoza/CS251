@@ -40,7 +40,7 @@ if ( $uploadOk == 0 ) {
 } else {
 	$cate = $_REQUEST[ 'p_cate' ];
 	
-	$conn = new mysqli( "13.231.233.64:3306", "project", "123456", "CS281" );
+	$conn = new mysqli( "13.231.233.64:3306", "project", "123456", "CS251" );
 	$getsql = "SELECT p_ind FROM product";
 	$res = $conn->query($getsql);
 	$idArr = mysqli_fetch_all($res);

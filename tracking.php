@@ -128,14 +128,22 @@ session_start();
 				<p>กรุณากรอกข้อมูลสินค้าที่ท่านต้องการเพิ่มในรายการ</p>
 				<form action="upload.php" method="post" enctype="multipart/form-data">
 					<input type="text" name="p_name" placeholder="Title" onfocus="this.placeholder=''" onblur="this.placeholder = 'Order ID'" required class="common-input mt-20">
-					<input type="text" placeholder="Owner" onfocus="this.placeholder=''" onblur="this.placeholder = 'Billing Email Address'" required class="common-input mt-20">
-					<input type="number" onchange="setTwoNumberDecimal" min="0" max="999999999" step="0.25"  name="p_price" placeholder="ราคา" onfocus="this.placeholder=''" onblur="this.placeholder = 'ราคา'" required class="common-input mt-20 w-25">
-					<input type="number" placeholder="Age(year)" name="p_age" onfocus="this.placeholder=''" onblur="this.placeholder = 'อายุของรองเท้า'" required class="common-input mt-20 w-25">
-					<select name="p_cate" required class="common-input mt-20 w-50 mr-50"  [single]>
-						<option value="0">รองเท้ากีฬา</option>
-						<option value="1">รองเท้าแตะ</option>
-						<option value="2">รองเท้าส้นสูง</option>
-						<option value="3">รองเท้าผ้าใบ</option>
+					<input type="text" placeholder="Color" onfocus="this.placeholder=''" onblur="this.placeholder = 'Color'" required class="common-input mt-20">
+					<input type="number" onchange="setTwoNumberDecimal" min="0" max="999999999" step="0.25"  name="price" placeholder="price" onfocus="this.placeholder=''" onblur="this.placeholder = 'Price'" required class="common-input mt-20 w-25">
+					
+					<select name="size" required class="common-input mt-20 w-50 mr-50"  [single]>
+						
+						<option value="0">S</option>
+						<option value="1">M</option>
+						<option value="2">L</option>
+						
+					</select>
+					
+					<select name="category" required class="common-input mt-20 w-50 mr-50"  [single]>
+						<option value="0">ผู้ชาย</option>
+						<option value="1">ผู้หญิง</option>
+						<!--<option value="2">xxx</option>
+						<option value="3">xxxxxx</option>-->
 					</select>
 				  	  <input type="file" name="fileToUpload" id="fileToUpload" accept="image/*" class="view-btn  mt-20"><br>
 					<textarea name="p_dtl" placeholder="รายละเอียดสินค้า" rows="5" cols="50" required class="common-input "></textarea>
